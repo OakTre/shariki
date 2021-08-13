@@ -16,6 +16,7 @@ const webp = require("gulp-webp");
 const del = require("del");
 const gcmq = require("gulp-group-css-media-queries");
 const pugInclude = require("pug-include-glob");
+const concat = require("gulp-concat");
 
 
 const pugBuild = () => {
@@ -64,34 +65,14 @@ const stylesVendor = () => {
 }
 
 const scripts = () => {
-    return src("./src/js/main.js")
-        .pipe(webpackStream({
-            output: {
-                filename: "main.js",
-            },
-            module: {
-                rules: [
-                  {
-                    test: /\.m?js$/,
-                    exclude: /node_modules/,
-                    use: {
-                      loader: 'babel-loader',
-                      options: {
-                        presets: [
-                          ['@babel/preset-env', { targets: "defaults" }]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-        }))
-        .pipe(sourcemaps.init())
-        .pipe(uglify().on("error", notify.onError()))
-        .pipe(sourcemaps.write("."))
-        .pipe(dest("./app/js"))
-        .pipe(browserSync.stream());
-
+	src('./src/js/vendor/**.js')
+		.pipe(concat('vendor.js'))
+		.pipe(uglify().on("error", notify.onError()))
+		.pipe(dest('./app/js/'))
+		return src(['./src/js/functions/**.js', './src/js/components/**.js','./src/js/global.js', './src/js/main.js'])
+		.pipe(sourcemaps.write('.'))
+		.pipe(dest('./app/js'))
+		.pipe(browserSync.stream());
 }
 
 const svgSprites = () => {
@@ -109,7 +90,7 @@ const svgSprites = () => {
 					  plugins: [
 						{
 						  removeAttrs: {
-							attrs: ['class', 'data-name', 'fill.*', 'stroke.*'],
+							attrs: ['data-name', 'stroke.*'],
 						  },
 						},
 					  ],
@@ -196,31 +177,13 @@ const stylesBuild = () => {
 }
 
 const scriptsBuild = () => {
-    return src("./src/js/main.js")
-        .pipe(webpackStream({
-            output: {
-                filename: "main.js",
-            },
-            module: {
-                rules: [
-                  {
-                    test: /\.m?js$/,
-                    exclude: /node_modules/,
-                    use: {
-                      loader: 'babel-loader',
-                      options: {
-                        presets: [
-                          ['@babel/preset-env', { targets: "defaults" }]
-                        ]
-                      }
-                    }
-                  }
-                ]
-              }
-        }))
-        .pipe(uglify().on("error", notify.onError()))
-        .pipe(dest("./app/js"))
-
+	src('./src/js/vendor/**.js')
+		.pipe(concat('vendor.js'))
+		.pipe(uglify().on("error", notify.onError()))
+		.pipe(dest('./app/js/'))
+		return src(['./src/js/functions/**.js', './src/js/components/**.js','./src/js/global.js', './src/js/main.js'])
+		.pipe(dest('./app/js'))
+		.pipe(browserSync.stream());
 }
 exports.build = series(clean, parallel(pugBuild, scriptsBuild, stylesVendor, imgToApp, toWebp, svgSprites, copySvg, copyFonts), stylesBuild, watchFiles);
 

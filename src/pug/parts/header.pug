@@ -1,2 +1,30 @@
+- let header_list = ["О компании", "Каталог", "Доставка и оплата", "Пункты самовывоза", "Контакты"];
 header.header
-	h1 header
+	.site-container
+		.header__container
+			a.header__logo.main-logo(href="")
+
+
+				img(src="img/logo.png", alt="Лого")
+				p
+					|	Воздушные гелиевые  шары с доставкой
+			span.header__location
+				|	Санкт-Петербург
+			nav.header__nav
+				.header__nav_wrap
+					ul
+						for item in header_list
+							li
+								a(href="")=item
+					a.header__nav-cart(href="", aria-label="Корзина")
+						span.header__quantity
+							|	199 шт
+						+icon("cart")
+			.header__btn-group
+				a.phone-content(href="")
+					|	+7 (999) 135-35-03
+				button.button-reset.header__order-button
+					span
+						|	Заказать звонок
+
+

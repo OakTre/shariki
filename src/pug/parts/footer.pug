@@ -1,2 +1,51 @@
+- let footer_list = ["О компании", "Каталог", "Доставка и оплата", "Пункты самовывоза"];
+
 footer.footer
-	h1 footer
+	.footer-layer.lazy(data-bg="img/footer-bg.webp", data-bg-fallback="img/footer-bg.png")
+	.site-container
+		.footer__container
+			.footer__left
+				a.footer__logo(href="")
+					img(src="img/logo.png", alt="Логотип")
+					p
+						|	Воздушные гелиевые шары с доставкой
+				span.footer__copyright
+					|	ⓒ Все права защищены. Информация на сайте не является публичной офертой. ИНН: 00000000000
+				a.footer__policy(href="")
+					|	Политика конфедециальности
+			.footer__content
+				.footer__col
+					span.footer__legend
+						|	Меню
+					nav.footer__nav
+						ul
+							for item in footer_list
+								li
+									a(href="")=item
+				.footer__col
+					span.footer__legend
+						|	Мы в соцсетях
+					ul.footer__social-list.social-list
+						li.social-list__item
+							a(href="")
+								+icon("inst")
+						li.social-list__item
+							a(href="")
+								+icon("vk")
+						li.social-list__item
+							a(href="")
+								+icon("wup")
+				.footer__col
+					span.footer__legend
+						|	Контакты
+					span.footer__location
+						|	г. Санкт-Петербург
+						br
+						|	Ул. Неизвестный д. 00
+			.footer__right
+				a.phone-content(href="")
+					|	+7(999) 135-35-03
+				button.button-reset.footer__button.button-primary
+					|	Заказать звонок
+				.b2b
+					|	Создание лендинга b2b

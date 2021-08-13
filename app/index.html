@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,28 @@
   <body class="page-home">
     <div class="page-wrapper">
       <header class="header">
-        <h1>header</h1>
+        <div class="site-container">
+          <div class="header__container"><a class="header__logo main-logo" href=""><img src="img/logo.png" alt="Лого">
+              <p>	Воздушные гелиевые  шары с доставкой</p></a><span class="header__location">	Санкт-Петербург</span>
+            <nav class="header__nav">
+              <div class="header__nav_wrap">
+                <ul>
+                  <li><a href="">О компании</a></li>
+                  <li><a href="">Каталог</a></li>
+                  <li><a href="">Доставка и оплата</a></li>
+                  <li><a href="">Пункты самовывоза</a></li>
+                  <li><a href="">Контакты</a></li>
+                </ul><a class="header__nav-cart" href="" aria-label="Корзина"><span class="header__quantity">	199 шт</span>
+                  <svg class="icon icon-cart">
+                    <use xlink:href="img/sprite.svg#cart"></use>
+                  </svg></a>
+              </div>
+            </nav>
+            <div class="header__btn-group"><a class="phone-content" href="">	+7 (999) 135-35-03</a>
+              <button class="button-reset header__order-button"><span>	Заказать звонок</span></button>
+            </div>
+          </div>
+        </div>
       </header>
       <main class="page-main main">
         <section class="hero">
@@ -22,9 +43,50 @@
         </section>
       </main>
       <footer class="footer">
-        <h1>footer</h1>
+        <div class="footer-layer lazy" data-bg="img/footer-bg.webp" data-bg-fallback="img/footer-bg.png"></div>
+        <div class="site-container">
+          <div class="footer__container">
+            <div class="footer__left"><a class="footer__logo" href=""><img src="img/logo.png" alt="Логотип">
+                <p>	Воздушные гелиевые шары с доставкой</p></a><span class="footer__copyright">	ⓒ Все права защищены. Информация на сайте не является публичной офертой. ИНН: 00000000000</span><a class="footer__policy" href="">	Политика конфедециальности</a></div>
+            <div class="footer__content">
+              <div class="footer__col"><span class="footer__legend">	Меню</span>
+                <nav class="footer__nav">
+                  <ul>
+                    <li><a href="">О компании</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Доставка и оплата</a></li>
+                    <li><a href="">Пункты самовывоза</a></li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="footer__col"><span class="footer__legend">	Мы в соцсетях</span>
+                <ul class="footer__social-list social-list">
+                  <li class="social-list__item"><a href="">
+                      <svg class="icon icon-inst">
+                        <use xlink:href="img/sprite.svg#inst"></use>
+                      </svg></a></li>
+                  <li class="social-list__item"><a href="">
+                      <svg class="icon icon-vk">
+                        <use xlink:href="img/sprite.svg#vk"></use>
+                      </svg></a></li>
+                  <li class="social-list__item"><a href="">
+                      <svg class="icon icon-wup">
+                        <use xlink:href="img/sprite.svg#wup"></use>
+                      </svg></a></li>
+                </ul>
+              </div>
+              <div class="footer__col"><span class="footer__legend">	Контакты</span><span class="footer__location">	г. Санкт-Петербург<br>	Ул. Неизвестный д. 00</span></div>
+            </div>
+            <div class="footer__right"><a class="phone-content" href="">	+7(999) 135-35-03</a>
+              <button class="button-reset footer__button button-primary">	Заказать звонок</button>
+              <div class="b2b">	Создание лендинга b2b</div>
+            </div>
+          </div>
+        </div>
       </footer>
     </div>
   </body>
-  <script src="js/main.js?v=0.0.0.0"></script>
+  <script defer src="js/vendor.js?v=0.0.0.0"></script>
+  <script defer src="js/global.js?v=0.0.0.0"></script>
+  <script defer src="js/main.js?v=0.0.0.0"></script>
 </html>

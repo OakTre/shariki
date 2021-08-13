@@ -6,7 +6,7 @@ block variables
 
 
 doctype html
-html(lang="en")
+html(lang="ru")
 	head
 		include ../parts/head.pug
 	body(class=bodyClass)
@@ -20,4 +20,6 @@ html(lang="en")
 				include ../parts/footer.pug
 
 	block scripts
-		script(src="js/main.js?v=" + siteVersion)
+		script(defer, src="js/vendor.js?v=" + siteVersion)
+		script(defer, src="js/global.js?v=" + siteVersion)
+		script(defer, src="js/main.js?v=" + siteVersion)

@@ -2,3 +2,55 @@
 @import "fonts/fonts.scss";
 @import "func/px-to-rem.scss";
 @import "settings/setttings.scss";
+
+.social-list {
+	display: flex;
+	align-items: center;
+	margin: -3px;
+
+	&__item {
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			margin: 3px;
+			background-color: $color-white;
+			border-radius: 9px;
+			outline: none;
+			transition: background-color 0.2s ease-in;
+
+			.icon {
+				width: 20px;
+				height: 20px;
+				fill: $color-purple-dark;
+			}
+
+			@include desktop {
+				&:hover {
+					background-color: $color-purple-light;
+				}
+			}
+
+			&:focus {
+				background-color: $color-purple-light;
+			}
+
+			&:active {
+				transform: scale(0.93);
+			}
+		}
+	}
+}
+
+.button-primary {
+	padding: 23px 46px;
+	color: $color-yellow-dark;
+	font-weight: 700;
+	text-transform: uppercase;
+	background: linear-gradient(0.13turn, rgba(234, 183, 53, 1) 5%, #f4d03a 50%, rgba(251, 231, 148, 1) 99%);
+	background-color: $color-yellow;
+	border-radius: 54px;
+	cursor: pointer;
+}
