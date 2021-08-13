@@ -1,0 +1,10 @@
+.header {
+	&__title {
+		margin: 0;
+		font-size: rem(40px);
+
+		@include _1440 {
+			font-size: rem(20px);
+		}
+	}
+}

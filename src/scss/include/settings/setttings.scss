@@ -1,0 +1,71 @@
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 16px;
+}
+
+body {
+	box-sizing: border-box;
+	font-family: $main-font;
+	background-color: $color-purple-lighter;
+
+	@include _2100 {
+		zoom: 1.2;
+	}
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $second-font;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+}
+
+.site-container {
+	width: 100%;
+	max-width: 1772px;
+	margin: 0 auto;
+	padding: 0 48px;
+
+	@include _1366 {
+		padding: 0 32px;
+	}
+
+	@include _1200 {
+		padding: 0 24px;
+	}
+
+	@include _360 {
+		padding: 0 16px;
+	}
+}
+
+.page-wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page-main {
+	flex-grow: 1;
+}

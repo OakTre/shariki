@@ -1,0 +1,144 @@
+@font-face {
+  font-weight: 400;
+  font-family: Exo2;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Exo2-Regular.woff2) format("woff2"),url(../fonts/Exo2-Regular.woff) format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Exo2;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/Exo2-SemiBold.woff2) format("woff2"),url(../fonts/Exo2-SemiBold.woff2) format("woff2");
+}
+
+@font-face {
+  font-weight: 800;
+  font-family: RoundedMp;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/RoundedMplus1c-Black.woff2) format("woff2"),url(../fonts/RoundedMplus1c-Black.woff2) format("woff2");
+}
+
+@font-face {
+  font-weight: 200;
+  font-family: RoundedMp;
+  font-style: normal;
+  font-display: swap;
+  src: url(../fonts/RoundedMplus1c-Thin.woff2) format("woff2"),url(../fonts/RoundedMplus1c-Thin.woff2) format("woff2");
+}
+
+*,
+::after,
+::before {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: Exo2,sans-serif;
+  background-color: #d5bff4;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: RoundedMp,sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+
+.site-container {
+  width: 100%;
+  max-width: 1772px;
+  margin: 0 auto;
+  padding: 0 48px;
+}
+
+.page-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.page-main {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.hero__bg-img {
+  width: 500px;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main {
+  color: #444;
+}
+
+@media (min-width:2100px) {
+  body {
+    zoom: 1.2;
+  }
+}
+
+@media (max-width:1440px) {
+  .header__title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width:1366px) {
+  .site-container {
+    padding: 0 32px;
+  }
+}
+
+@media (max-width:1200px) {
+  .site-container {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width:360px) {
+  .site-container {
+    padding: 0 16px;
+  }
+}
+/*# sourceMappingURL=style.min.css.map */
