@@ -1,0 +1,52 @@
+.discount {
+	position: relative;
+	margin-top: -4px;
+	padding-top: 90px;
+	padding-bottom: 176px;
+	background-color: $color-blue-light;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	&::before {
+		position: absolute;
+		top: -83px;
+		left: 0;
+		width: 100%;
+		height: 150px;
+		background: linear-gradient(180deg, rgba($color: $color-blue, $alpha: 0.2), rgba($color: #a0baf8, $alpha: 0.2) 100%);
+		content: "";
+	}
+
+	.layer {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		&._bubles {
+			top: -380px;
+			left: 0;
+			z-index: 15;
+			width: 100%;
+			height: 781px;
+		}
+	}
+
+	&__title {
+		max-width: 818px;
+		margin: 0 auto;
+		margin-bottom: 64px;
+
+		h2 {
+			margin: 0;
+			font-weight: 200;
+			font-size: rem(80px);
+			line-height: 1.2;
+
+			span {
+				font-weight: 800;
+			}
+		}
+	}
+}

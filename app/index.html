@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Описание сайта">
-    <title>Главная | Название сайта</title>
+    <title>Главная | Шарики</title>
     <link rel="stylesheet" href="./css/vendor.min.css?v=0.0.0.0">
     <link rel="stylesheet" href="./css/style.min.css?v=0.0.0.0">
   </head>
   <body class="page-home">
     <div class="page-wrapper">
-      <header class="header">
+      <header class="header lazy" data-bg="img/header-bg.webp" data-bg-fallback="img/header-bg.png">
         <div class="site-container">
           <div class="header__container"><a class="header__logo main-logo" href=""><img src="img/logo.png" alt="Лого">
               <p>	Воздушные гелиевые  шары с доставкой</p></a><span class="header__location">	Санкт-Петербург</span>
@@ -36,9 +36,166 @@
         </div>
       </header>
       <main class="page-main main">
-        <section class="hero">
+        <section class="hero-section lazy" data-bg="img/hero-bg.webp" data-bg-fallback="img/hero-bg.png">
+          <div class="layer _sky1 lazy" data-bg="img/sky1.webp" data-bg-fallback="img/sky1.png"></div>
+          <div class="layer _sky2 lazy" data-bg="img/sky2.webp" data-bg-fallback="img/sky2.png"></div>
+          <div class="layer _sky3 lazy" data-bg="img/sky3.webp" data-bg-fallback="img/sky3.png"></div>
+          <div class="layer _sky4 lazy" data-bg="img/sky4.webp" data-bg-fallback="img/sky4.png"></div>
+          <div class="layer _sky5 lazy" data-bg="img/sky5.webp" data-bg-fallback="img/sky5.png"></div>
+          <div class="layer _sky6 lazy" data-bg="img/sky6.webp" data-bg-fallback="img/sky6.png"></div>
+          <div class="layer _sky7 lazy" data-bg="img/sky7.webp" data-bg-fallback="img/sky7.png"></div>
+          <div class="layer _sky8 lazy" data-bg="img/sky8.webp" data-bg-fallback="img/sky8.png"></div>
+          <div class="layer _sky9 lazy" data-bg="img/sky9.webp" data-bg-fallback="img/sky9.png"></div>
+          <div class="layer _ball1 lazy" data-bg="img/ball1.webp" data-bg-fallback="img/ball1.png"></div>
+          <div class="layer _ball2 lazy" data-bg="img/ball2.webp" data-bg-fallback="img/ball2.png"></div>
+          <div class="layer _ball3 lazy" data-bg="img/ball3.webp" data-bg-fallback="img/ball3.png"></div>
+          <div class="layer _ball4 lazy" data-bg="img/ball4.webp" data-bg-fallback="img/ball4.png"></div>
+          <div class="layer _light-right lazy" data-bg="img/light-right.webp" data-bg-fallback="img/light-right.png"></div>
+          <div class="layer _light-left lazy" data-bg="img/light-left.webp" data-bg-fallback="img/light-left.png"></div>
+          <div class="layer _hero-mountains lazy" data-bg="img/hero-mountains.webp" data-bg-fallback="img/hero-mountains.png"></div>
           <div class="site-container">
-            <h1>	Hero Heading 123</h1>
+            <div class="hero-section__container">
+              <h1>	Привезем<span><span>	воздушные</span><span>	шарики за 3 часа</span></span></h1>
+              <p><strong>	Бесплатно обрабатываем шары</strong><br>	особым составом для продления полета</p>
+              <button class="button-reset btn hero-section__button"><span>	Написать нам</span></button>
+            </div>
+          </div>
+        </section>
+        <section class="section catalog">
+          <div class="layer _bg lazy" data-bg="img/catalog-bg.webp" data-bg-fallback="img/catalog-bg.png"></div>
+          <div class="layer _ball1 lazy" data-bg="img/catalog-ball1.webp" data-bg-fallback="img/catalog-ball1.png"></div>
+          <div class="layer _ball2 lazy" data-bg="img/catalog-ball2.webp" data-bg-fallback="img/catalog-ball2.png"></div>
+          <div class="site-container">
+            <div class="catalog__title">
+              <h2><span>	Добавим эмоций</span>	в ваше событие</h2>
+            </div>
+            <div class="catalog__container">
+              <div class="catalog__col">
+                <ul class="catalog__list">
+                  <li class="catalog__item _active">День рождения</li>
+                  <li class="catalog__item">Выписка из роддома</li>
+                  <li class="catalog__item">Свадьба</li>
+                  <li class="catalog__item">День святого Валентина</li>
+                  <li class="catalog__item">Гендерная вечеринка</li>
+                  <li class="catalog__item">23 февраля</li>
+                  <li class="catalog__item">8 марта</li>
+                  <li class="catalog__item">День матери</li>
+                  <li class="catalog__item">Юбилей</li>
+                  <li class="catalog__item">Девичник</li>
+                  <li class="catalog__item">1 сентября</li>
+                  <li class="catalog__item">Выпускной</li>
+                </ul>
+              </div>
+              <div class="catalog__col">
+                <ul class="catalog__products">
+                  <li class="catalog__product">
+                    <div class="_wrap"><img src="img/product0.png" alt="Продукт">
+                      <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
+                        <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
+                      </div>
+                      <div class="catalog__product-button cart-button"><a class="cart-button__text" href="">	Подробнее</a>
+                        <div class="cart-button__quant">
+                          <svg class="icon icon-cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg><span class="cart-button__plus">	-</span>
+                          <input class="cart-button__input" type="text" value="1" maxlength="3">
+                          <sapn class="cart-button__minus">	+</sapn>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__product">
+                    <div class="_wrap"><img src="img/product1.png" alt="Продукт">
+                      <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
+                        <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
+                      </div>
+                      <div class="catalog__product-button cart-button"><a class="cart-button__text" href="">	Подробнее</a>
+                        <div class="cart-button__quant">
+                          <svg class="icon icon-cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg><span class="cart-button__plus">	-</span>
+                          <input class="cart-button__input" type="text" value="1" maxlength="3">
+                          <sapn class="cart-button__minus">	+</sapn>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__product">
+                    <div class="_wrap"><img src="img/product2.png" alt="Продукт">
+                      <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
+                        <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
+                      </div>
+                      <div class="catalog__product-button cart-button"><a class="cart-button__text" href="">	Подробнее</a>
+                        <div class="cart-button__quant">
+                          <svg class="icon icon-cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg><span class="cart-button__plus">	-</span>
+                          <input class="cart-button__input" type="text" value="1" maxlength="3">
+                          <sapn class="cart-button__minus">	+</sapn>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__product">
+                    <div class="_wrap"><img src="img/product3.png" alt="Продукт">
+                      <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
+                        <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
+                      </div>
+                      <div class="catalog__product-button cart-button"><a class="cart-button__text" href="">	Подробнее</a>
+                        <div class="cart-button__quant">
+                          <svg class="icon icon-cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg><span class="cart-button__plus">	-</span>
+                          <input class="cart-button__input" type="text" value="1" maxlength="3">
+                          <sapn class="cart-button__minus">	+</sapn>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__product">
+                    <div class="_wrap"><img src="img/product4.png" alt="Продукт">
+                      <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
+                        <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
+                      </div>
+                      <div class="catalog__product-button cart-button"><a class="cart-button__text" href="">	Подробнее</a>
+                        <div class="cart-button__quant">
+                          <svg class="icon icon-cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg><span class="cart-button__plus">	-</span>
+                          <input class="cart-button__input" type="text" value="1" maxlength="3">
+                          <sapn class="cart-button__minus">	+</sapn>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__product">
+                    <div class="_wrap"><img src="img/product5.png" alt="Продукт">
+                      <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
+                        <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
+                      </div>
+                      <div class="catalog__product-button cart-button"><a class="cart-button__text" href="">	Подробнее</a>
+                        <div class="cart-button__quant">
+                          <svg class="icon icon-cart">
+                            <use xlink:href="img/sprite.svg#cart"></use>
+                          </svg><span class="cart-button__plus">	-</span>
+                          <input class="cart-button__input" type="text" value="1" maxlength="3">
+                          <sapn class="cart-button__minus">	+</sapn>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul><a class="catalog__show-more" href="">	Показать еще</a>
+                <p class="catalog__text">	И&nbsp;это еще не&nbsp;все!<br>	Кстати, мы&nbsp;продаем шарики и&nbsp;наборами, и&nbsp;поштучно</p><a class="catalog__link btn" href=""><span>	В каталог</span></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section discount">
+          <div class="layer _bubles lazy" data-bg="img/bubles.webp" data-bg-fallback="img/bubles.png"></div>
+          <div class="site-container">
+            <div class="discount__title">
+              <h2><span>	Воздушные скидки</span>	для вашей улыбки</h2>
+            </div>
           </div>
         </section>
       </main>
@@ -78,7 +235,7 @@
               <div class="footer__col"><span class="footer__legend">	Контакты</span><span class="footer__location">	г. Санкт-Петербург<br>	Ул. Неизвестный д. 00</span></div>
             </div>
             <div class="footer__right"><a class="phone-content" href="">	+7(999) 135-35-03</a>
-              <button class="button-reset footer__button button-primary">	Заказать звонок</button>
+              <button class="button-reset footer__button btn"><span>	Заказать звонок</span></button>
               <div class="b2b">	Создание лендинга b2b</div>
             </div>
           </div>

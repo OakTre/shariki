@@ -1,0 +1,51 @@
+- let arr = ["День рождения", "Выписка из роддома", "Свадьба", "День святого Валентина", "Гендерная вечеринка", "23 февраля", "8 марта", "День матери", "Юбилей", "Девичник", "1 сентября", "Выпускной"]
+- let n = 0;
+section.section.catalog
+	.layer._bg.lazy(data-bg="img/catalog-bg.webp", data-bg-fallback="img/catalog-bg.png")
+	.layer._ball1.lazy(data-bg="img/catalog-ball1.webp", data-bg-fallback="img/catalog-ball1.png")
+	.layer._ball2.lazy(data-bg="img/catalog-ball2.webp", data-bg-fallback="img/catalog-ball2.png")
+	.site-container
+		.catalog__title
+			h2
+				span
+					|	Добавим эмоций
+				|	в ваше событие
+		.catalog__container
+			.catalog__col
+				ul.catalog__list
+					for item in arr
+						- n++
+						li.catalog__item(class=`${ n == 1 ? "_active" : "" }`)=item
+			.catalog__col
+				ul.catalog__products
+					- for (let i=0; i<6; i++)
+						li.catalog__product
+							._wrap
+								img(src=`img/product${i}.png`, alt="Продукт")
+								.catalog__product-info
+									span.catalog__product-legend
+										|	"Твое желание"
+									.catalog__product-wrap
+										span.catalog__product-price
+											|	2 150 ₽
+										span.catalog__product-quant
+											|	11 шариков
+								.catalog__product-button.cart-button
+									a.cart-button__text(href="")
+										|	Подробнее
+									.cart-button__quant
+										+icon("cart")
+										span.cart-button__plus
+											|	-
+										input.cart-button__input(type="text", value="1", maxlength="3")
+										sapn.cart-button__minus
+											|	+
+				a.catalog__show-more(href="")
+					|	Показать еще
+				p.catalog__text
+					|	И&nbsp;это еще не&nbsp;все!
+					br
+					|	Кстати, мы&nbsp;продаем шарики и&nbsp;наборами, и&nbsp;поштучно
+				a.catalog__link.btn(href="")
+					span
+						|	В каталог

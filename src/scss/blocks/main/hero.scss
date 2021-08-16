@@ -1,9 +1,194 @@
-.hero {
-	&__bg-img {
-		width: 500px;
-		height: 500px;
+.hero-section {
+	position: relative;
+	margin-bottom: 40px;
+	padding-top: 197px;
+	padding-bottom: 204px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	&::before {
+		position: absolute;
+		bottom: -20px;
+		left: 0;
+		z-index: 150;
+		width: 100%;
+		height: 97px;
+		background: linear-gradient(180deg, rgba($color: #d5bff4, $alpha: 0.2) 0%, #d5bff4);
+		content: "";
+	}
+
+	.layer {
+		position: absolute;
+		z-index: 80;
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
+
+		&._sky1 {
+			top: 80px;
+			left: 0;
+			width: 106px;
+			height: 430px;
+		}
+
+		&._sky2 {
+			top: 110px;
+			left: 50px;
+			width: 169px;
+			height: 169px;
+		}
+
+		&._sky3 {
+			top: 240px;
+			left: 43px;
+			width: 78px;
+			height: 78px;
+		}
+
+		&._sky4 {
+			top: 430px;
+			left: 28px;
+			width: 180px;
+			height: 180px;
+		}
+
+		&._sky5 {
+			top: 600px;
+			left: 0;
+			width: 181px;
+			height: 188px;
+		}
+
+		&._sky6 {
+			top: 250px;
+			right: 40px;
+			width: 132px;
+			height: 132px;
+		}
+
+		&._sky7 {
+			top: 310px;
+			right: 0;
+			width: 58px;
+			height: 190px;
+		}
+
+		&._sky8 {
+			top: 490px;
+			right: 0;
+			width: 112px;
+			height: 142px;
+		}
+
+		&._sky9 {
+			top: 650px;
+			right: 0;
+			width: 245px;
+			height: 189px;
+		}
+
+		&._ball1 {
+			top: 250px;
+			left: 230px;
+			width: 292px;
+			height: 654px;
+		}
+
+		&._ball2 {
+			top: 410px;
+			left: 460px;
+			width: 138px;
+			height: 378px;
+		}
+
+		&._ball3 {
+			top: 170px;
+			right: 550px;
+			width: 196px;
+			height: 443px;
+		}
+
+		&._ball4 {
+			top: 370px;
+			right: 300px;
+			width: 183px;
+			height: 484px;
+		}
+
+		&._light-right {
+			top: 0;
+			right: 0;
+			z-index: 20;
+			width: 817px;
+			height: 663px;
+		}
+
+		&._light-left {
+			top: 0;
+			left: 0;
+			z-index: 50;
+			width: 1133px;
+			height: 838px;
+		}
+
+		&._hero-mountains {
+			bottom: -70px;
+			left: 0;
+			z-index: 50;
+			width: 100%;
+			height: 460px;
+			background-position: bottom center;
+			background-size: cover;
+		}
+	}
+
+	&__button {
+		margin-left: 435px;
+
+		span {
+			padding: 33px 78px;
+		}
+	}
+
+	&__container {
+		position: relative;
+		z-index: 90;
+		max-width: 961px;
+		margin: 0 auto;
+
+		h1 {
+			margin: 0;
+			margin-bottom: 16px;
+			font-weight: 200;
+			font-size: rem(102px);
+			font-family: $second-font;
+			line-height: 1.14;
+
+			span {
+				font-weight: 800;
+
+				span {
+					&:nth-of-type(1) {
+						display: block;
+						padding-left: 67px;
+					}
+
+					&:nth-of-type(2) {
+						display: block;
+						padding-left: 435px;
+					}
+				}
+			}
+		}
+
+		p {
+			margin: 0;
+			margin-bottom: 48px;
+			padding-left: 435px;
+			font-size: rem(20px);
+			line-height: 1.4;
+		}
 	}
 }
