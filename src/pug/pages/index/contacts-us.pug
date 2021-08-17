@@ -1,0 +1,37 @@
+section.section.contacts-us
+	.site-container
+		.contacts-us__title
+			h2
+				span
+					|	Вам нравятся шарики,
+				br
+				|	а нам - люди, которые их любят!
+		.contacts-us__container
+			.contacts-us__top
+				ul
+					li
+						|	Поможем выбрать нужный набор шариков;
+					li
+						|	Не&nbsp;найдем подходящего&nbsp;&mdash; соберем с&nbsp;нуля;
+					li
+						|	Для доставки бесплатно упакуем шарики в&nbsp;специальные огромные пакеты: ничего не&nbsp;запутается, не&nbsp;улетит и&nbsp;не&nbsp;запачкается
+				span.contacts-us__warninig
+					|	* Не распространяется  на акционные наборы
+			.contacts-us__bottom
+				form.contacts-us__form.custom-form(action="")
+					.custom-form__row
+						.custom-form__col
+							label.custom-form__label
+								input.custom-form__input(type="text", name="Имя", placeholder="Ваше имя")
+							label.custom-form__label
+								input.custom-form__input(type="text", name="phone", placeholder="Ваш номер")
+						.custom-form__col
+							button.button-reset.btn.custom-form__button
+								span
+									|	Написать нам
+							label.custom-form__agreement
+								input.custom-form__argeement-input.visually-hidden(type="checkbox", name="arg", value="arg", checked="checked")
+								span.custom-form__agreement-text
+									|	Я даю свое согласие на обработку персональных данных и соглашаюсь с
+									a(href="")
+										|	политикой конфиденциальности

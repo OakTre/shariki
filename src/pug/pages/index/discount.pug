@@ -1,9 +1,30 @@
 section.section.discount
 	//- .lazy(data-bg="img/discount-bg.webp", data-bg-fallback="img/discount-bg.png")
 	.layer._bubles.lazy(data-bg="img/bubles.webp", data-bg-fallback="img/bubles.png")
+	.layer.lazy.discount-sky1(data-bg="img/discount-sky1.webp", data-bg-fallback="img/discount-sky1.png")
+	.layer.lazy.discount-sky2(data-bg="img/discount-sky2.webp", data-bg-fallback="img/discount-sky2.png")
+	.layer.lazy.discount-sky3(data-bg="img/discount-sky3.webp", data-bg-fallback="img/discount-sky3.png")
 	.site-container
 		.discount__title
 			h2
 				span
 					|	Воздушные скидки
 				|	для вашей улыбки
+		.discount__container.swiper-container
+			.swiper-wrapper
+				- for (let i = 0; i<3; i++)
+					article.discount__content.swiper-slide.lazy(data-bg=`img/discount-img${i}.webp` data-bg-fallback=`img/discount-img${i}.png`)
+						span.discount__stock
+							|	Акция
+						h3.discount__legend
+							span
+								|	3 шарика в подарок
+							|	при заказе от 2000 руб
+						button.button-reset.btn.discount__button
+							span
+								|	Подробнее
+			.discount__pagination
+		.text-center
+			a.btn.discount__link(href="")
+				span
+					|	Смотреть все акции

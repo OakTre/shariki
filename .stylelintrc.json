@@ -10,5 +10,8 @@
 		"indentation": "tab",
 		"at-rule-no-unknown": null,
 		"scss/at-rule-no-unknown": true
-	}
+	},
+	"ignore": [
+		"selectors-within-list"
+	]
 }

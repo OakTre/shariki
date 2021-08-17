@@ -1,0 +1,20 @@
+- let reasons_arr = [{name: "Наши шарики летают долго", text: "Перед надуванием обрабатываем  их изнутри составом Ultra Hi-Float  – это продлевает полет."}, {name: "Доставляем наборы в день заказа и никогда не опаздываем", text: "Привезем улыбки к вашему празднику, даже если вы решили заказать шарики прямо в час X."}, {name: "Привезем связку шаров  даже в 3 часа ночи", text: "После 22:00 будет чуть  дороже, но не оставим же мы вас  без улыбки в ваш особенный день."}, {name: "Наши шарики полностью безопасны", text: "Можно дарить даже маленьким детям! Никакого «Китая» – только Испания, Колумбия, Мексика и США."}, {name: "Лайкаем ваши фотки с заказами в соцсетях", text: "Наши композиции на редкость фотогеничны. Радуемся, когда  вы отмечаете нас на снимках."}, {name: "Уделяем внимание деталям", text: "С удовольствием подбираем к наборам декоративный грузик, ленточки и банты. Нам это нравится, поэтому не берем  за это деньги."}]
+- let reasons_num = 0;
+
+section.section.reasons
+	.layer._ball1.lazy(data-bg="img/reasons-ball1.webp", data-bg-fallback="img/reasons-ball1.png")
+	.layer._ball2.lazy(data-bg="img/custom-ball.webp", data-bg-fallback="img/custom-ball.png")
+	.site-container
+		.reasons__title
+			.title-layer.lazy(data-bg="img/reason-title-layer.webp", data-bg-fallback="img/reason-title-layer.png")
+			h2
+				span
+					|	6 причин того,
+				|	почему мы прикольные
+		ul.reasons__container
+			for val in reasons_arr
+				- reasons_num++
+				li.reasons__item
+					img(src=`img/reasons-img${reasons_num}.png`, alt="Шарики")
+					span=val.name
+					p=val.text

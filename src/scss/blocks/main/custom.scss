@@ -1,0 +1,80 @@
+.custom {
+	position: relative;
+	z-index: 15;
+	margin-bottom: 1649px;
+
+	.layer {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		&._bg {
+			bottom: 70px;
+			left: 0;
+			z-index: -1;
+			width: 100%;
+			height: 1108px;
+		}
+	}
+
+	&__title {
+		max-width: 1036px;
+		margin: 0 auto;
+		margin-bottom: 104px;
+		text-align: center;
+
+		h2 {
+			margin: 0;
+			font-weight: 800;
+			font-size: rem(80px);
+			line-height: 1.2;
+		}
+	}
+
+	&__container {
+		padding-left: 143px;
+
+		ul {
+			max-width: 413px;
+			margin-bottom: 40px;
+
+			li {
+				position: relative;
+				margin-bottom: 16px;
+				padding-left: 56px;
+				color: $color-purple-darker;
+				font-size: rem(20px);
+				line-height: 1.4;
+
+				&:nth-last-of-type(1) {
+					margin-bottom: 0;
+				}
+
+				&::before {
+					position: absolute;
+					top: 4px;
+					left: 2px;
+					width: 42px;
+					height: 36px;
+					content: url(../img/list-icon.svg);
+				}
+			}
+		}
+
+		p {
+			max-width: 390px;
+			margin: 0;
+			margin-bottom: 40px;
+			color: $color-purple-darker;
+			font-size: rem(32px);
+			line-height: 1.4;
+		}
+	}
+
+	&__button {
+		span {
+			padding: 33px 78px;
+		}
+	}
+}
