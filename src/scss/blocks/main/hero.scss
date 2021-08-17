@@ -1,7 +1,7 @@
 .hero-section {
 	position: relative;
 	margin-bottom: 40px;
-	padding-top: 197px;
+	padding-top: 212px;
 	padding-bottom: 204px;
 	overflow: hidden;
 	background-repeat: no-repeat;
@@ -27,29 +27,29 @@
 		background-size: cover;
 
 		&._sky1 {
-			top: 80px;
+			top: 21px;
 			left: 0;
 			width: 106px;
 			height: 430px;
 		}
 
 		&._sky2 {
-			top: 110px;
-			left: 50px;
+			top: 119px;
+			left: 36px;
 			width: 169px;
 			height: 169px;
 		}
 
 		&._sky3 {
-			top: 240px;
-			left: 43px;
+			top: 220px;
+			left: 23px;
 			width: 78px;
 			height: 78px;
 		}
 
 		&._sky4 {
-			top: 430px;
-			left: 28px;
+			top: 380px;
+			left: 2px;
 			width: 180px;
 			height: 180px;
 		}
@@ -62,57 +62,57 @@
 		}
 
 		&._sky6 {
-			top: 250px;
-			right: 40px;
+			top: 170px;
+			right: 30px;
 			width: 132px;
 			height: 132px;
 		}
 
 		&._sky7 {
-			top: 310px;
+			top: 190px;
 			right: 0;
 			width: 58px;
 			height: 190px;
 		}
 
 		&._sky8 {
-			top: 490px;
+			top: 341px;
 			right: 0;
 			width: 112px;
 			height: 142px;
 		}
 
 		&._sky9 {
-			top: 650px;
+			top: 610px;
 			right: 0;
 			width: 245px;
 			height: 189px;
 		}
 
 		&._ball1 {
-			top: 250px;
-			left: 230px;
+			top: 267px;
+			left: 190px;
 			width: 292px;
 			height: 654px;
 		}
 
 		&._ball2 {
-			top: 410px;
-			left: 460px;
+			top: 470px;
+			left: 450px;
 			width: 138px;
 			height: 378px;
 		}
 
 		&._ball3 {
-			top: 170px;
-			right: 550px;
+			top: 154px;
+			right: 660px;
 			width: 196px;
 			height: 443px;
 		}
 
 		&._ball4 {
-			top: 370px;
-			right: 300px;
+			top: 300px;
+			right: 466px;
 			width: 183px;
 			height: 484px;
 		}
@@ -145,7 +145,7 @@
 	}
 
 	&__button {
-		margin-left: 435px;
+		margin-left: 425px;
 
 		span {
 			padding: 33px 78px;
@@ -160,7 +160,7 @@
 
 		h1 {
 			margin: 0;
-			margin-bottom: 16px;
+			margin-bottom: 11px;
 			font-weight: 200;
 			font-size: rem(102px);
 			font-family: $second-font;
@@ -186,7 +186,7 @@
 		p {
 			margin: 0;
 			margin-bottom: 48px;
-			padding-left: 435px;
+			padding-left: 426px;
 			font-size: rem(20px);
 			line-height: 1.4;
 		}

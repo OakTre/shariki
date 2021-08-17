@@ -1,6 +1,7 @@
 .catalog {
 	position: relative;
 	z-index: 10;
+	margin-top: -54px;
 	padding-bottom: 565px;
 
 	.layer {
@@ -77,6 +78,7 @@
 
 	&__list {
 		width: 286px;
+		margin-left: auto;
 		padding: 30px 0 30px 12px;
 		background: linear-gradient($color-purple-light, $color-purple-lighter);
 		border-radius: 20px;
@@ -183,6 +185,11 @@
 			max-width: 343px;
 		}
 
+		&:nth-child(2),
+		&:nth-child(5) {
+			transform: translateY(50px);
+		}
+
 		@include desktop {
 			&-button {
 				position: absolute;
@@ -223,12 +230,13 @@
 		position: relative;
 		display: inline-block;
 		margin: 0 auto;
-		margin-top: 40px;
+		margin-top: 88px;
 		margin-bottom: 100px;
 		color: $color-purple-darker;
 		font-weight: 700;
 		font-size: rem(20px);
 		text-align: center;
+		outline: none !important;
 
 		&::before {
 			position: absolute;
@@ -239,6 +247,12 @@
 			background-color: $color-purple-darker;
 			transition: opacity 0.2s ease-in;
 			content: "";
+		}
+
+		&:focus {
+			&::before {
+				opacity: 0;
+			}
 		}
 
 		@include desktop {

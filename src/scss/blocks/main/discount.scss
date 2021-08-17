@@ -1,7 +1,7 @@
 .discount {
 	position: relative;
 	margin-top: -4px;
-	padding-top: 90px;
+	padding-top: 70px;
 	padding-bottom: 176px;
 	background-color: $color-blue-light;
 	background-repeat: no-repeat;
@@ -33,23 +33,23 @@
 		}
 
 		&.discount-sky1 {
-			top: 340px;
-			left: -80px;
+			top: 330px;
+			left: -63px;
 			z-index: 15;
 			width: 429px;
 			height: 318px;
 		}
 
 		&.discount-sky2 {
-			bottom: -20px;
-			left: -110px;
+			bottom: -6px;
+			left: -98px;
 			width: 600px;
 			height: 437px;
 		}
 
 		&.discount-sky3 {
 			right: -90px;
-			bottom: 250px;
+			bottom: 278px;
 			z-index: 14;
 			width: 549px;
 			height: 437px;
@@ -81,9 +81,10 @@
 	&__title {
 		position: relative;
 		z-index: 25;
-		max-width: 818px;
+		max-width: 788px;
 		margin: 0 auto;
-		margin-bottom: 64px;
+		margin-bottom: 74px;
+		text-align: center;
 
 		h2 {
 			margin: 0;
@@ -110,6 +111,7 @@
 		box-sizing: border-box;
 		width: 100%;
 		padding: 63px 58px;
+		padding-bottom: 95px;
 		background-color: $color-purple-light;
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -132,7 +134,7 @@
 	&__stock {
 		display: inline-block;
 		margin-bottom: 16px;
-		padding: 6px 25px;
+		padding: 2px 25px;
 		font-weight: 400;
 		font-size: rem(20px);
 		background-color: #8e67eb;
@@ -164,5 +166,13 @@
 		z-index: 15;
 		display: inline-block;
 		margin-top: 48px;
+
+		span {
+			padding: 29px 41px;
+			color: $color-white;
+			font-size: rem(18px);
+			background: rgb(120, 95, 225);
+			background: linear-gradient(13deg, rgba(120, 95, 225, 1) 5%, rgba(132, 98, 230, 1) 12%, rgba(143, 103, 235, 1) 18%, rgba(157, 123, 238, 1) 81%, rgba(178, 153, 242, 1) 88%, rgba(202, 184, 246, 1) 93%);
+		}
 	}
 }

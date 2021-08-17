@@ -33,12 +33,13 @@
 		background-color: $color-white;
 		border: none;
 		border-radius: 43px;
+		outline: none !important;
 		box-shadow: inset 0 2px 0 #4568b9;
 	}
 
 	&__button {
 		width: 100%;
-		margin-bottom: 32px;
+		margin-bottom: 34px;
 
 		span {
 			padding: 33px 78px;
@@ -49,6 +50,7 @@
 		position: relative;
 		display: block;
 		max-width: 96%;
+		margin-left: 7px;
 		cursor: pointer;
 
 		&-text {
@@ -84,9 +86,14 @@
 			}
 
 			a {
+				outline: none !important;
 				transition: color 0.2s ease-in;
 
 				&:hover {
+					color: $color-yellow;
+				}
+
+				&:focus {
 					color: $color-yellow;
 				}
 			}
@@ -99,6 +106,12 @@
 				&::after {
 					opacity: 1;
 				}
+			}
+		}
+
+		&:focus {
+			& ~ .custom-form__agreement-text {
+				color: $color-yellow;
 			}
 		}
 	}

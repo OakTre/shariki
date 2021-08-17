@@ -1,7 +1,8 @@
 .custom {
 	position: relative;
 	z-index: 15;
-	margin-bottom: 1649px;
+	margin-bottom: 1739px;
+	padding-top: 6px;
 
 	.layer {
 		position: absolute;
@@ -10,7 +11,7 @@
 		background-size: cover;
 
 		&._bg {
-			bottom: 70px;
+			bottom: 64px;
 			left: 0;
 			z-index: -1;
 			width: 100%;
@@ -21,7 +22,7 @@
 	&__title {
 		max-width: 1036px;
 		margin: 0 auto;
-		margin-bottom: 104px;
+		margin-bottom: 111px;
 		text-align: center;
 
 		h2 {
@@ -36,16 +37,16 @@
 		padding-left: 143px;
 
 		ul {
-			max-width: 413px;
-			margin-bottom: 40px;
+			max-width: 444px;
+			margin-bottom: 34px;
 
 			li {
 				position: relative;
-				margin-bottom: 16px;
+				margin-bottom: 13px;
 				padding-left: 56px;
 				color: $color-purple-darker;
 				font-size: rem(20px);
-				line-height: 1.4;
+				line-height: 1.3;
 
 				&:nth-last-of-type(1) {
 					margin-bottom: 0;
@@ -53,7 +54,7 @@
 
 				&::before {
 					position: absolute;
-					top: 4px;
+					top: 0;
 					left: 2px;
 					width: 42px;
 					height: 36px;
@@ -66,6 +67,7 @@
 			max-width: 390px;
 			margin: 0;
 			margin-bottom: 40px;
+			padding-left: 10px;
 			color: $color-purple-darker;
 			font-size: rem(32px);
 			line-height: 1.4;
@@ -73,6 +75,8 @@
 	}
 
 	&__button {
+		margin-left: 10px;
+
 		span {
 			padding: 33px 78px;
 		}

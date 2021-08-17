@@ -12,7 +12,7 @@
 	&__container {
 		display: flex;
 		align-items: center;
-		justify-content: space-between;
+		// justify-content: space-between;
 		padding: 21px 0;
 	}
 
@@ -26,11 +26,12 @@
 	&__logo {
 		display: flex;
 		align-items: center;
+		margin-right: 50px;
 		outline: none !important;
 
 		img {
 			max-width: 150px;
-			margin-right: 20px;
+			margin-right: 79px;
 		}
 
 		p {
@@ -54,6 +55,7 @@
 
 	&__location {
 		display: block;
+		margin-right: 80px;
 		color: $color-white;
 		font-size: rem(14px);
 	}
@@ -135,6 +137,9 @@
 	}
 
 	&__btn-group {
+		margin-left: auto;
+		text-align: end;
+
 		.phone-content {
 			display: block;
 			margin-bottom: 8px;

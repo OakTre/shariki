@@ -1,15 +1,51 @@
 .contacts-us {
+	position: relative;
+	padding-bottom: 90px;
+
+	&::before {
+		position: absolute;
+		bottom: -2px;
+		left: 0;
+		width: 100%;
+		height: 150px;
+		background-color: $color-purple-dark;
+		content: "";
+	}
+
+	.layer {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+
+		&._ball1 {
+			top: -58px;
+			left: -131px;
+			width: 399px;
+			height: 940px;
+			transform: rotate(13deg);
+		}
+
+		&._ball2 {
+			top: 151px;
+			right: -44px;
+			width: 349px;
+			height: 610px;
+			transform: rotate(55deg);
+		}
+	}
+
 	&__title {
 		max-width: 1077px;
 		margin: 0 auto;
-		margin-bottom: 95px;
+		margin-bottom: 94px;
 		text-align: center;
 
 		h2 {
 			margin: 0;
 			font-weight: 200;
 			font-size: rem(64px);
-			line-height: 1.4;
+			line-height: 1.3;
 
 			span {
 				font-weight: 800;
@@ -28,13 +64,19 @@
 		position: relative;
 		padding-bottom: 104px;
 
+		img {
+			position: absolute;
+			right: -30px;
+			bottom: -144px;
+		}
+
 		ul {
 			max-width: 443px;
-			margin-bottom: 32px;
+			margin-bottom: 20px;
 
 			li {
 				position: relative;
-				margin-bottom: 16px;
+				margin-bottom: 9px;
 				padding-left: 56px;
 				color: $color-purple-darker;
 				font-size: rem(20px);
@@ -68,11 +110,68 @@
 		position: relative;
 		padding: 32px;
 		background-color: $color-blue;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
 		border-radius: 20px;
+
+		._container {
+			max-width: 668px;
+			margin: 0 auto;
+		}
+
+		&::after {
+			position: absolute;
+			top: 32px;
+			left: 32px;
+			width: 40px;
+			height: 40px;
+			background-color: $color-purple-lighter;
+			border-radius: 50%;
+			box-shadow: 3px 3px 0 #7191de;
+			content: "";
+		}
+
+		&::before {
+			position: absolute;
+			top: 32px;
+			right: 32px;
+			width: 40px;
+			height: 40px;
+			background-color: $color-purple-lighter;
+			border-radius: 50%;
+			box-shadow: -3px 3px 0 #7191de;
+			content: "";
+		}
 	}
 
 	&__form {
-		max-width: 668px;
-		margin: 0 auto;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	&__promocode {
+		position: relative;
+		width: 437px;
+		padding: 13px 75px;
+		border: 1px dashed $color-white;
+		border-radius: 41px;
+
+		.watup {
+			top: -33px;
+			right: -27px;
+			z-index: 11;
+			width: 137px;
+			height: 308px;
+			transform: rotate(6deg);
+		}
+	}
+
+	&__promocode-text {
+		display: inline-block;
+		max-width: 206px;
+		font-weight: 700;
+		font-size: rem(18px);
+		line-height: 1.5;
 	}
 }

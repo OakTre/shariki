@@ -107,7 +107,7 @@
 	&__nav {
 		ul {
 			li {
-				margin-bottom: 16px;
+				margin-bottom: 11px;
 
 				a {
 					color: $color-white;
@@ -167,7 +167,7 @@
 		max-width: 276px;
 
 		.phone-content {
-			margin-bottom: 24px;
+			margin-bottom: 14px;
 			color: $color-white;
 			font-weight: 700;
 			font-size: rem(32px) !important;
@@ -189,7 +189,16 @@
 	&__content {
 		display: flex;
 		flex-grow: 1;
-		justify-content: space-between;
 		margin-right: 73px;
+	}
+
+	&__col {
+		&:nth-of-type(1) {
+			margin-right: 30px;
+		}
+
+		&:nth-of-type(2) {
+			margin-right: 48px;
+		}
 	}
 }

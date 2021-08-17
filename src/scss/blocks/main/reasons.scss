@@ -1,6 +1,6 @@
 .reasons {
 	position: relative;
-	padding-bottom: 302px;
+	padding-bottom: 342px;
 	background-color: #abc3ff;
 
 	.layer {
@@ -10,7 +10,7 @@
 		background-size: cover;
 
 		&._ball1 {
-			top: -374px;
+			top: -394px;
 			right: -108px;
 			z-index: 15;
 			width: 462px;
@@ -18,7 +18,7 @@
 		}
 
 		&._ball2 {
-			bottom: -707px;
+			bottom: -671px;
 			left: -100px;
 			z-index: 26;
 			width: 433px;
@@ -31,7 +31,7 @@
 		z-index: 10;
 		max-width: 892px;
 		margin: 0 auto;
-		margin-bottom: 78px;
+		margin-bottom: 86px;
 		text-align: center;
 
 		h2 {
@@ -90,7 +90,7 @@
 			display: block;
 			max-width: 380px;
 			margin: 0;
-			margin-top: 129px;
+			margin-top: 79px;
 			margin-bottom: 16px;
 			font-weight: 700;
 			font-size: rem(24px);
@@ -118,6 +118,12 @@
 		&:nth-child(5) {
 			span {
 				max-width: 258px;
+			}
+		}
+
+		&:nth-child(3) {
+			span {
+				max-width: 288px;
 			}
 		}
 	}
