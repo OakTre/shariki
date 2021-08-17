@@ -20,7 +20,7 @@ section.section.catalog
 				ul.catalog__products
 					- for (let i=0; i<6; i++)
 						li.catalog__product
-							._wrap
+							a._wrap(href="")
 								img(src=`img/product${i}.png`, alt="Продукт")
 								.catalog__product-info
 									span.catalog__product-legend
@@ -31,8 +31,8 @@ section.section.catalog
 										span.catalog__product-quant
 											|	11 шариков
 								.catalog__product-button.cart-button
-									a.cart-button__text(href="")
-										|	Подробнее
+									button.cart-button__text.button-reset
+										|	В корзину
 									.cart-button__quant
 										+icon("cart")
 										span.cart-button__plus
