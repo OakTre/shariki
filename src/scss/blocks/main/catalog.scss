@@ -309,22 +309,27 @@
 		cursor: pointer;
 	}
 
-	&__quant {
-		display: flex;
-		align-items: center;
-		width: 143px;
-		padding: 23px 25px;
-		background-color: #098e6a;
-		border-radius: 0 15px 15px 0;
+	&._disabled {
+		opacity: 0.5 !important;
+		pointer-events: none;
+	}
+}
 
-		.icon-cart {
-			display: block;
-			width: 23px;
-			height: 23px;
-			margin-right: 16px;
-			color: #098e6a;
-			fill: $color-white;
-		}
+.quant {
+	display: flex;
+	align-items: center;
+	width: 143px;
+	padding: 23px 25px;
+	background-color: #098e6a;
+	border-radius: 0 15px 15px 0;
+
+	.icon-cart {
+		display: block;
+		width: 23px;
+		height: 23px;
+		margin-right: 16px;
+		color: #098e6a;
+		fill: $color-white;
 	}
 
 	&__input {
@@ -346,6 +351,7 @@
 		font-weight: 700;
 		font-size: 23px;
 		cursor: pointer;
+		user-select: none;
 	}
 
 	&__minus {
@@ -357,5 +363,6 @@
 		font-weight: 700;
 		font-size: 23px;
 		cursor: pointer;
+		user-select: none;
 	}
 }

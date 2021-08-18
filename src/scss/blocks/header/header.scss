@@ -17,7 +17,8 @@
 	}
 
 	&__quantity {
-		display: block;
+		display: none;
+		margin-right: 12px;
 		color: $color-yellow-dark;
 		font-size: rem(14px);
 		line-height: 1;
@@ -117,7 +118,6 @@
 			.icon-cart {
 				width: 23px;
 				height: 23px;
-				margin-left: 12px;
 				color: $color-white;
 				fill: $color-yellow-dark;
 			}

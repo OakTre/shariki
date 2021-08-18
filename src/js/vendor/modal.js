@@ -28,6 +28,7 @@ class Modal {
 			document.addEventListener('click', function(e){
 				const clickedElement = e.target.closest('[data-path]');
 				if (clickedElement) {
+					e.preventDefault();
 					let target = clickedElement.dataset.path;
 					let animation = clickedElement.dataset.animation;
 					let speed = clickedElement.dataset.speed;
@@ -59,7 +60,7 @@ class Modal {
 			}.bind(this));
 
 			this.modal.addEventListener('click', function(e) {
-				if (!e.target.classList.contains('modal__container') && !e.target.closest('.modal__container') && this.isOpen) {
+				if (!e.target.classList.contains('modal__container') && !e.target.closest('.modal__container') && !e.target.classList.contains("mini-cart__delete") && this.isOpen) {
 					this.close();
 				}
 			}.bind(this));
@@ -155,13 +156,3 @@ class Modal {
 		document.body.style.paddingRight = '0px';
 	}
 }
-
-const modal = new Modal({
-	isOpen: (modal) => {
-		console.log(modal);
-		console.log('opened');
-	},
-	isClose: () => {
-		console.log('closed');
-	},
-});

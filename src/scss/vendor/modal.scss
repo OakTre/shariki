@@ -73,10 +73,6 @@
 	transition: opacity var(--transition-time), transform var(--transition-time);
 }
 
-*:focus {
-	outline: 3px red solid;
-}
-
 .content {
 	min-height: 200vh;
 }

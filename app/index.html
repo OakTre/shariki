@@ -23,14 +23,14 @@
                   <li><a href="">Доставка и оплата</a></li>
                   <li><a href="">Пункты самовывоза</a></li>
                   <li><a href="">Контакты</a></li>
-                </ul><a class="header__nav-cart" href="" aria-label="Корзина"><span class="header__quantity">	199 шт</span>
+                </ul><a class="header__nav-cart modal-btn" href="" aria-label="Перейти в корзину" data-path="test" data-animation="fadeInUp" data-speed="400"><span class="header__quantity cart-quant"><span class="cartQuantity">	0</span>	шт.</span>
                   <svg class="icon icon-cart">
                     <use xlink:href="img/sprite.svg#cart"></use>
                   </svg></a>
               </div>
             </nav>
             <div class="header__btn-group"><a class="phone-content" href="">	+7 (999) 135-35-03</a>
-              <button class="button-reset header__order-button modal-btn" data-path="test" data-animation="fadeInUp" data-speed="400"><span>	Заказать звонок</span></button>
+              <button class="button-reset header__order-button"><span>	Заказать звонок</span></button>
             </div>
           </div>
         </div>
@@ -88,88 +88,82 @@
               </div>
               <div class="catalog__col">
                 <ul class="catalog__products">
-                  <li class="catalog__product"><a class="_wrap" href=""><img src="img/product0.png" alt="Продукт">
+                  <li class="catalog__product" data-id="0"><a class="_wrap" href=""><img src="img/product0.png" alt="Продукт">
                       <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
                         <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
                       </div>
                       <div class="catalog__product-button cart-button">
-                        <button class="cart-button__text button-reset">	В корзину</button>
-                        <div class="cart-button__quant">
+                        <button class="cart-button__text button-reset product-button" data-price="2050" data-id="0" data-link="test0" data-name="Твое желание-0" data-img="img/product0.png" data-summ="2050" data-quant="1">	В корзину</button>
+                        <div class="quant" data-id="0" data-price="2050">
                           <svg class="icon icon-cart">
                             <use xlink:href="img/sprite.svg#cart"></use>
-                          </svg><span class="cart-button__plus">	-</span>
-                          <input class="cart-button__input" type="text" value="1" maxlength="3">
-                          <sapn class="cart-button__minus">	+</sapn>
+                          </svg><span class="quant__minus quantChange__minus">	-</span>
+                          <input class="quant__input" type="text" value="1" maxlength="3"><span class="quant__plus quantChange__plus">	+</span>
                         </div>
                       </div></a></li>
-                  <li class="catalog__product"><a class="_wrap" href=""><img src="img/product1.png" alt="Продукт">
+                  <li class="catalog__product" data-id="1"><a class="_wrap" href=""><img src="img/product1.png" alt="Продукт">
                       <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
                         <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
                       </div>
                       <div class="catalog__product-button cart-button">
-                        <button class="cart-button__text button-reset">	В корзину</button>
-                        <div class="cart-button__quant">
+                        <button class="cart-button__text button-reset product-button" data-price="2150" data-id="1" data-link="test1" data-name="Твое желание-1" data-img="img/product1.png" data-summ="2150" data-quant="1">	В корзину</button>
+                        <div class="quant" data-id="1" data-price="2150">
                           <svg class="icon icon-cart">
                             <use xlink:href="img/sprite.svg#cart"></use>
-                          </svg><span class="cart-button__plus">	-</span>
-                          <input class="cart-button__input" type="text" value="1" maxlength="3">
-                          <sapn class="cart-button__minus">	+</sapn>
+                          </svg><span class="quant__minus quantChange__minus">	-</span>
+                          <input class="quant__input" type="text" value="1" maxlength="3"><span class="quant__plus quantChange__plus">	+</span>
                         </div>
                       </div></a></li>
-                  <li class="catalog__product"><a class="_wrap" href=""><img src="img/product2.png" alt="Продукт">
+                  <li class="catalog__product" data-id="2"><a class="_wrap" href=""><img src="img/product2.png" alt="Продукт">
                       <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
                         <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
                       </div>
                       <div class="catalog__product-button cart-button">
-                        <button class="cart-button__text button-reset">	В корзину</button>
-                        <div class="cart-button__quant">
+                        <button class="cart-button__text button-reset product-button" data-price="2250" data-id="2" data-link="test2" data-name="Твое желание-2" data-img="img/product2.png" data-summ="2250" data-quant="1">	В корзину</button>
+                        <div class="quant" data-id="2" data-price="2250">
                           <svg class="icon icon-cart">
                             <use xlink:href="img/sprite.svg#cart"></use>
-                          </svg><span class="cart-button__plus">	-</span>
-                          <input class="cart-button__input" type="text" value="1" maxlength="3">
-                          <sapn class="cart-button__minus">	+</sapn>
+                          </svg><span class="quant__minus quantChange__minus">	-</span>
+                          <input class="quant__input" type="text" value="1" maxlength="3"><span class="quant__plus quantChange__plus">	+</span>
                         </div>
                       </div></a></li>
-                  <li class="catalog__product"><a class="_wrap" href=""><img src="img/product3.png" alt="Продукт">
+                  <li class="catalog__product" data-id="3"><a class="_wrap" href=""><img src="img/product3.png" alt="Продукт">
                       <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
                         <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
                       </div>
                       <div class="catalog__product-button cart-button">
-                        <button class="cart-button__text button-reset">	В корзину</button>
-                        <div class="cart-button__quant">
+                        <button class="cart-button__text button-reset product-button" data-price="2350" data-id="3" data-link="test3" data-name="Твое желание-3" data-img="img/product3.png" data-summ="2350" data-quant="1">	В корзину</button>
+                        <div class="quant" data-id="3" data-price="2350">
                           <svg class="icon icon-cart">
                             <use xlink:href="img/sprite.svg#cart"></use>
-                          </svg><span class="cart-button__plus">	-</span>
-                          <input class="cart-button__input" type="text" value="1" maxlength="3">
-                          <sapn class="cart-button__minus">	+</sapn>
+                          </svg><span class="quant__minus quantChange__minus">	-</span>
+                          <input class="quant__input" type="text" value="1" maxlength="3"><span class="quant__plus quantChange__plus">	+</span>
                         </div>
                       </div></a></li>
-                  <li class="catalog__product"><a class="_wrap" href=""><img src="img/product4.png" alt="Продукт">
+                  <li class="catalog__product" data-id="4"><a class="_wrap" href=""><img src="img/product4.png" alt="Продукт">
                       <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
                         <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
                       </div>
                       <div class="catalog__product-button cart-button">
-                        <button class="cart-button__text button-reset">	В корзину</button>
-                        <div class="cart-button__quant">
+                        <button class="cart-button__text button-reset product-button" data-price="2450" data-id="4" data-link="test4" data-name="Твое желание-4" data-img="img/product4.png" data-summ="2450" data-quant="1">	В корзину</button>
+                        <div class="quant" data-id="4" data-price="2450">
                           <svg class="icon icon-cart">
                             <use xlink:href="img/sprite.svg#cart"></use>
-                          </svg><span class="cart-button__plus">	-</span>
-                          <input class="cart-button__input" type="text" value="1" maxlength="3">
-                          <sapn class="cart-button__minus">	+</sapn>
+                          </svg><span class="quant__minus quantChange__minus">	-</span>
+                          <input class="quant__input" type="text" value="1" maxlength="3"><span class="quant__plus quantChange__plus">	+</span>
                         </div>
                       </div></a></li>
-                  <li class="catalog__product"><a class="_wrap" href=""><img src="img/product5.png" alt="Продукт">
+                  <li class="catalog__product" data-id="5"><a class="_wrap" href=""><img src="img/product5.png" alt="Продукт">
                       <div class="catalog__product-info"><span class="catalog__product-legend">	"Твое желание"</span>
                         <div class="catalog__product-wrap"><span class="catalog__product-price">	2 150 ₽</span><span class="catalog__product-quant">	11 шариков</span></div>
                       </div>
                       <div class="catalog__product-button cart-button">
-                        <button class="cart-button__text button-reset">	В корзину</button>
-                        <div class="cart-button__quant">
+                        <button class="cart-button__text button-reset product-button" data-price="2550" data-id="5" data-link="test5" data-name="Твое желание-5" data-img="img/product5.png" data-summ="2550" data-quant="1">	В корзину</button>
+                        <div class="quant" data-id="5" data-price="2550">
                           <svg class="icon icon-cart">
                             <use xlink:href="img/sprite.svg#cart"></use>
-                          </svg><span class="cart-button__plus">	-</span>
-                          <input class="cart-button__input" type="text" value="1" maxlength="3">
-                          <sapn class="cart-button__minus">	+</sapn>
+                          </svg><span class="quant__minus quantChange__minus">	-</span>
+                          <input class="quant__input" type="text" value="1" maxlength="3"><span class="quant__plus quantChange__plus">	+</span>
                         </div>
                       </div></a></li>
                 </ul><a class="catalog__show-more" href="">	Показать еще</a>
@@ -346,10 +340,29 @@
       </footer>
       <div class="modal cart-modal">
         <div class="modal__container" data-target="test">
-          <button class="modal-close">Закрыть</button>
-          <div class="modal-content">
+          <button class="modal-close cart-modal__close button-reset">Закрыть</button>
+          <div class="modal-content cart-modal__content" data-simplebar>
+            <div class="cart-modal__title">	Корзина</div>
             <div class="cart-modal__top">
-              <div class="cart-modal__title">	Корзина</div>
+              <div class="cart-modal__head"><span class="cart-modal__name">	Наименование</span><span class="cart-modal__price">	Цена</span><span class="cart-modal__quant">	Количество</span><span class="cart-modal__summ">Сумма</span></div>
+              <ul class="cart-modal__list mini-cart"></ul>
+              <div class="cart-modal__order-summ">	Общая сумма заказа:<span class="fullPrice">	0</span>	руб.</div>
+            </div>
+            <div class="cart-modal__title">	Оформление заказа</div>
+            <div class="cart-modal__bottom">
+              <form class="cart-modal__form">
+                <label class="cart-modal__label">
+                  <input class="cart-modal__input" type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label class="cart-modal__label">
+                  <input class="cart-modal__input" type="text" name="tel" placeholder="Ваш номер">
+                </label>
+                <label class="cart-modal__label">
+                  <input class="cart-modal__input" type="text" name="email" placeholder="Ваш email">
+                </label>
+                <button class="button-reset btn cart-modal__button"><span>	Оформить заказ</span></button>
+              </form>
+              <div class="cart-modal__warning">	Если у вас возникли сложности с выбором товаров или с оформлением заказа, пожалуйста, позвоните нам по номеру:<br><a class="phone-content" href="">	+7 (999) 000-00-00</a></div>
             </div>
           </div>
         </div>

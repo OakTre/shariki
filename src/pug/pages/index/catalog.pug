@@ -19,7 +19,7 @@ section.section.catalog
 			.catalog__col
 				ul.catalog__products
 					- for (let i=0; i<6; i++)
-						li.catalog__product
+						li.catalog__product(data-id=`${i}`)
 							a._wrap(href="")
 								img(src=`img/product${i}.png`, alt="Продукт")
 								.catalog__product-info
@@ -31,14 +31,14 @@ section.section.catalog
 										span.catalog__product-quant
 											|	11 шариков
 								.catalog__product-button.cart-button
-									button.cart-button__text.button-reset
+									button.cart-button__text.button-reset.product-button(data-price=`2${i}50`, data-id=`${i}`, data-link=`test${i}`, data-name=`Твое желание-${i}`, data-img=`img/product${i}.png`, data-summ=`2${i}50`, data-quant="1")
 										|	В корзину
-									.cart-button__quant
+									.quant(data-id=`${i}`, data-price=`2${i}50`)
 										+icon("cart")
-										span.cart-button__plus
+										span.quant__minus.quantChange__minus
 											|	-
-										input.cart-button__input(type="text", value="1", maxlength="3")
-										sapn.cart-button__minus
+										input.quant__input(type="text", value="1", maxlength="3")
+										span.quant__plus.quantChange__plus
 											|	+
 				a.catalog__show-more(href="")
 					|	Показать еще
