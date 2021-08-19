@@ -1,4 +1,4 @@
-let price = 0;
+let MainPrice = 0;
 
 const priceWithoutSpaces = (str) => {
 	return str.replace(/\s/g, '');
@@ -9,11 +9,11 @@ const normalPrice = (str) => {
 };
 
 const plusFullPrice = (currentPrice) => {
-	return price += currentPrice;
+	return MainPrice += currentPrice;
 };
 
 const minusFullPrice = (currentPrice) => {
-	return price -= currentPrice;
+	return MainPrice -= currentPrice;
 };
 
 
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const cartQuantity = document.querySelector(".cartQuantity");
 
 	const printFullPrice = function() {
-		fullPrice.textContent = ` ${normalPrice(price)}`;
+		fullPrice.textContent = ` ${normalPrice(MainPrice)}`;
 	};
 
 	const printQuantity = function(num) {
@@ -216,6 +216,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		if (text === "plus") {
 			var val = parseInt(input.value) + 1;
 			let summ = val * Number(price);
+			MainPrice += Number(price);
 			let fullPrice = priceWithoutSpaces(parent.closest(".cart-modal__top").querySelector(".fullPrice").innerHTML);
 			parent.closest(".mini-cart__item").querySelector(".cartItemSumm").innerHTML = normalPrice(summ);
 			fullPrice = Number(fullPrice) + Number(price);
@@ -230,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 				parent.closest(".mini-cart__item").querySelector(".cartItemSumm").innerHTML = normalPrice(price);
 			} else {
 				let summ = val * Number(price);
+				MainPrice -= Number(price);
 				let fullPrice = priceWithoutSpaces(parent.closest(".cart-modal__top").querySelector(".fullPrice").innerHTML);
 				parent.closest(".mini-cart__item").querySelector(".cartItemSumm").innerHTML = normalPrice(summ);
 				fullPrice = Number(fullPrice) - Number(price);
@@ -269,10 +271,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	myModal.addEventListener("click", function(e){
 		if(e.target.classList.contains("mini-cart__quantPlus")) {
 			miniCartQuantChange(e.target, "plus")
+			console.log(MainPrice);
 		}
 
 		if(e.target.classList.contains("mini-cart__quantMinus")) {
 			miniCartQuantChange(e.target, "minus")
+			console.log(MainPrice);
 		}
 	});
 });
