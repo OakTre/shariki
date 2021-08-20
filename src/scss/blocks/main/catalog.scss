@@ -25,6 +25,7 @@
 			z-index: 15;
 			width: 408px;
 			height: 1117px;
+			animation: levitateCatalog 6s ease-in-out infinite;
 		}
 
 		&._ball2 {
@@ -32,6 +33,119 @@
 			left: 27px;
 			width: 251px;
 			height: 992px;
+			animation: levitateCatalogOut 6s ease-in-out infinite;
+		}
+
+		&._kid-rabbit {
+			right: 490px;
+			bottom: 270px;
+			width: 438px;
+			height: 549px;
+			animation: levitate 6s ease-in-out infinite;
+
+			._kid-rabbit__component {
+				position: absolute;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: contain;
+			}
+
+			.kid-rabbit-body {
+				bottom: 0;
+				left: 50%;
+				width: 221px;
+				height: 400px;
+				transform: translateX(-50%);
+			}
+
+			.kid-rabbit-ball1 {
+				top: 116px;
+				left: -20px;
+				width: 132px;
+				height: 130px;
+				animation: kid-ball1 6s ease-in-out infinite;
+			}
+
+			.kid-rabbit-ball2 {
+				top: 0;
+				left: 140px;
+				width: 121px;
+				height: 153px;
+				animation: kid-ball2 6s ease-in-out infinite;
+			}
+
+			.kid-rabbit-ball3 {
+				top: 46px;
+				right: 9px;
+				width: 125px;
+				height: 147px;
+				animation: kid-ball3 6s ease-in-out infinite;
+			}
+
+			.kid-rabbit-toy {
+				right: 74px;
+				bottom: -2px;
+				left: auto;
+				width: 107px;
+				height: 104px;
+				animation: kid-toy 6s ease-in-out infinite;
+			}
+		}
+
+		@keyframes kid-ball1 {
+			0% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+
+			50% {
+				transform: rotate(-13deg) translate(-15px, 11px) skewY(3deg);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+		}
+
+		@keyframes kid-ball2 {
+			0% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+
+			50% {
+				transform: rotate(25deg) translate(31px, -16px) skewY(0);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+		}
+
+		@keyframes kid-ball3 {
+			0% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+
+			50% {
+				transform: rotate(24deg) translate(33px, 9px) skewY(-2deg);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+		}
+
+		@keyframes kid-toy {
+			0% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+
+			50% {
+				transform: rotate(-32deg) translate(18px, -3px) skewY(-2deg);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0) skewY(0);
+			}
 		}
 	}
 
@@ -364,5 +478,33 @@
 		font-size: 23px;
 		cursor: pointer;
 		user-select: none;
+	}
+}
+
+@keyframes levitateCatalog {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-3rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes levitateCatalogOut {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(2rem);
+	}
+
+	100% {
+		transform: translateY(0);
 	}
 }
