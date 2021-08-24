@@ -90,6 +90,160 @@
 				height: 104px;
 				animation: kid-toy 6s ease-in-out infinite;
 			}
+
+			.kid-rabbit-eye {
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				// background-color: red;
+
+				&._left {
+					bottom: 115px;
+					left: 155px;
+					transform: translate(-12px, -8px);
+					animation: eye-on-ball 6s ease-in-out infinite;
+
+					._left {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						z-index: 15;
+						width: 16px;
+						height: 16px;
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: contain;
+						transform: translate(-50%, -50%);
+					}
+				}
+
+				&._right {
+					right: 175px;
+					bottom: 115px;
+					transform: translate(-12px, -8px);
+					animation: eye-on-ball 6s ease-in-out infinite;
+
+					._right {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						z-index: 15;
+						width: 16px;
+						height: 16px;
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: contain;
+						transform: translate(-50%, -50%);
+					}
+				}
+			}
+		}
+
+		&._school-rabbit {
+			right: 160px;
+			bottom: 500px;
+			width: 226px;
+			height: 463px;
+			animation: levitateSchoolRabbit 6s ease-in-out infinite;
+
+			._school-rabbit__component {
+				background-repeat: no-repeat;
+				background-position: center bottom;
+				background-size: contain;
+			}
+
+			.main {
+				position: relative;
+				z-index: 18;
+				width: 226px;
+				height: 463px;
+			}
+
+			.ball {
+				position: absolute;
+				top: -216px;
+				left: 40px;
+				width: 188px;
+				height: 242px;
+				animation: school-rabbi-ball 6s ease-in-out infinite;
+			}
+
+			.arm-left {
+				position: absolute;
+				bottom: 40px;
+				left: 14px;
+				width: 25px;
+				height: 95px;
+				animation: school-rabbi-arm 6s ease-in-out infinite;
+			}
+
+			.arm-right {
+				position: absolute;
+				right: 97px;
+				bottom: 53px;
+				z-index: 21;
+				width: 28px;
+				height: 90px;
+				animation: school-rabbi-arm 6s ease-in-out infinite;
+			}
+
+			.bag {
+				position: absolute;
+				right: 63px;
+				bottom: -36px;
+				z-index: 19;
+				width: 96px;
+				height: 97px;
+				animation: school-rabbi-bag 6s ease-in-out infinite;
+			}
+
+			.eye-left {
+				position: absolute;
+				bottom: 152px;
+				left: 8px;
+				z-index: 22;
+				width: 13px;
+				height: 13px;
+				animation: eye-on-ball2 6s ease-in-out infinite;
+			}
+
+			.eye-right {
+				position: absolute;
+				right: 122px;
+				bottom: 173px;
+				z-index: 22;
+				width: 13px;
+				height: 13px;
+				animation: eye-on-ball2 6s ease-in-out infinite;
+			}
+		}
+
+		@keyframes eye-on-ball2 {
+			0% {
+				transform: translate(0, 0);
+			}
+
+			50% {
+				transform: translate(0, -7px);
+			}
+
+			100% {
+				transform: translate(0, 0);
+			}
+		}
+
+		@keyframes eye-on-ball {
+			0% {
+				transform: translate(-12px, -8px);
+			}
+
+			50% {
+				transform: translate(-12px, -2px);
+			}
+
+			100% {
+				transform: translate(-12px, -8px);
+			}
 		}
 
 		@keyframes kid-ball1 {
@@ -140,11 +294,53 @@
 			}
 
 			50% {
-				transform: rotate(-32deg) translate(18px, -3px) skewY(-2deg);
+				transform: rotate(32deg) translate(-18px, 16px) skewY(-3deg);
 			}
 
 			100% {
 				transform: rotate(0) translate(0, 0) skewY(0);
+			}
+		}
+
+		@keyframes school-rabbi-arm {
+			0% {
+				transform: rotate(0) translate(0, 0);
+			}
+
+			50% {
+				transform: rotate(21deg) translate(-10px, -2px);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0);
+			}
+		}
+
+		@keyframes school-rabbi-bag {
+			0% {
+				transform: rotate(0) translate(0, 0);
+			}
+
+			50% {
+				transform: rotate(-15deg) translate(-10px, -12px);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0);
+			}
+		}
+
+		@keyframes school-rabbi-ball {
+			0% {
+				transform: rotate(0) translate(0, 0);
+			}
+
+			50% {
+				transform: rotate(10deg) translate(23px, 0);
+			}
+
+			100% {
+				transform: rotate(0) translate(0, 0);
 			}
 		}
 	}
@@ -502,6 +698,20 @@
 
 	50% {
 		transform: translateY(2rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes levitateSchoolRabbit {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(3rem);
 	}
 
 	100% {

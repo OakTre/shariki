@@ -651,6 +651,40 @@ ul {
   animation: 6s ease-in-out infinite ear-right;
 }
 
+.hero-section .layer._rabbit .rabbit-leg {
+  top: 85px;
+  left: 92px;
+  z-index: 17;
+  width: 38px;
+  height: 63px;
+  -webkit-animation: 6s ease-in-out infinite rabbit-leg;
+  animation: 6s ease-in-out infinite rabbit-leg;
+}
+
+@-webkit-keyframes rabbit-leg {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-21deg) translate(12px,3px);
+    transform: rotate(-21deg) translate(12px,3px);
+  }
+}
+
+@keyframes rabbit-leg {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-21deg) translate(12px,3px);
+    transform: rotate(-21deg) translate(12px,3px);
+  }
+}
+
 @-webkit-keyframes ear-left {
   0%, 100% {
     -webkit-transform: rotate(0) translateX(0) translateY(0) skewY(0);
@@ -714,9 +748,9 @@ ul {
   top: 0;
   left: 0;
   z-index: 50;
-  width: 20px;
-  height: 20px;
-  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
   border-radius: 50%;
 }
 
@@ -726,7 +760,7 @@ ul {
   left: 50%;
   width: 10px;
   height: 10px;
-  background-color: rgba(0,0,0,.7);
+  background-color: transparent;
   border-radius: 50%;
   -webkit-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -735,13 +769,13 @@ ul {
 
 .hero-section .layer .rabit-eye._right {
   top: 96px;
-  right: 33px;
+  right: 36px;
   left: auto;
 }
 
 .hero-section .layer .rabit-eye._left {
-  top: 60px;
-  left: 123px;
+  top: 62px;
+  left: 125px;
 }
 
 .hero-section__button {
@@ -1063,6 +1097,196 @@ ul {
   animation: 6s ease-in-out infinite kid-toy;
 }
 
+.catalog .layer._kid-rabbit .kid-rabbit-eye {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+}
+
+.catalog .layer._kid-rabbit .kid-rabbit-eye._left {
+  bottom: 115px;
+  left: 155px;
+  -webkit-transform: translate(-12px,-8px);
+  -ms-transform: translate(-12px,-8px);
+  transform: translate(-12px,-8px);
+  -webkit-animation: 6s ease-in-out infinite eye-on-ball;
+  animation: 6s ease-in-out infinite eye-on-ball;
+}
+
+.catalog .layer._kid-rabbit .kid-rabbit-eye._left ._left {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.catalog .layer._kid-rabbit .kid-rabbit-eye._right {
+  right: 175px;
+  bottom: 115px;
+  -webkit-transform: translate(-12px,-8px);
+  -ms-transform: translate(-12px,-8px);
+  transform: translate(-12px,-8px);
+  -webkit-animation: 6s ease-in-out infinite eye-on-ball;
+  animation: 6s ease-in-out infinite eye-on-ball;
+}
+
+.catalog .layer._kid-rabbit .kid-rabbit-eye._right ._right {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 15;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+
+.catalog .layer._school-rabbit {
+  right: 160px;
+  bottom: 500px;
+  width: 226px;
+  height: 463px;
+  -webkit-animation: 6s ease-in-out infinite levitateSchoolRabbit;
+  animation: 6s ease-in-out infinite levitateSchoolRabbit;
+}
+
+.catalog .layer._school-rabbit ._school-rabbit__component {
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+}
+
+.catalog .layer._school-rabbit .main {
+  position: relative;
+  z-index: 18;
+  width: 226px;
+  height: 463px;
+}
+
+.catalog .layer._school-rabbit .ball {
+  position: absolute;
+  top: -216px;
+  left: 40px;
+  width: 188px;
+  height: 242px;
+  -webkit-animation: 6s ease-in-out infinite school-rabbi-ball;
+  animation: 6s ease-in-out infinite school-rabbi-ball;
+}
+
+.catalog .layer._school-rabbit .arm-left {
+  position: absolute;
+  bottom: 40px;
+  left: 14px;
+  width: 25px;
+  height: 95px;
+  -webkit-animation: 6s ease-in-out infinite school-rabbi-arm;
+  animation: 6s ease-in-out infinite school-rabbi-arm;
+}
+
+.catalog .layer._school-rabbit .arm-right {
+  position: absolute;
+  right: 97px;
+  bottom: 53px;
+  z-index: 21;
+  width: 28px;
+  height: 90px;
+  -webkit-animation: 6s ease-in-out infinite school-rabbi-arm;
+  animation: 6s ease-in-out infinite school-rabbi-arm;
+}
+
+.catalog .layer._school-rabbit .bag {
+  position: absolute;
+  right: 63px;
+  bottom: -36px;
+  z-index: 19;
+  width: 96px;
+  height: 97px;
+  -webkit-animation: 6s ease-in-out infinite school-rabbi-bag;
+  animation: 6s ease-in-out infinite school-rabbi-bag;
+}
+
+.catalog .layer._school-rabbit .eye-left {
+  position: absolute;
+  bottom: 152px;
+  left: 8px;
+  z-index: 22;
+  width: 13px;
+  height: 13px;
+  -webkit-animation: 6s ease-in-out infinite eye-on-ball2;
+  animation: 6s ease-in-out infinite eye-on-ball2;
+}
+
+.catalog .layer._school-rabbit .eye-right {
+  position: absolute;
+  right: 122px;
+  bottom: 173px;
+  z-index: 22;
+  width: 13px;
+  height: 13px;
+  -webkit-animation: 6s ease-in-out infinite eye-on-ball2;
+  animation: 6s ease-in-out infinite eye-on-ball2;
+}
+
+@-webkit-keyframes eye-on-ball2 {
+  0%, 100% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: translate(0,-7px);
+    transform: translate(0,-7px);
+  }
+}
+
+@keyframes eye-on-ball2 {
+  0%, 100% {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: translate(0,-7px);
+    transform: translate(0,-7px);
+  }
+}
+
+@-webkit-keyframes eye-on-ball {
+  0%, 100% {
+    -webkit-transform: translate(-12px,-8px);
+    transform: translate(-12px,-8px);
+  }
+
+  50% {
+    -webkit-transform: translate(-12px,-2px);
+    transform: translate(-12px,-2px);
+  }
+}
+
+@keyframes eye-on-ball {
+  0%, 100% {
+    -webkit-transform: translate(-12px,-8px);
+    transform: translate(-12px,-8px);
+  }
+
+  50% {
+    -webkit-transform: translate(-12px,-2px);
+    transform: translate(-12px,-2px);
+  }
+}
+
 @-webkit-keyframes kid-ball1 {
   0%, 100% {
     -webkit-transform: rotate(0) translate(0,0) skewY(0);
@@ -1142,8 +1366,8 @@ ul {
   }
 
   50% {
-    -webkit-transform: rotate(-32deg) translate(18px,-3px) skewY(-2deg);
-    transform: rotate(-32deg) translate(18px,-3px) skewY(-2deg);
+    -webkit-transform: rotate(32deg) translate(-18px,16px) skewY(-3deg);
+    transform: rotate(32deg) translate(-18px,16px) skewY(-3deg);
   }
 }
 
@@ -1154,8 +1378,80 @@ ul {
   }
 
   50% {
-    -webkit-transform: rotate(-32deg) translate(18px,-3px) skewY(-2deg);
-    transform: rotate(-32deg) translate(18px,-3px) skewY(-2deg);
+    -webkit-transform: rotate(32deg) translate(-18px,16px) skewY(-3deg);
+    transform: rotate(32deg) translate(-18px,16px) skewY(-3deg);
+  }
+}
+
+@-webkit-keyframes school-rabbi-arm {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(21deg) translate(-10px,-2px);
+    transform: rotate(21deg) translate(-10px,-2px);
+  }
+}
+
+@keyframes school-rabbi-arm {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(21deg) translate(-10px,-2px);
+    transform: rotate(21deg) translate(-10px,-2px);
+  }
+}
+
+@-webkit-keyframes school-rabbi-bag {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-15deg) translate(-10px,-12px);
+    transform: rotate(-15deg) translate(-10px,-12px);
+  }
+}
+
+@keyframes school-rabbi-bag {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-15deg) translate(-10px,-12px);
+    transform: rotate(-15deg) translate(-10px,-12px);
+  }
+}
+
+@-webkit-keyframes school-rabbi-ball {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(10deg) translate(23px,0);
+    transform: rotate(10deg) translate(23px,0);
+  }
+}
+
+@keyframes school-rabbi-ball {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(10deg) translate(23px,0);
+    transform: rotate(10deg) translate(23px,0);
   }
 }
 
@@ -1546,6 +1842,30 @@ ul {
   }
 }
 
+@-webkit-keyframes levitateSchoolRabbit {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
+  }
+}
+
+@keyframes levitateSchoolRabbit {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem);
+  }
+}
+
 .discount {
   position: relative;
   margin-top: -4px;
@@ -1587,7 +1907,7 @@ ul {
 .discount .layer.discount-sky1 {
   top: 330px;
   left: -63px;
-  z-index: 15;
+  z-index: 18;
   width: 429px;
   height: 318px;
 }
@@ -1595,6 +1915,7 @@ ul {
 .discount .layer.discount-sky2 {
   bottom: -6px;
   left: -98px;
+  z-index: 15;
   width: 600px;
   height: 437px;
 }
@@ -1602,9 +1923,135 @@ ul {
 .discount .layer.discount-sky3 {
   right: -90px;
   bottom: 278px;
-  z-index: 14;
+  z-index: 20;
   width: 549px;
   height: 437px;
+}
+
+.discount .layer.lazy-rabbit {
+  bottom: 230px;
+  left: 205px;
+  z-index: 11;
+  width: 307px;
+  height: 271px;
+  -webkit-transform: rotate(49deg);
+  -ms-transform: rotate(49deg);
+  transform: rotate(49deg);
+}
+
+.discount .layer.lazy-rabbit .tie {
+  position: absolute;
+  top: 163px;
+  left: 78px;
+  z-index: 12;
+  width: 69px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.discount .layer.lazy-rabbit .tie.hover {
+  -webkit-animation: .4s linear tickle;
+  animation: .4s linear tickle;
+}
+
+@-webkit-keyframes tickle {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(17deg);
+    transform: rotate(17deg);
+  }
+}
+
+@keyframes tickle {
+  0%, 100% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-17deg);
+    transform: rotate(-17deg);
+  }
+
+  75% {
+    -webkit-transform: rotate(17deg);
+    transform: rotate(17deg);
+  }
+}
+
+.discount .layer.lazy-rabbit .left-ear {
+  position: absolute;
+  top: 23px;
+  left: -5px;
+  width: 69px;
+  height: 123px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transition: -webkit-transform .4s linear;
+  transition: transform .4s linear;
+  -o-transition: transform .4s linear;
+  transition: transform .4s linear,-webkit-transform .4s linear;
+}
+
+.discount .layer.lazy-rabbit .left-ear.hover {
+  -webkit-transform: skewY(15deg) translate(0,-6px);
+  -ms-transform: skewY(15deg) translate(0,-6px);
+  transform: skewY(15deg) translate(0,-6px);
+}
+
+.discount .layer.lazy-rabbit .right-ear {
+  position: absolute;
+  top: -1px;
+  left: 68px;
+  width: 69px;
+  height: 123px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  -webkit-transition: -webkit-transform .4s linear;
+  transition: transform .4s linear;
+  -o-transition: transform .4s linear;
+  transition: transform .4s linear,-webkit-transform .4s linear;
+}
+
+.discount .layer.lazy-rabbit .right-ear.hover {
+  -webkit-transform: skewY(7deg) translate(-1px,-1px);
+  -ms-transform: skewY(7deg) translate(-1px,-1px);
+  transform: skewY(7deg) translate(-1px,-1px);
+}
+
+.discount .layer.wedding-rabbit {
+  top: -22px;
+  left: 87px;
+  z-index: 16;
+  width: 280px;
+  height: 432px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.discount .layer.simple-rabbit {
+  top: 125px;
+  right: 90px;
+  z-index: 16;
+  width: 207px;
+  height: 410px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
 }
 
 .discount__button span {
@@ -1746,9 +2193,11 @@ ul {
 .reasons .layer._ball1 {
   top: -394px;
   right: -108px;
-  z-index: 15;
+  z-index: 25;
   width: 462px;
   height: 1398px;
+  -webkit-animation: 6s ease-in-out infinite levitateCatalog;
+  animation: 6s ease-in-out infinite levitateCatalog;
 }
 
 .reasons .layer._ball2 {
@@ -1757,6 +2206,8 @@ ul {
   z-index: 26;
   width: 433px;
   height: 1057px;
+  -webkit-animation: 6s ease-in-out infinite levitateCatalog;
+  animation: 6s ease-in-out infinite levitateCatalog;
 }
 
 .reasons__title {
@@ -1860,7 +2311,7 @@ ul {
 .custom {
   position: relative;
   z-index: 15;
-  margin-bottom: 1739px;
+  margin-bottom: 84px;
   padding-top: 6px;
 }
 
@@ -1938,6 +2389,188 @@ ul {
 
 .custom__button span {
   padding: 33px 78px;
+}
+
+.rabbits {
+  position: relative;
+}
+
+.rabbits .layer {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.rabbits .flying-rabbit {
+  position: absolute;
+  top: 50%;
+  left: -216px;
+  width: 570px;
+  height: 1118px;
+  -webkit-transform: translateY(-50%) rotate(-6deg);
+  -ms-transform: translateY(-50%) rotate(-6deg);
+  transform: translateY(-50%) rotate(-6deg);
+  -webkit-animation: 6s ease-in-out infinite levitateFlyin;
+  animation: 6s ease-in-out infinite levitateFlyin;
+}
+
+.rabbits .body {
+  top: 0;
+  left: 0;
+  z-index: 15;
+  width: 570px;
+  height: 1118px;
+}
+
+.rabbits .ball1 {
+  top: 270px;
+  left: 149px;
+  z-index: 15;
+  width: 169px;
+  height: 225px;
+}
+
+.rabbits .ball2 {
+  top: -3px;
+  left: 142px;
+  z-index: 15;
+  width: 240px;
+  height: 505px;
+  -webkit-animation: 6s ease-in-out infinite levitateBall;
+  animation: 6s ease-in-out infinite levitateBall;
+}
+
+.rabbits .ball3 {
+  top: 203px;
+  left: 281px;
+  z-index: 15;
+  width: 171px;
+  height: 289px;
+  -webkit-animation: 6s ease-in-out infinite levitateBall2;
+  animation: 6s ease-in-out infinite levitateBall2;
+}
+
+.rabbits .right-wing {
+  right: 90px;
+  bottom: 328px;
+  width: 141px;
+  height: 180px;
+}
+
+.rabbits .arm-heart {
+  right: 161px;
+  bottom: 237px;
+  width: 88px;
+  height: 149px;
+  -webkit-animation: 6s ease-in-out infinite armhead;
+  animation: 6s ease-in-out infinite armhead;
+}
+
+@-webkit-keyframes levitateFlyin {
+  0%, 100% {
+    -webkit-transform: translateY(-50%) rotate(-6deg);
+    transform: translateY(-50%) rotate(-6deg);
+  }
+
+  50% {
+    -webkit-transform: translateY(-40%) rotate(-6deg);
+    transform: translateY(-40%) rotate(-6deg);
+  }
+}
+
+@keyframes levitateFlyin {
+  0%, 100% {
+    -webkit-transform: translateY(-50%) rotate(-6deg);
+    transform: translateY(-50%) rotate(-6deg);
+  }
+
+  50% {
+    -webkit-transform: translateY(-40%) rotate(-6deg);
+    transform: translateY(-40%) rotate(-6deg);
+  }
+}
+
+@-webkit-keyframes armhead {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-33deg) translate(19px,0);
+    transform: rotate(-33deg) translate(19px,0);
+  }
+}
+
+@keyframes armhead {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-33deg) translate(19px,0);
+    transform: rotate(-33deg) translate(19px,0);
+  }
+}
+
+@-webkit-keyframes levitateBall {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(14deg) translate(50px,-5px);
+    transform: rotate(14deg) translate(50px,-5px);
+  }
+}
+
+@keyframes levitateBall {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(14deg) translate(50px,-5px);
+    transform: rotate(14deg) translate(50px,-5px);
+  }
+}
+
+@-webkit-keyframes levitateBall2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(14deg) translate(41px,10px);
+    transform: rotate(14deg) translate(41px,10px);
+  }
+}
+
+@keyframes levitateBall2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(14deg) translate(41px,10px);
+    transform: rotate(14deg) translate(41px,10px);
+  }
+}
+
+.birthday-rabbit2 {
+  width: 840px;
+  height: 581px;
+}
+
+.rabbit-with-baby {
+  width: 1052px;
+  height: 782px;
 }
 
 .contacts-us {
@@ -2060,6 +2693,101 @@ ul {
   background-position: center center;
   background-size: cover;
   border-radius: 20px;
+}
+
+.contacts-us__bottom .layer,
+.contacts-us__bottom .layer .lazy {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contacts-us__bottom .layer.right-rabbit {
+  right: 50px;
+  bottom: 20px;
+  width: 307px;
+  height: 271px;
+}
+
+.contacts-us__bottom .layer.left-rabbit {
+  bottom: -93px;
+  left: 50px;
+  width: 214px;
+  height: 383px;
+}
+
+.contacts-us__bottom .layer .ear-left {
+  top: 0;
+  left: 32px;
+  width: 60px;
+  height: 150px;
+  -webkit-animation: 6s ease-in-out infinite smart-rabbit-ear-left;
+  animation: 6s ease-in-out infinite smart-rabbit-ear-left;
+}
+
+@-webkit-keyframes smart-rabbit-ear-left {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0) skew(0,0);
+    transform: rotate(0) translate(0,0) skew(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(4deg) translate(5px,0) skew(0deg,4deg);
+    transform: rotate(4deg) translate(5px,0) skew(0deg,4deg);
+  }
+}
+
+@keyframes smart-rabbit-ear-left {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0) skew(0,0);
+    transform: rotate(0) translate(0,0) skew(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(4deg) translate(5px,0) skew(0deg,4deg);
+    transform: rotate(4deg) translate(5px,0) skew(0deg,4deg);
+  }
+}
+
+.contacts-us__bottom .layer .ear-right {
+  top: 0;
+  right: 48px;
+  width: 58px;
+  height: 153px;
+  -webkit-animation: 6s ease-in-out infinite smart-rabbit-ear;
+  animation: 6s ease-in-out infinite smart-rabbit-ear;
+}
+
+@-webkit-keyframes smart-rabbit-ear {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0) skew(0,0);
+    transform: rotate(0) translate(0,0) skew(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-4deg) translate(-7px,0) skew(0deg,-3deg);
+    transform: rotate(-4deg) translate(-7px,0) skew(0deg,-3deg);
+  }
+}
+
+@keyframes smart-rabbit-ear {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0) skew(0,0);
+    transform: rotate(0) translate(0,0) skew(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-4deg) translate(-7px,0) skew(0deg,-3deg);
+    transform: rotate(-4deg) translate(-7px,0) skew(0deg,-3deg);
+  }
+}
+
+.contacts-us__bottom .layer .glasses {
+  top: 141px;
+  left: 0;
+  width: 192px;
+  height: 74px;
 }
 
 .contacts-us__bottom ._container {

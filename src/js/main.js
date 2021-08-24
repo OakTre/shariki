@@ -424,4 +424,27 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 		evnt.stopPropagation();
 	});
+
+
+	const dicountButton = document.querySelectorAll(".discount__button");
+	const sectionDiscount = document.querySelector(".discount");
+
+	if (dicountButton) {
+		dicountButton.forEach(function (el) {
+			el.addEventListener("mouseenter", function(){
+				sectionDiscount.querySelector(".tie").classList.add("hover");
+				sectionDiscount.querySelector(".left-ear").classList.add("hover");
+				sectionDiscount.querySelector(".right-ear").classList.add("hover");
+			});
+
+			el.addEventListener("mouseleave", function(){
+				setTimeout(function(){
+					sectionDiscount.querySelector(".tie").classList.remove("hover");
+					sectionDiscount.querySelector(".left-ear").classList.remove("hover");
+					sectionDiscount.querySelector(".right-ear").classList.remove("hover");
+				}, 500);
+			});
+		});
+	}
+
 });

@@ -12,9 +12,10 @@
 		&._ball1 {
 			top: -394px;
 			right: -108px;
-			z-index: 15;
+			z-index: 25;
 			width: 462px;
 			height: 1398px;
+			animation: levitateCatalog 6s ease-in-out infinite;
 		}
 
 		&._ball2 {
@@ -23,6 +24,7 @@
 			z-index: 26;
 			width: 433px;
 			height: 1057px;
+			animation: levitateCatalog 6s ease-in-out infinite;
 		}
 	}
 

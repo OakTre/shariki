@@ -115,6 +115,92 @@
 		background-size: cover;
 		border-radius: 20px;
 
+		.layer {
+			position: absolute;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+
+			.lazy {
+				position: absolute;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+			}
+
+			&.right-rabbit {
+				right: 50px;
+				bottom: 20px;
+				width: 307px;
+				height: 271px;
+			}
+
+			&.left-rabbit {
+				bottom: -93px;
+				left: 50px;
+				width: 214px;
+				height: 383px;
+			}
+
+			.ear-left {
+				top: 0;
+				left: 32px;
+				width: 60px;
+				height: 150px;
+				animation: smart-rabbit-ear-left 6s ease-in-out infinite;
+			}
+
+			@keyframes smart-rabbit-ear-left {
+				0% {
+					transform: rotate(0) translate(0, 0) skew(0, 0);
+				}
+
+				50% {
+					transform: rotate(4deg) translate(5px, 0) skew(0deg, 4deg);
+				}
+
+				100% {
+					transform: rotate(0) translate(0, 0) skew(0, 0);
+				}
+			}
+
+			.ear-right {
+				top: 0;
+				right: 48px;
+				width: 58px;
+				height: 153px;
+				animation: smart-rabbit-ear 6s ease-in-out infinite;
+			}
+
+			@keyframes smart-rabbit-ear {
+				0% {
+					transform: rotate(0) translate(0, 0) skew(0, 0);
+				}
+
+				50% {
+					transform: rotate(-4deg) translate(-7px, 0) skew(0deg, -3deg);
+				}
+
+				100% {
+					transform: rotate(0) translate(0, 0) skew(0, 0);
+				}
+			}
+
+			.glasses {
+				top: 141px;
+				left: 0;
+				width: 192px;
+				height: 74px;
+			}
+
+			// .nose {
+			// 	top: 50px;
+			// 	left: 50px;
+			// 	width: 67px;
+			// 	height: 48px;
+			// }
+		}
+
 		._container {
 			max-width: 668px;
 			margin: 0 auto;

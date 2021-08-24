@@ -1,7 +1,7 @@
 .custom {
 	position: relative;
 	z-index: 15;
-	margin-bottom: 1739px;
+	margin-bottom: 84px;
 	padding-top: 6px;
 
 	.layer {
@@ -81,4 +81,140 @@
 			padding: 33px 78px;
 		}
 	}
+}
+
+.rabbits {
+	position: relative;
+
+	.layer {
+		position: absolute;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+	}
+
+	.flying-rabbit {
+		position: absolute;
+		top: 50%;
+		left: -216px;
+		width: 570px;
+		height: 1118px;
+		transform: translateY(-50%) rotate(-6deg);
+		animation: levitateFlyin 6s ease-in-out infinite;
+	}
+
+	.body {
+		top: 0;
+		left: 0;
+		z-index: 15;
+		width: 570px;
+		height: 1118px;
+	}
+
+	.ball1 {
+		top: 270px;
+		left: 149px;
+		z-index: 15;
+		width: 169px;
+		height: 225px;
+	}
+
+	.ball2 {
+		top: -3px;
+		left: 142px;
+		z-index: 15;
+		width: 240px;
+		height: 505px;
+		animation: levitateBall 6s ease-in-out infinite;
+	}
+
+	.ball3 {
+		top: 203px;
+		left: 281px;
+		z-index: 15;
+		width: 171px;
+		height: 289px;
+		animation: levitateBall2 6s ease-in-out infinite;
+	}
+
+	.right-wing {
+		right: 90px;
+		bottom: 328px;
+		width: 141px;
+		height: 180px;
+	}
+
+	.arm-heart {
+		right: 161px;
+		bottom: 237px;
+		width: 88px;
+		height: 149px;
+		animation: armhead 6s ease-in-out infinite;
+	}
+
+	@keyframes levitateFlyin {
+		0% {
+			transform: translateY(-50%) rotate(-6deg);
+		}
+
+		50% {
+			transform: translateY(-40%) rotate(-6deg);
+		}
+
+		100% {
+			transform: translateY(-50%) rotate(-6deg);
+		}
+	}
+
+	@keyframes armhead {
+		0% {
+			transform: rotate(0) translate(0, 0);
+		}
+
+		50% {
+			transform: rotate(-33deg) translate(19px, 0);
+		}
+
+		100% {
+			transform: rotate(0) translate(0, 0);
+		}
+	}
+
+	@keyframes levitateBall {
+		0% {
+			transform: rotate(0) translate(0, 0);
+		}
+
+		50% {
+			transform: rotate(14deg) translate(50px, -5px);
+		}
+
+		100% {
+			transform: rotate(0) translate(0, 0);
+		}
+	}
+
+	@keyframes levitateBall2 {
+		0% {
+			transform: rotate(0) translate(0, 0);
+		}
+
+		50% {
+			transform: rotate(14deg) translate(41px, 10px);
+		}
+
+		100% {
+			transform: rotate(0) translate(0, 0);
+		}
+	}
+}
+
+.birthday-rabbit2 {
+	width: 840px;
+	height: 581px;
+}
+
+.rabbit-with-baby {
+	width: 1052px;
+	height: 782px;
 }
