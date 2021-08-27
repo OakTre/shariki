@@ -24,6 +24,21 @@
 			width: 399px;
 			height: 940px;
 			transform: rotate(13deg);
+			animation: contactBall1 ease-in-out 6s infinite;
+		}
+
+		@keyframes contactBall1 {
+			0% {
+				transform: rotate(13deg) translate(0, 0);
+			}
+
+			50% {
+				transform: rotate(6deg) translate(-40px, 0);
+			}
+
+			100% {
+				transform: rotate(13deg) translate(0, 0);
+			}
 		}
 
 		&._ball2 {
@@ -32,6 +47,21 @@
 			width: 349px;
 			height: 610px;
 			transform: rotate(55deg);
+			animation: contactBall2 ease-in-out 6s infinite;
+		}
+
+		@keyframes contactBall2 {
+			0% {
+				transform: rotate(55deg) translate(0, 0);
+			}
+
+			50% {
+				transform: rotate(35deg) translate(-94px, 10px);
+			}
+
+			100% {
+				transform: rotate(55deg) translate(0, 0);
+			}
 		}
 	}
 
@@ -77,13 +107,41 @@
 
 		.tail {
 			position: absolute;
-			top: 102px;
+			top: 106px;
 			right: 485px;
+			z-index: 90;
 			width: 64px;
 			height: 72px;
 			background-repeat: no-repeat;
 			background-position: center center;
 			background-size: cover;
+			// transition: transform 0.1s linear;
+
+			// &.easterEggggg {
+			// 	transform: translateY(100px);
+			// }
+
+			&.anim {
+				animation: tailAnim 0.8s linear;
+			}
+		}
+
+		@keyframes tailAnim {
+			0% {
+				transform: rotate(0) scale(1);
+			}
+
+			25% {
+				transform: rotate(-16deg) skew(0deg, 5deg) translate(-8px, 0);
+			}
+
+			75% {
+				transform: rotate(16deg) skew(0deg, -5deg) translate(8px, 0);
+			}
+
+			100% {
+				transform: rotate(0) scale(1);
+			}
 		}
 
 		.discount-board {
@@ -173,6 +231,11 @@
 					width: 79px;
 					height: 68px;
 					transform: rotate(56deg);
+					transition: transform 0.1s linear;
+
+					&.easterEggggg {
+						transform: translateY(100px);
+					}
 				}
 			}
 

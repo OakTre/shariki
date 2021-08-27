@@ -1,43 +1,47 @@
-.modal.cart-modal
+.modal.cart-modal.is-empty
 	.modal__container(data-target="test")
 		button.modal-close.cart-modal__close.button-reset
 			| Закрыть
 		.modal-content.cart-modal__content(data-simplebar)
-				.cart-modal__title
-					|	Корзина
-				.cart-modal__top
-					.cart-modal__head
-						span.cart-modal__name
-							|	Наименование
-						span.cart-modal__price
-							|	Цена
-						span.cart-modal__quant
-							|	Количество
-						span.cart-modal__summ
-							| Сумма
-					ul.cart-modal__list.mini-cart
-					.cart-modal__order-summ
-						|	Общая сумма заказа:
-						span.fullPrice
-							|	0
-						|	руб.
-				.cart-modal__title
-					|	Оформление заказа
-				.cart-modal__bottom
-					form.cart-modal__form
-						label.cart-modal__label
-							input.cart-modal__input(type="text", name="name", placeholder="Ваше имя")
-						label.cart-modal__label
-							input.cart-modal__input(type="text", name="tel", placeholder="Ваш номер")
-						label.cart-modal__label
-							input.cart-modal__input(type="text", name="email", placeholder="Ваш email")
-						button.button-reset.btn.cart-modal__button
-							span
-								|	Оформить заказ
-					.cart-modal__warning
-						|	Если у вас возникли сложности с выбором товаров или с оформлением заказа, пожалуйста, позвоните нам по номеру:
-						br
-						a.phone-content(href="")
-							|	+7 (999) 000-00-00
+				._is-empty
+					.cart-modal__title
+						|	Корзина пуста, добавьте товары
+				._not-empty
+					.cart-modal__title
+						|	Корзина
+					.cart-modal__top
+						.cart-modal__head
+							span.cart-modal__name
+								|	Наименование
+							span.cart-modal__price
+								|	Цена
+							span.cart-modal__quant
+								|	Количество
+							span.cart-modal__summ
+								| Сумма
+						ul.cart-modal__list.mini-cart
+						.cart-modal__order-summ
+							|	Общая сумма заказа:
+							span.fullPrice
+								|	0
+							|	руб.
+					.cart-modal__title
+						|	Оформление заказа
+					.cart-modal__bottom
+						form.cart-modal__form
+							label.cart-modal__label
+								input.cart-modal__input(type="text", name="name", placeholder="Ваше имя")
+							label.cart-modal__label
+								input.cart-modal__input(type="text", name="tel", placeholder="Ваш номер")
+							label.cart-modal__label
+								input.cart-modal__input(type="text", name="email", placeholder="Ваш email")
+							button.button-reset.btn.cart-modal__button
+								span
+									|	Оформить заказ
+						.cart-modal__warning
+							|	Если у вас возникли сложности с выбором товаров или с оформлением заказа, пожалуйста, позвоните нам по номеру:
+							br
+							a.phone-content(href="")
+								|	+7 (999) 000-00-00
 
 

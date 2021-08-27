@@ -171,6 +171,52 @@
 			perspective: 800px;
 			animation: levitateOut 6s ease-in-out infinite;
 
+			&._hover {
+				.rabbit-ear-right {
+					animation: tickling1 0.5s linear;
+				}
+
+				.rabbit-ear-left {
+					animation: tickling2 0.5s linear;
+				}
+
+				@keyframes tickling1 {
+					0% {
+						transform: rotate(0) translate(0, 0);
+					}
+
+					25% {
+						transform: rotate(-8deg) translate(-3px, 0);
+					}
+
+					75% {
+						transform: rotate(8deg) translate(5px, 4px);
+					}
+
+					100% {
+						transform: rotate(0) translate(0, 0);
+					}
+				}
+
+				@keyframes tickling2 {
+					0% {
+						transform: rotate(0) translate(0, 0);
+					}
+
+					25% {
+						transform: rotate(-8deg) translate(-4px, -2px);
+					}
+
+					75% {
+						transform: rotate(8deg) translate(4px, 3px);
+					}
+
+					100% {
+						transform: rotate(0) translate(0, 0);
+					}
+				}
+			}
+
 			.rabbit-component {
 				position: absolute;
 				top: 0;

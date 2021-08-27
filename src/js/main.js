@@ -81,6 +81,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		let cartItemNumber = document.querySelectorAll(".mini-cart__item").length;
 		cartQuantity.textContent = cartItemNumber;
 
+		// показывем что корзина пуста
+		if (cartItemNumber == 0) {
+			myModal.classList.add("is-empty");
+		}
+
 		// показываем количество если товаров больше 0 и наоборот
 		cartItemNumber > 0 ? cartQuantity.closest(".cart-quant").style.display = "block" : cartQuantity.closest(".cart-quant").style.display = "none";
 	};
@@ -102,9 +107,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		cartProduct.querySelector(".quant__input").value = 1;
 
 		minusFullPrice(Number(cartSumm));
-		console.log(MainPrice);
 		printFullPrice();
-		console.log(MainPrice);
 		product.remove();
 
 		printQuantity();
@@ -124,6 +127,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			const link = e.currentTarget.dataset.link;
 			const name = e.currentTarget.dataset.name;
 			const img = e.currentTarget.dataset.img;
+
+			myModal.classList.remove("is-empty");
+
 
 			productContainer.insertAdjacentHTML("afterbegin", generateCartProduct(id, price, summ, link, img, name, quant))
 
@@ -238,6 +244,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const initialState = function() {
 		if (localStorage.getItem("products") !== null) {
 			productContainer.innerHTML = localStorage.getItem("products");
+			myModal.classList.remove("is-empty");
 			printQuantity();
 			countSumm();
 			printFullPrice();
@@ -446,5 +453,62 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			});
 		});
 	}
+
+	const tail = document.querySelector(".tail");
+
+	if (tail) {
+		function animRabbitTail() {
+			setInterval(() => {
+				tail.classList.add("anim");
+
+				setTimeout(() => {
+					tail.classList.remove("anim");
+				}, 2000);
+			}, 5000);
+		}
+
+		animRabbitTail();
+	}
+
+
+	const easterEgg = document.querySelectorAll(".easterEgg");
+
+	if (easterEgg) {
+		let count = 0;
+		easterEgg.forEach(function(el){
+			el.addEventListener("click", function(e){
+				let $this = e.target;
+				count++;
+
+				if (count == 10) {
+					$this.classList.add("easterEggggg");
+
+					setTimeout(() => {
+						$this.style.opacity = 0;
+					}, 150);
+				}
+			});
+		});
+	}
+
+	const heroButton = document.querySelector(".hero-section__button");
+
+	if (heroButton) {
+		heroButton.addEventListener("mouseenter", function(){
+			let parent = this.closest(".hero-section");
+
+			parent.querySelector("._rabbit").classList.add("_hover");
+		})
+
+		heroButton.addEventListener("mouseleave", function(){
+			let parent = this.closest(".hero-section");
+
+			setTimeout(() => {
+				parent.querySelector("._rabbit").classList.remove("_hover");
+			}, 600);
+		})
+	}
+
+
 
 });

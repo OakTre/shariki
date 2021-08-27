@@ -356,7 +356,7 @@
                   <source type="image/webp" data-srcset="img/form-img.webp" srcset="img/placeholder.png"/><img class="lazy" data-src="img/form-img.png" alt="Держите промокод на скидку 10%"/>
                 </picture>
                 <div class="layer thief lazy" data-bg="img/rabbit-thief.webp" data-bg-fallback="img/rabbit-thief.png"></div>
-                <div class="layer tail lazy" data-bg="img/tail.webp" data-bg-fallback="img/tail.png"></div>
+                <div class="easterEgg layer tail lazy" data-bg="img/tail.webp" data-bg-fallback="img/tail.png"></div>
                 <div class="layer discount-board lazy" data-bg="img/discount-board.webp" data-bg-fallback="img/discount-board.png"></div>
                 <ul>
                   <li>	Поможем выбрать нужный набор шариков;</li>
@@ -366,7 +366,7 @@
               </div>
               <div class="contacts-us__bottom lazy" data-bg="img/custom-bg.webp" data-bg-fallback="img/custom-bg.png">
                 <div class="layer right-rabbit lazy" data-bg="img/bottom-rabbit.webp" data-bg-fallback="img/bottom-rabbit.png">
-                  <div class="layer tie lazy" data-bg="img/tie.webp" data-bg-fallback="img/tie.png"></div>
+                  <div class="easterEgg layer tie lazy" data-bg="img/tie.webp" data-bg-fallback="img/tie.png"></div>
                 </div>
                 <div class="layer left-rabbit lazy" data-bg="img/sitting-rabbit.webp" data-bg-fallback="img/sitting-rabbit.png">
                   <div class="ear-left lazy" data-bg="img/sitting-rabbit-ear-left.webp" data-bg-fallback="img/sitting-rabbit-ear-left.png"></div>
@@ -445,31 +445,36 @@
           </div>
         </div>
       </footer>
-      <div class="modal cart-modal">
+      <div class="modal cart-modal is-empty">
         <div class="modal__container" data-target="test">
           <button class="modal-close cart-modal__close button-reset">Закрыть</button>
           <div class="modal-content cart-modal__content" data-simplebar>
-            <div class="cart-modal__title">	Корзина</div>
-            <div class="cart-modal__top">
-              <div class="cart-modal__head"><span class="cart-modal__name">	Наименование</span><span class="cart-modal__price">	Цена</span><span class="cart-modal__quant">	Количество</span><span class="cart-modal__summ">Сумма</span></div>
-              <ul class="cart-modal__list mini-cart"></ul>
-              <div class="cart-modal__order-summ">	Общая сумма заказа:<span class="fullPrice">	0</span>	руб.</div>
+            <div class="_is-empty">
+              <div class="cart-modal__title">	Корзина пуста, добавьте товары</div>
             </div>
-            <div class="cart-modal__title">	Оформление заказа</div>
-            <div class="cart-modal__bottom">
-              <form class="cart-modal__form">
-                <label class="cart-modal__label">
-                  <input class="cart-modal__input" type="text" name="name" placeholder="Ваше имя">
-                </label>
-                <label class="cart-modal__label">
-                  <input class="cart-modal__input" type="text" name="tel" placeholder="Ваш номер">
-                </label>
-                <label class="cart-modal__label">
-                  <input class="cart-modal__input" type="text" name="email" placeholder="Ваш email">
-                </label>
-                <button class="button-reset btn cart-modal__button"><span>	Оформить заказ</span></button>
-              </form>
-              <div class="cart-modal__warning">	Если у вас возникли сложности с выбором товаров или с оформлением заказа, пожалуйста, позвоните нам по номеру:<br><a class="phone-content" href="">	+7 (999) 000-00-00</a></div>
+            <div class="_not-empty">
+              <div class="cart-modal__title">	Корзина</div>
+              <div class="cart-modal__top">
+                <div class="cart-modal__head"><span class="cart-modal__name">	Наименование</span><span class="cart-modal__price">	Цена</span><span class="cart-modal__quant">	Количество</span><span class="cart-modal__summ">Сумма</span></div>
+                <ul class="cart-modal__list mini-cart"></ul>
+                <div class="cart-modal__order-summ">	Общая сумма заказа:<span class="fullPrice">	0</span>	руб.</div>
+              </div>
+              <div class="cart-modal__title">	Оформление заказа</div>
+              <div class="cart-modal__bottom">
+                <form class="cart-modal__form">
+                  <label class="cart-modal__label">
+                    <input class="cart-modal__input" type="text" name="name" placeholder="Ваше имя">
+                  </label>
+                  <label class="cart-modal__label">
+                    <input class="cart-modal__input" type="text" name="tel" placeholder="Ваш номер">
+                  </label>
+                  <label class="cart-modal__label">
+                    <input class="cart-modal__input" type="text" name="email" placeholder="Ваш email">
+                  </label>
+                  <button class="button-reset btn cart-modal__button"><span>	Оформить заказ</span></button>
+                </form>
+                <div class="cart-modal__warning">	Если у вас возникли сложности с выбором товаров или с оформлением заказа, пожалуйста, позвоните нам по номеру:<br><a class="phone-content" href="">	+7 (999) 000-00-00</a></div>
+              </div>
             </div>
           </div>
         </div>

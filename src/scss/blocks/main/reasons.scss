@@ -76,6 +76,7 @@
 		min-height: 334px;
 		padding: 48px 32px;
 		overflow: hidden;
+		background: linear-gradient(31deg, rgba(143, 132, 239, 1) 9%, rgba(126, 133, 235, 1) 37%, rgba(113, 129, 230, 1) 54%, rgba(113, 129, 231, 1) 74%, rgba(76, 105, 219, 1) 94%);
 		background-color: $color-blue;
 		border-radius: 20px;
 
@@ -107,6 +108,13 @@
 			margin: 0;
 			font-size: rem(18px);
 			line-height: 1.4;
+		}
+
+		&:nth-child(1),
+		&:nth-child(3),
+		&:nth-child(5) {
+			background: rgb(151, 127, 241);
+			background: linear-gradient(153deg, rgba(151, 127, 241, 1) 5%, rgba(95, 126, 214, 1) 24%, rgba(125, 145, 232, 1) 66%, rgba(144, 168, 241, 1) 84%);
 		}
 
 		&:nth-child(2),

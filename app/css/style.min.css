@@ -614,6 +614,84 @@ ul {
   animation: 6s ease-in-out infinite levitateOut;
 }
 
+.hero-section .layer._rabbit._hover .rabbit-ear-right {
+  -webkit-animation: .5s linear tickling1;
+  animation: .5s linear tickling1;
+}
+
+.hero-section .layer._rabbit._hover .rabbit-ear-left {
+  -webkit-animation: .5s linear tickling2;
+  animation: .5s linear tickling2;
+}
+
+@-webkit-keyframes tickling1 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-8deg) translate(-3px,0);
+    transform: rotate(-8deg) translate(-3px,0);
+  }
+
+  75% {
+    -webkit-transform: rotate(8deg) translate(5px,4px);
+    transform: rotate(8deg) translate(5px,4px);
+  }
+}
+
+@keyframes tickling1 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-8deg) translate(-3px,0);
+    transform: rotate(-8deg) translate(-3px,0);
+  }
+
+  75% {
+    -webkit-transform: rotate(8deg) translate(5px,4px);
+    transform: rotate(8deg) translate(5px,4px);
+  }
+}
+
+@-webkit-keyframes tickling2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-8deg) translate(-4px,-2px);
+    transform: rotate(-8deg) translate(-4px,-2px);
+  }
+
+  75% {
+    -webkit-transform: rotate(8deg) translate(4px,3px);
+    transform: rotate(8deg) translate(4px,3px);
+  }
+}
+
+@keyframes tickling2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  25% {
+    -webkit-transform: rotate(-8deg) translate(-4px,-2px);
+    transform: rotate(-8deg) translate(-4px,-2px);
+  }
+
+  75% {
+    -webkit-transform: rotate(8deg) translate(4px,3px);
+    transform: rotate(8deg) translate(4px,3px);
+  }
+}
+
 .hero-section .layer._rabbit .rabbit-component {
   position: absolute;
   top: 0;
@@ -1910,6 +1988,32 @@ ul {
   z-index: 18;
   width: 429px;
   height: 318px;
+  -webkit-animation: 6s ease-in-out infinite smallLevatage;
+  animation: 6s ease-in-out infinite smallLevatage;
+}
+
+@-webkit-keyframes smallLevatage {
+  from, to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes smallLevatage {
+  from, to {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-14px);
+    transform: translateY(-14px);
+  }
 }
 
 .discount .layer.discount-sky2 {
@@ -1918,6 +2022,8 @@ ul {
   z-index: 15;
   width: 600px;
   height: 437px;
+  -webkit-animation: 6s ease-in-out infinite smallLevatage;
+  animation: 6s ease-in-out infinite smallLevatage;
 }
 
 .discount .layer.discount-sky3 {
@@ -1926,6 +2032,8 @@ ul {
   z-index: 20;
   width: 549px;
   height: 437px;
+  -webkit-animation: 6s ease-in-out infinite smallLevatage;
+  animation: 6s ease-in-out infinite smallLevatage;
 }
 
 .discount .layer.lazy-rabbit {
@@ -2040,6 +2148,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  -webkit-animation: 6s ease-in-out infinite smallLevatage;
+  animation: 6s ease-in-out infinite smallLevatage;
 }
 
 .discount .layer.simple-rabbit {
@@ -2051,6 +2161,8 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  -webkit-animation: 6s ease-in-out infinite smallLevatage;
+  animation: 6s ease-in-out infinite smallLevatage;
 }
 
 .discount__button span {
@@ -2261,6 +2373,8 @@ ul {
   min-height: 334px;
   padding: 48px 32px;
   overflow: hidden;
+  background: -o-linear-gradient(59deg,#8f84ef 9%,#7e85eb 37%,#7181e6 54%,#7181e7 74%,#4c69db 94%);
+  background: linear-gradient(31deg,#8f84ef 9%,#7e85eb 37%,#7181e6 54%,#7181e7 74%,#4c69db 94%);
   background-color: #5676fe;
   border-radius: 20px;
 }
@@ -2291,6 +2405,14 @@ ul {
   margin: 0;
   font-size: 1.125rem;
   line-height: 1.4;
+}
+
+.reasons__item:nth-child(1),
+.reasons__item:nth-child(3),
+.reasons__item:nth-child(5) {
+  background: #977ff1;
+  background: -o-linear-gradient(297deg,#977ff1 5%,#5f7ed6 24%,#7d91e8 66%,#90a8f1 84%);
+  background: linear-gradient(153deg,#977ff1 5%,#5f7ed6 24%,#7d91e8 66%,#90a8f1 84%);
 }
 
 .reasons__item:nth-child(2) img,
@@ -2484,6 +2606,32 @@ ul {
   right: 242px;
   width: 140px;
   height: 433px;
+  -webkit-animation: 6s ease-in-out infinite balllevitage;
+  animation: 6s ease-in-out infinite balllevitage;
+}
+
+@-webkit-keyframes balllevitage {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-7deg) translate(-23px,-3px);
+    transform: rotate(-7deg) translate(-23px,-3px);
+  }
+}
+
+@keyframes balllevitage {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-7deg) translate(-23px,-3px);
+    transform: rotate(-7deg) translate(-23px,-3px);
+  }
 }
 
 .custom .birthday-rabbits .ball2 {
@@ -2492,6 +2640,32 @@ ul {
   right: 78px;
   width: 262px;
   height: 553px;
+  -webkit-animation: 6s ease-in-out infinite balllevitage2;
+  animation: 6s ease-in-out infinite balllevitage2;
+}
+
+@-webkit-keyframes balllevitage2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-7deg) translate(-35px,-3px);
+    transform: rotate(-7deg) translate(-35px,-3px);
+  }
+}
+
+@keyframes balllevitage2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-7deg) translate(-35px,-3px);
+    transform: rotate(-7deg) translate(-35px,-3px);
+  }
 }
 
 .custom .birthday-rabbits .ball3 {
@@ -2500,6 +2674,32 @@ ul {
   right: 28px;
   width: 314px;
   height: 415px;
+  -webkit-animation: 6s ease-in-out infinite balllevitage3;
+  animation: 6s ease-in-out infinite balllevitage3;
+}
+
+@-webkit-keyframes balllevitage3 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-7deg) translate(-23px,-16px);
+    transform: rotate(-7deg) translate(-23px,-16px);
+  }
+}
+
+@keyframes balllevitage3 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-7deg) translate(-23px,-16px);
+    transform: rotate(-7deg) translate(-23px,-16px);
+  }
 }
 
 .rabbits {
@@ -2697,8 +2897,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  -webkit-animation: none!important;
-  animation: none!important;
 }
 
 .birthday-rabbit2 .smart-rabbit {
@@ -2721,8 +2919,35 @@ ul {
   position: absolute;
   top: 148px;
   left: 0;
+  z-index: 15;
   width: 211px;
   height: 293px;
+  -webkit-animation: 6s ease-in-out infinite smartBallLevitage;
+  animation: 6s ease-in-out infinite smartBallLevitage;
+}
+
+@-webkit-keyframes smartBallLevitage {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(9px,-10px);
+    transform: rotate(5deg) translate(9px,-10px);
+  }
+}
+
+@keyframes smartBallLevitage {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(9px,-10px);
+    transform: rotate(5deg) translate(9px,-10px);
+  }
 }
 
 .birthday-rabbit2 .smart-ball2 {
@@ -2731,6 +2956,32 @@ ul {
   left: 27px;
   width: 192px;
   height: 365px;
+  -webkit-animation: 6s ease-in-out infinite smartBallLevitage2;
+  animation: 6s ease-in-out infinite smartBallLevitage2;
+}
+
+@-webkit-keyframes smartBallLevitage2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-10px,13px);
+    transform: rotate(-5deg) translate(-10px,13px);
+  }
+}
+
+@keyframes smartBallLevitage2 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-10px,13px);
+    transform: rotate(-5deg) translate(-10px,13px);
+  }
 }
 
 .birthday-rabbit2 .smart-ball3 {
@@ -2739,6 +2990,32 @@ ul {
   left: 336px;
   width: 173px;
   height: 421px;
+  -webkit-animation: 6s ease-in-out infinite smartBallLevitage3;
+  animation: 6s ease-in-out infinite smartBallLevitage3;
+}
+
+@-webkit-keyframes smartBallLevitage3 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-17px,0);
+    transform: rotate(-5deg) translate(-17px,0);
+  }
+}
+
+@keyframes smartBallLevitage3 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-17px,0);
+    transform: rotate(-5deg) translate(-17px,0);
+  }
 }
 
 .birthday-rabbit2 .smart-ball4 {
@@ -2747,6 +3024,32 @@ ul {
   right: 228px;
   width: 112px;
   height: 348px;
+  -webkit-animation: 6s ease-in-out infinite smartBallLevitage4;
+  animation: 6s ease-in-out infinite smartBallLevitage4;
+}
+
+@-webkit-keyframes smartBallLevitage4 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(14px,-5px);
+    transform: rotate(5deg) translate(14px,-5px);
+  }
+}
+
+@keyframes smartBallLevitage4 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(14px,-5px);
+    transform: rotate(5deg) translate(14px,-5px);
+  }
 }
 
 .birthday-rabbit2 .smart-ball5 {
@@ -2755,6 +3058,32 @@ ul {
   right: 0;
   width: 237px;
   height: 439px;
+  -webkit-animation: 6s ease-in-out infinite smartBallLevitage5;
+  animation: 6s ease-in-out infinite smartBallLevitage5;
+}
+
+@-webkit-keyframes smartBallLevitage5 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(20px,7px);
+    transform: rotate(5deg) translate(20px,7px);
+  }
+}
+
+@keyframes smartBallLevitage5 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(20px,7px);
+    transform: rotate(5deg) translate(20px,7px);
+  }
 }
 
 .rabbit-with-baby {
@@ -2769,8 +3098,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
-  -webkit-animation: none!important;
-  animation: none!important;
 }
 
 .rabbit-with-baby .rabbit-mama {
@@ -2796,6 +3123,35 @@ ul {
   left: 98px;
   width: 35px;
   height: 30px;
+  -webkit-transform: scale(.8) translate(0,-4px);
+  -ms-transform: scale(.8) translate(0,-4px);
+  transform: scale(.8) translate(0,-4px);
+  -webkit-animation: 2.7s ease-in-out infinite babyRabbitToy;
+  animation: 2.7s ease-in-out infinite babyRabbitToy;
+}
+
+@-webkit-keyframes babyRabbitToy {
+  0%, 100% {
+    -webkit-transform: scale(.8) translate(0,-4px);
+    transform: scale(.8) translate(0,-4px);
+  }
+
+  50% {
+    -webkit-transform: scale(1) translate(0,0);
+    transform: scale(1) translate(0,0);
+  }
+}
+
+@keyframes babyRabbitToy {
+  0%, 100% {
+    -webkit-transform: scale(.8) translate(0,-4px);
+    transform: scale(.8) translate(0,-4px);
+  }
+
+  50% {
+    -webkit-transform: scale(1) translate(0,0);
+    transform: scale(1) translate(0,0);
+  }
 }
 
 .rabbit-with-baby .baby-rabbit ._ear-left {
@@ -2804,6 +3160,8 @@ ul {
   left: 81px;
   width: 35px;
   height: 88px;
+  -webkit-animation: 6s ease-in-out infinite babyRabbitEarLeft;
+  animation: 6s ease-in-out infinite babyRabbitEarLeft;
 }
 
 .rabbit-with-baby .baby-rabbit ._ear-right {
@@ -2812,6 +3170,56 @@ ul {
   left: 118px;
   width: 36px;
   height: 93px;
+  -webkit-animation: 6s ease-in-out infinite babyRabbitEarRight;
+  animation: 6s ease-in-out infinite babyRabbitEarRight;
+}
+
+@-webkit-keyframes babyRabbitEarLeft {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-3px,2px);
+    transform: rotate(-5deg) translate(-3px,2px);
+  }
+}
+
+@keyframes babyRabbitEarLeft {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-3px,2px);
+    transform: rotate(-5deg) translate(-3px,2px);
+  }
+}
+
+@-webkit-keyframes babyRabbitEarRight {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(3px,1px);
+    transform: rotate(5deg) translate(3px,1px);
+  }
+}
+
+@keyframes babyRabbitEarRight {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(3px,1px);
+    transform: rotate(5deg) translate(3px,1px);
+  }
 }
 
 .rabbit-with-baby .ball1 {
@@ -2820,6 +3228,32 @@ ul {
   left: 6px;
   width: 149px;
   height: 310px;
+  -webkit-animation: 6s ease-in-out infinite babyRabbitBall1;
+  animation: 6s ease-in-out infinite babyRabbitBall1;
+}
+
+@-webkit-keyframes babyRabbitBall1 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(13px,-7px);
+    transform: rotate(5deg) translate(13px,-7px);
+  }
+}
+
+@keyframes babyRabbitBall1 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(13px,-7px);
+    transform: rotate(5deg) translate(13px,-7px);
+  }
 }
 
 .rabbit-with-baby .ball2 {
@@ -2828,6 +3262,8 @@ ul {
   left: 117px;
   width: 107px;
   height: 241px;
+  -webkit-animation: none;
+  animation: none;
 }
 
 .rabbit-with-baby ._ball3 {
@@ -2837,6 +3273,32 @@ ul {
   z-index: 20;
   width: 147px;
   height: 491px;
+  -webkit-animation: 6s ease-in-out infinite babyRabbitBall3;
+  animation: 6s ease-in-out infinite babyRabbitBall3;
+}
+
+@-webkit-keyframes babyRabbitBall3 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(13px,-7px);
+    transform: rotate(5deg) translate(13px,-7px);
+  }
+}
+
+@keyframes babyRabbitBall3 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(5deg) translate(13px,-7px);
+    transform: rotate(5deg) translate(13px,-7px);
+  }
 }
 
 .rabbit-with-baby .ball4 {
@@ -2855,6 +3317,32 @@ ul {
   z-index: 19;
   width: 222px;
   height: 271px;
+  -webkit-animation: 6s ease-in-out infinite babyRabbitBall5;
+  animation: 6s ease-in-out infinite babyRabbitBall5;
+}
+
+@-webkit-keyframes babyRabbitBall5 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-9px,-9px);
+    transform: rotate(-5deg) translate(-9px,-9px);
+  }
+}
+
+@keyframes babyRabbitBall5 {
+  0%, 100% {
+    -webkit-transform: rotate(0) translate(0,0);
+    transform: rotate(0) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(-5deg) translate(-9px,-9px);
+    transform: rotate(-5deg) translate(-9px,-9px);
+  }
 }
 
 .contacts-us {
@@ -2887,6 +3375,32 @@ ul {
   -webkit-transform: rotate(13deg);
   -ms-transform: rotate(13deg);
   transform: rotate(13deg);
+  -webkit-animation: 6s ease-in-out infinite contactBall1;
+  animation: 6s ease-in-out infinite contactBall1;
+}
+
+@-webkit-keyframes contactBall1 {
+  0%, 100% {
+    -webkit-transform: rotate(13deg) translate(0,0);
+    transform: rotate(13deg) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(6deg) translate(-40px,0);
+    transform: rotate(6deg) translate(-40px,0);
+  }
+}
+
+@keyframes contactBall1 {
+  0%, 100% {
+    -webkit-transform: rotate(13deg) translate(0,0);
+    transform: rotate(13deg) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(6deg) translate(-40px,0);
+    transform: rotate(6deg) translate(-40px,0);
+  }
 }
 
 .contacts-us .layer._ball2 {
@@ -2897,6 +3411,32 @@ ul {
   -webkit-transform: rotate(55deg);
   -ms-transform: rotate(55deg);
   transform: rotate(55deg);
+  -webkit-animation: 6s ease-in-out infinite contactBall2;
+  animation: 6s ease-in-out infinite contactBall2;
+}
+
+@-webkit-keyframes contactBall2 {
+  0%, 100% {
+    -webkit-transform: rotate(55deg) translate(0,0);
+    transform: rotate(55deg) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(35deg) translate(-94px,10px);
+    transform: rotate(35deg) translate(-94px,10px);
+  }
+}
+
+@keyframes contactBall2 {
+  0%, 100% {
+    -webkit-transform: rotate(55deg) translate(0,0);
+    transform: rotate(55deg) translate(0,0);
+  }
+
+  50% {
+    -webkit-transform: rotate(35deg) translate(-94px,10px);
+    transform: rotate(35deg) translate(-94px,10px);
+  }
 }
 
 .contacts-us__title {
@@ -2941,13 +3481,53 @@ ul {
 
 .contacts-us__top .tail {
   position: absolute;
-  top: 102px;
+  top: 106px;
   right: 485px;
+  z-index: 90;
   width: 64px;
   height: 72px;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+}
+
+.contacts-us__top .tail.anim {
+  -webkit-animation: .8s linear tailAnim;
+  animation: .8s linear tailAnim;
+}
+
+@-webkit-keyframes tailAnim {
+  0%, 100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+  }
+
+  25% {
+    -webkit-transform: rotate(-16deg) skew(0deg,5deg) translate(-8px,0);
+    transform: rotate(-16deg) skew(0deg,5deg) translate(-8px,0);
+  }
+
+  75% {
+    -webkit-transform: rotate(16deg) skew(0deg,-5deg) translate(8px,0);
+    transform: rotate(16deg) skew(0deg,-5deg) translate(8px,0);
+  }
+}
+
+@keyframes tailAnim {
+  0%, 100% {
+    -webkit-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+  }
+
+  25% {
+    -webkit-transform: rotate(-16deg) skew(0deg,5deg) translate(-8px,0);
+    transform: rotate(-16deg) skew(0deg,5deg) translate(-8px,0);
+  }
+
+  75% {
+    -webkit-transform: rotate(16deg) skew(0deg,-5deg) translate(8px,0);
+    transform: rotate(16deg) skew(0deg,-5deg) translate(8px,0);
+  }
 }
 
 .contacts-us__top .discount-board {
@@ -3035,6 +3615,16 @@ ul {
   -webkit-transform: rotate(56deg);
   -ms-transform: rotate(56deg);
   transform: rotate(56deg);
+  -webkit-transition: -webkit-transform .1s linear;
+  transition: transform .1s linear;
+  -o-transition: transform .1s linear;
+  transition: transform .1s linear,-webkit-transform .1s linear;
+}
+
+.contacts-us__bottom .layer.right-rabbit .tie.easterEggggg {
+  -webkit-transform: translateY(100px);
+  -ms-transform: translateY(100px);
+  transform: translateY(100px);
 }
 
 .contacts-us__bottom .layer.left-rabbit {
@@ -3304,6 +3894,20 @@ ul {
   color: #f7da5b;
 }
 
+.cart-modal.is-empty ._not-empty {
+  display: none;
+}
+
+.cart-modal.is-empty ._is-empty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cart-modal.is-empty .simplebar-content {
+  height: 100%;
+}
+
 .cart-modal__close {
   position: absolute;
   top: 24px;
@@ -3317,9 +3921,9 @@ ul {
   height: 800px;
   padding: 32px;
   overflow-y: auto;
-  background: -webkit-gradient(linear,left top,left bottom,from(rgba(86,118,254,.4)),color-stop(40%,#abc3ff));
-  background: -o-linear-gradient(rgba(86,118,254,.4),#abc3ff 40%);
-  background: linear-gradient(rgba(86,118,254,.4),#abc3ff 40%);
+  background: -webkit-gradient(linear,left bottom,left top,from(#aba3ff),color-stop(50%,#848dff),to(#5169ff));
+  background: -o-linear-gradient(bottom,#aba3ff 0,#848dff 50%,#5169ff 100%);
+  background: linear-gradient(0deg,#aba3ff 0,#848dff 50%,#5169ff 100%);
   border-radius: 20px;
 }
 
@@ -3331,6 +3935,18 @@ ul {
 .cart-modal__content .simplebar-track.simplebar-vertical .simplebar-scrollbar::before {
   top: 42px;
   bottom: 42px;
+}
+
+.cart-modal__content ._is-empty {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
 
 .cart-modal__title {
