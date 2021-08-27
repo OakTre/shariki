@@ -64,6 +64,39 @@
 		position: relative;
 		padding-bottom: 104px;
 
+		.thief {
+			position: absolute;
+			top: 102px;
+			right: 394px;
+			width: 230px;
+			height: 274px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		.tail {
+			position: absolute;
+			top: 102px;
+			right: 485px;
+			width: 64px;
+			height: 72px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+
+		.discount-board {
+			position: absolute;
+			top: -53px;
+			right: 580px;
+			width: 281px;
+			height: 353px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+		}
+
 		img {
 			position: absolute;
 			right: -30px;
@@ -133,6 +166,14 @@
 				bottom: 20px;
 				width: 307px;
 				height: 271px;
+
+				.tie {
+					top: 158px;
+					left: 153px;
+					width: 79px;
+					height: 68px;
+					transform: rotate(56deg);
+				}
 			}
 
 			&.left-rabbit {
@@ -187,18 +228,25 @@
 			}
 
 			.glasses {
-				top: 141px;
+				top: 135px;
 				left: 0;
 				width: 192px;
 				height: 74px;
 			}
 
-			// .nose {
-			// 	top: 50px;
-			// 	left: 50px;
-			// 	width: 67px;
-			// 	height: 48px;
-			// }
+			.nose {
+				top: 154px;
+				left: 63px;
+				width: 67px;
+				height: 48px;
+			}
+
+			.right-hand {
+				top: 193px;
+				left: 21px;
+				width: 76px;
+				height: 86px;
+			}
 		}
 
 		._container {

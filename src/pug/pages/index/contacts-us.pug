@@ -11,6 +11,10 @@ section.section.contacts-us
 		.contacts-us__container
 			.contacts-us__top
 				+pictureLazy("form-img.png", "Держите промокод на скидку 10%")
+				.layer.thief.lazy(data-bg="img/rabbit-thief.webp", data-bg-fallback="img/rabbit-thief.png")
+				.layer.tail.lazy(data-bg="img/tail.webp", data-bg-fallback="img/tail.png")
+				.layer.discount-board.lazy(data-bg="img/discount-board.webp", data-bg-fallback="img/discount-board.png")
+
 				ul
 					li
 						|	Поможем выбрать нужный набор шариков;
@@ -22,11 +26,13 @@ section.section.contacts-us
 					|	* Не распространяется  на акционные наборы
 			.contacts-us__bottom.lazy(data-bg="img/custom-bg.webp", data-bg-fallback="img/custom-bg.png")
 				.layer.right-rabbit.lazy(data-bg="img/bottom-rabbit.webp", data-bg-fallback="img/bottom-rabbit.png")
+					.layer.tie.lazy(data-bg="img/tie.webp", data-bg-fallback="img/tie.png")
 				.layer.left-rabbit.lazy(data-bg="img/sitting-rabbit.webp", data-bg-fallback="img/sitting-rabbit.png")
 					.ear-left.lazy(data-bg="img/sitting-rabbit-ear-left.webp", data-bg-fallback="img/sitting-rabbit-ear-left.png")
 					.ear-right.lazy(data-bg="img/sitting-rabbit-ear-right.webp", data-bg-fallback="img/sitting-rabbit-ear-right.png")
 					.glasses.lazy(data-bg="img/glasses.webp", data-bg-fallback="img/glasses.png")
-					//- .nose.lazy(data-bg="img/nose.webp", data-bg-fallback="img/nose.png")
+					.nose.lazy(data-bg="img/nose.webp", data-bg-fallback="img/nose.png")
+					.right-hand.lazy(data-bg="img/right-hand.webp", data-bg-fallback="img/right-hand.png")
 				._container
 					form.contacts-us__form.custom-form(action="")
 						.custom-form__row
