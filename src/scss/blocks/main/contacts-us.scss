@@ -371,4 +371,47 @@
 		font-size: rem(18px);
 		line-height: 1.5;
 	}
+
+	@include _1680 {
+		.layer {
+			background-size: contain;
+
+			&._ball1 {
+				top: -168px;
+				width: 359px;
+				height: 880px;
+			}
+
+			&._ball2 {
+				right: -84px;
+				width: 309px;
+				height: 590px;
+			}
+		}
+
+		&__top {
+			img {
+				width: 80%;
+			}
+
+			.thief {
+				top: 133px;
+				right: 367px;
+				width: 210px;
+				height: 254px;
+			}
+
+			.tail {
+				top: 136px;
+				right: 447px;
+			}
+
+			.discount-board {
+				top: -13px;
+				right: 547px;
+				width: 271px;
+				height: 333px;
+			}
+		}
+	}
 }

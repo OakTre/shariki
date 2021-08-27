@@ -394,6 +394,168 @@
 			line-height: 1.4;
 		}
 	}
+
+	@include _1680 {
+		&__container {
+			max-width: 811px;
+
+			h1 {
+				font-size: rem(80px);
+			}
+		}
+
+		.layer {
+			background-size: contain;
+
+			&._sky1 {
+				top: 61px;
+				left: 0;
+				width: 86px;
+				height: 390px;
+			}
+
+			&._sky2 {
+				width: 149px;
+				height: 149px;
+			}
+
+			&._sky4 {
+				width: 160px;
+				height: 160px;
+			}
+
+			&._sky5 {
+				top: 590px;
+				width: 161px;
+				height: 168px;
+			}
+
+			&._sky6 {
+				width: 122px;
+				height: 122px;
+			}
+
+			&._sky7 {
+				top: 220px;
+				right: 0;
+				width: 48px;
+				height: 170px;
+			}
+
+			&._sky8 {
+				top: 313px;
+				right: 0;
+				width: 102px;
+				height: 132px;
+			}
+
+			&._sky9 {
+				top: 570px;
+				width: 220px;
+				height: 169px;
+			}
+
+			&._skyTinny {
+				bottom: 250px;
+				left: 270px;
+				width: 175px;
+				height: 90px;
+			}
+
+			&._ball1 {
+				left: 170px;
+				width: 242px;
+				height: 574px;
+			}
+
+			&._ball2 {
+				left: 410px;
+				width: 128px;
+				height: 338px;
+			}
+
+			&._ball3 {
+				top: 174px;
+				right: 640px;
+				width: 176px;
+				height: 413px;
+			}
+
+			&._ball4 {
+				top: 270px;
+				right: 436px;
+				width: 163px;
+				height: 454px;
+			}
+
+			&._rabbit {
+				bottom: 30px;
+				left: 560px;
+				width: 201px;
+				height: 529px;
+
+				.rabbit {
+					width: 201px;
+					height: 529px;
+				}
+
+				.rabbit-ball {
+					width: 201px;
+					height: 529px;
+				}
+
+				.rabbit-component {
+					background-size: contain;
+				}
+
+				.rabbit-ear-left {
+					top: 16.3px;
+					width: 42px;
+					height: 60px;
+				}
+
+				.rabbit-ear-right {
+					top: 30px;
+					right: 4px;
+					width: 40px;
+					height: 66px;
+				}
+
+				.rabbit-leg {
+					top: 94px;
+					left: 82px;
+					width: 33px;
+					height: 53px;
+				}
+
+				.rabit-eye {
+					&._left {
+						top: 71px;
+						left: 108px;
+					}
+
+					&._right {
+						top: 101px;
+						right: 36px;
+					}
+				}
+			}
+
+			&._light-right {
+				width: 587px;
+				height: 493px;
+			}
+
+			&._light-left {
+				width: 973px;
+				height: 728px;
+			}
+
+			&._hero-mountains {
+				height: 390px;
+			}
+		}
+	}
 }
 
 @keyframes levitate {

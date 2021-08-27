@@ -4510,6 +4510,693 @@ ul {
   }
 }
 
+@media (max-width:1680px) {
+  .hero-section__container {
+    max-width: 811px;
+  }
+
+  .hero-section__container h1 {
+    font-size: 5rem;
+  }
+
+  .hero-section .layer {
+    background-size: contain;
+  }
+
+  .hero-section .layer._sky1 {
+    top: 61px;
+    left: 0;
+    width: 86px;
+    height: 390px;
+  }
+
+  .hero-section .layer._sky2 {
+    width: 149px;
+    height: 149px;
+  }
+
+  .hero-section .layer._sky4 {
+    width: 160px;
+    height: 160px;
+  }
+
+  .hero-section .layer._sky5 {
+    top: 590px;
+    width: 161px;
+    height: 168px;
+  }
+
+  .hero-section .layer._sky6 {
+    width: 122px;
+    height: 122px;
+  }
+
+  .hero-section .layer._sky7 {
+    top: 220px;
+    right: 0;
+    width: 48px;
+    height: 170px;
+  }
+
+  .hero-section .layer._sky8 {
+    top: 313px;
+    right: 0;
+    width: 102px;
+    height: 132px;
+  }
+
+  .hero-section .layer._sky9 {
+    top: 570px;
+    width: 220px;
+    height: 169px;
+  }
+
+  .hero-section .layer._skyTinny {
+    bottom: 250px;
+    left: 270px;
+    width: 175px;
+    height: 90px;
+  }
+
+  .hero-section .layer._ball1 {
+    left: 170px;
+    width: 242px;
+    height: 574px;
+  }
+
+  .hero-section .layer._ball2 {
+    left: 410px;
+    width: 128px;
+    height: 338px;
+  }
+
+  .hero-section .layer._ball3 {
+    top: 174px;
+    right: 640px;
+    width: 176px;
+    height: 413px;
+  }
+
+  .hero-section .layer._ball4 {
+    top: 270px;
+    right: 436px;
+    width: 163px;
+    height: 454px;
+  }
+
+  .hero-section .layer._rabbit {
+    bottom: 30px;
+    left: 560px;
+    width: 201px;
+    height: 529px;
+  }
+
+  .hero-section .layer._rabbit .rabbit,
+  .hero-section .layer._rabbit .rabbit-ball {
+    width: 201px;
+    height: 529px;
+  }
+
+  .hero-section .layer._rabbit .rabbit-component {
+    background-size: contain;
+  }
+
+  .hero-section .layer._rabbit .rabbit-ear-left {
+    top: 16.3px;
+    width: 42px;
+    height: 60px;
+  }
+
+  .hero-section .layer._rabbit .rabbit-ear-right {
+    top: 30px;
+    right: 4px;
+    width: 40px;
+    height: 66px;
+  }
+
+  .hero-section .layer._rabbit .rabbit-leg {
+    top: 94px;
+    left: 82px;
+    width: 33px;
+    height: 53px;
+  }
+
+  .hero-section .layer._rabbit .rabit-eye._left {
+    top: 71px;
+    left: 108px;
+  }
+
+  .hero-section .layer._rabbit .rabit-eye._right {
+    top: 101px;
+    right: 36px;
+  }
+
+  .hero-section .layer._light-right {
+    width: 587px;
+    height: 493px;
+  }
+
+  .hero-section .layer._light-left {
+    width: 973px;
+    height: 728px;
+  }
+
+  .hero-section .layer._hero-mountains {
+    height: 390px;
+  }
+
+  .catalog {
+    padding-bottom: 495px;
+  }
+
+  .catalog__title {
+    max-width: 603px;
+  }
+
+  .catalog__title h2 {
+    font-size: 4.375rem;
+  }
+
+  .catalog__list {
+    margin-left: 0;
+  }
+
+  .catalog__col:nth-child(1) {
+    width: 289px;
+  }
+
+  .catalog__col:nth-child(2) {
+    width: calc(100% - 352px);
+  }
+
+  .catalog__product {
+    height: 482px;
+  }
+
+  .catalog__product img {
+    width: 90%;
+  }
+
+  .catalog__product:hover .catalog__product-info {
+    -webkit-transform: translateY(-84px);
+    -ms-transform: translateY(-84px);
+    transform: translateY(-84px);
+  }
+
+  .catalog__text {
+    font-size: 2.5rem;
+  }
+
+  .catalog .layer {
+    background-size: contain;
+  }
+
+  .catalog .layer._ball1 {
+    bottom: 120px;
+    left: 60px;
+    width: 368px;
+    height: 977px;
+  }
+
+  .catalog .layer._ball2 {
+    bottom: 110px;
+    left: -43px;
+    width: 231px;
+    height: 872px;
+  }
+
+  .catalog .layer._bg {
+    height: 948px;
+    background-size: cover;
+  }
+
+  .catalog .layer._kid-rabbit {
+    right: 360px;
+    bottom: 160px;
+    width: 418px;
+    height: 529px;
+  }
+
+  .catalog .layer._kid-rabbit .kid-rabbit-body {
+    width: 201px;
+    height: 380px;
+  }
+
+  .catalog .layer._kid-rabbit .kid-rabbit-ball1 {
+    top: 126px;
+    left: -10px;
+    width: 122px;
+    height: 120px;
+  }
+
+  .catalog .layer._kid-rabbit .kid-rabbit-ball2 {
+    top: 20px;
+    left: 136px;
+    width: 111px;
+    height: 143px;
+  }
+
+  .catalog .layer._kid-rabbit .kid-rabbit-ball3 {
+    top: 62px;
+    right: 19px;
+    width: 115px;
+    height: 137px;
+  }
+
+  .catalog .layer._kid-rabbit .kid-rabbit-eye._right {
+    right: 157px;
+    bottom: 115px;
+  }
+
+  .catalog .layer._kid-rabbit .kid-rabbit-toy {
+    bottom: 5px;
+    width: 97px;
+    height: 94px;
+  }
+
+  .catalog .layer._school-rabbit {
+    right: 90px;
+    bottom: 380px;
+    width: 206px;
+    height: 443px;
+  }
+
+  .catalog .layer._school-rabbit .main {
+    width: 206px;
+    height: 443px;
+  }
+
+  .catalog .layer._school-rabbit .ball {
+    top: -176px;
+    width: 168px;
+    height: 222px;
+  }
+
+  .catalog .layer._school-rabbit .arm-left {
+    bottom: 50px;
+    height: 85px;
+  }
+
+  .catalog .layer._school-rabbit .arm-right {
+    right: 92px;
+    bottom: 49px;
+    height: 80px;
+  }
+
+  .catalog .layer._school-rabbit .bag {
+    right: 57px;
+    bottom: -32px;
+    width: 96px;
+    height: 87px;
+  }
+
+  .catalog .layer._school-rabbit .eye-left {
+    bottom: 132px;
+  }
+
+  .catalog .layer._school-rabbit .eye-right {
+    right: 109px;
+    bottom: 153px;
+  }
+
+  .cart-button__text {
+    padding: 22px 21px;
+  }
+
+  .quant {
+    padding: 22px 25px;
+  }
+
+  .discount .layer {
+    background-size: contain;
+  }
+
+  .discount .layer._bubles {
+    top: -310px;
+    height: 681px;
+  }
+
+  .discount .layer.wedding-rabbit {
+    top: 8px;
+    width: 230px;
+    height: 332px;
+  }
+
+  .discount .layer.discount-sky1 {
+    top: 280px;
+    left: -113px;
+    width: 409px;
+    height: 298px;
+  }
+
+  .discount .layer.simple-rabbit {
+    top: 165px;
+    width: 187px;
+    height: 340px;
+  }
+
+  .discount .layer.discount-sky2 {
+    bottom: 4px;
+    left: -148px;
+    width: 550px;
+    height: 397px;
+  }
+
+  .discount .layer.discount-sky3 {
+    right: -140px;
+    bottom: 328px;
+    width: 519px;
+    height: 387px;
+  }
+
+  .discount .layer.lazy-rabbit {
+    left: 105px;
+    width: 287px;
+    height: 241px;
+  }
+
+  .discount .layer.lazy-rabbit .tie {
+    top: 143px;
+    left: 68px;
+  }
+
+  .discount .layer.lazy-rabbit .left-ear {
+    top: 28px;
+    left: -1px;
+    width: 69px;
+    height: 103px;
+  }
+
+  .discount .layer.lazy-rabbit .right-ear {
+    top: 2px;
+    left: 60px;
+    width: 67px;
+    height: 103px;
+  }
+
+  .discount__title h2 {
+    font-size: 4.375rem;
+  }
+
+  .reasons {
+    padding-bottom: 282px;
+  }
+
+  .reasons .layer {
+    background-size: contain;
+  }
+
+  .reasons .layer._ball1 {
+    top: -374px;
+    right: -108px;
+    width: 382px;
+    height: 1198px;
+  }
+
+  .reasons .layer._ball2 {
+    bottom: -671px;
+    width: 393px;
+    height: 927px;
+  }
+
+  .reasons__title {
+    max-width: 762px;
+  }
+
+  .reasons__title h2 {
+    font-size: 4.375rem;
+  }
+
+  .reasons__title .title-layer {
+    width: 885px;
+    height: 899px;
+  }
+
+  .custom__title {
+    max-width: 656px;
+  }
+
+  .custom__title h2 {
+    font-size: 4.375rem;
+  }
+
+  .custom .layer._bg {
+    height: 1038px;
+  }
+
+  .custom .birthday-rabbits {
+    width: 815px;
+    height: 678px;
+  }
+
+  .custom .birthday-rabbits ._first-rabbit,
+  .custom .birthday-rabbits ._first-rabbit ._body {
+    width: 238px;
+    height: 303px;
+  }
+
+  .custom .birthday-rabbits ._first-rabbit ._ear-right {
+    top: 3px;
+    width: 50px;
+    height: 128px;
+  }
+
+  .custom .birthday-rabbits ._first-rabbit ._ear-left {
+    top: 3px;
+    left: 65px;
+    width: 50px;
+    height: 121px;
+  }
+
+  .custom .birthday-rabbits ._first-rabbit ._hat {
+    top: 70px;
+    width: 37px;
+    height: 54px;
+  }
+
+  .custom .birthday-rabbits ._cake {
+    bottom: -4px;
+    width: 193px;
+    height: 380px;
+  }
+
+  .custom .birthday-rabbits ._second-rabbit,
+  .custom .birthday-rabbits ._second-rabbit .body {
+    width: 183px;
+    height: 389px;
+  }
+
+  .custom .birthday-rabbits .ball1 {
+    right: 249px;
+    width: 130px;
+    height: 423px;
+  }
+
+  .custom .birthday-rabbits .ball2 {
+    width: 242px;
+    height: 533px;
+  }
+
+  .custom .birthday-rabbits .ball3 {
+    width: 294px;
+    height: 395px;
+  }
+
+  .rabbits .flying-rabbit {
+    left: -206px;
+    width: 550px;
+    height: 1098px;
+  }
+
+  .rabbits .flying-rabbit .body {
+    width: 550px;
+    height: 1098px;
+  }
+
+  .rabbits .flying-rabbit .right-wing {
+    right: 130px;
+    bottom: 368px;
+    width: 121px;
+    height: 160px;
+  }
+
+  .rabbits .flying-rabbit .arm-heart {
+    right: 156px;
+    bottom: 231px;
+    width: 88px;
+    height: 139px;
+  }
+
+  .rabbits .flying-rabbit .ball1 {
+    width: 149px;
+    height: 209px;
+  }
+
+  .rabbits .flying-rabbit .ball2 {
+    top: 5px;
+    left: 137px;
+    width: 230px;
+    height: 485px;
+  }
+
+  .rabbits .flying-rabbit .ball3 {
+    top: 220px;
+    left: 273px;
+    width: 151px;
+    height: 269px;
+  }
+
+  .birthday-rabbit2 {
+    width: 800px;
+    height: 561px;
+  }
+
+  .birthday-rabbit2 .smart-rabbit {
+    width: 308px;
+    height: 430px;
+  }
+
+  .birthday-rabbit2 .gift-rabbit {
+    width: 222px;
+    height: 322px;
+  }
+
+  .birthday-rabbit2 .smart-ball1 {
+    top: 158px;
+    left: 20px;
+    width: 191px;
+    height: 273px;
+  }
+
+  .birthday-rabbit2 .smart-ball2 {
+    top: 92px;
+    left: 41px;
+    width: 172px;
+    height: 345px;
+  }
+
+  .birthday-rabbit2 .smart-ball3 {
+    top: 20px;
+    left: 326px;
+    width: 153px;
+    height: 401px;
+  }
+
+  .birthday-rabbit2 .smart-ball4 {
+    top: 127px;
+    right: 218px;
+    width: 92px;
+    height: 328px;
+  }
+
+  .birthday-rabbit2 .smart-ball5 {
+    top: 25px;
+    right: 5px;
+    width: 217px;
+    height: 419px;
+  }
+
+  .rabbit-with-baby {
+    width: 1022px;
+    height: 742px;
+  }
+
+  .rabbit-with-baby .rabbit-mama {
+    width: 328px;
+    height: 469px;
+  }
+
+  .rabbit-with-baby .baby-rabbit {
+    width: 387px;
+    height: 302px;
+  }
+
+  .rabbit-with-baby .baby-rabbit ._toy {
+    top: 100px;
+    left: 93px;
+  }
+
+  .rabbit-with-baby .baby-rabbit ._ear-left {
+    width: 35px;
+    height: 78px;
+  }
+
+  .rabbit-with-baby .baby-rabbit ._ear-right {
+    left: 112px;
+    height: 83px;
+  }
+
+  .rabbit-with-baby .ball1 {
+    left: 16px;
+    width: 129px;
+    height: 290px;
+  }
+
+  .rabbit-with-baby .ball2 {
+    width: 97px;
+    height: 221px;
+  }
+
+  .rabbit-with-baby ._ball3 {
+    top: 65px;
+    width: 127px;
+    height: 471px;
+  }
+
+  .rabbit-with-baby .ball4 {
+    top: 101px;
+    right: 95px;
+    width: 212px;
+    height: 417px;
+  }
+
+  .rabbit-with-baby .ball5 {
+    top: 269px;
+    right: 60px;
+    width: 202px;
+    height: 251px;
+  }
+
+  .contacts-us .layer {
+    background-size: contain;
+  }
+
+  .contacts-us .layer._ball1 {
+    top: -168px;
+    width: 359px;
+    height: 880px;
+  }
+
+  .contacts-us .layer._ball2 {
+    right: -84px;
+    width: 309px;
+    height: 590px;
+  }
+
+  .contacts-us__top img {
+    width: 80%;
+  }
+
+  .contacts-us__top .thief {
+    top: 133px;
+    right: 367px;
+    width: 210px;
+    height: 254px;
+  }
+
+  .contacts-us__top .tail {
+    top: 136px;
+    right: 447px;
+  }
+
+  .contacts-us__top .discount-board {
+    top: -13px;
+    right: 547px;
+    width: 271px;
+    height: 333px;
+  }
+}
+
 @media (max-width:1366px) {
   .site-container {
     padding: 0 32px;

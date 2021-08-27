@@ -137,4 +137,38 @@
 			}
 		}
 	}
+
+	@include _1680 {
+		padding-bottom: 282px;
+
+		.layer {
+			background-size: contain;
+
+			&._ball1 {
+				top: -374px;
+				right: -108px;
+				width: 382px;
+				height: 1198px;
+			}
+
+			&._ball2 {
+				bottom: -671px;
+				width: 393px;
+				height: 927px;
+			}
+		}
+
+		&__title {
+			max-width: 762px;
+
+			h2 {
+				font-size: rem(70px);
+			}
+
+			.title-layer {
+				width: 885px;
+				height: 899px;
+			}
+		}
+	}
 }

@@ -291,4 +291,79 @@
 			background: linear-gradient(13deg, rgba(120, 95, 225, 1) 5%, rgba(132, 98, 230, 1) 12%, rgba(143, 103, 235, 1) 18%, rgba(157, 123, 238, 1) 81%, rgba(178, 153, 242, 1) 88%, rgba(202, 184, 246, 1) 93%);
 		}
 	}
+
+	@include _1680 {
+		.layer {
+			background-size: contain;
+
+			&._bubles {
+				top: -310px;
+				height: 681px;
+			}
+
+			&.wedding-rabbit {
+				top: 8px;
+				width: 230px;
+				height: 332px;
+			}
+
+			&.discount-sky1 {
+				top: 280px;
+				left: -113px;
+				width: 409px;
+				height: 298px;
+			}
+
+			&.simple-rabbit {
+				top: 165px;
+				width: 187px;
+				height: 340px;
+			}
+
+			&.discount-sky2 {
+				bottom: 4px;
+				left: -148px;
+				width: 550px;
+				height: 397px;
+			}
+
+			&.discount-sky3 {
+				right: -140px;
+				bottom: 328px;
+				width: 519px;
+				height: 387px;
+			}
+
+			&.lazy-rabbit {
+				left: 105px;
+				width: 287px;
+				height: 241px;
+
+				.tie {
+					top: 143px;
+					left: 68px;
+				}
+
+				.left-ear {
+					top: 28px;
+					left: -1px;
+					width: 69px;
+					height: 103px;
+				}
+
+				.right-ear {
+					top: 2px;
+					left: 60px;
+					width: 67px;
+					height: 103px;
+				}
+			}
+		}
+
+		&__title {
+			h2 {
+				font-size: rem(70px);
+			}
+		}
+	}
 }

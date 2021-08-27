@@ -602,6 +602,164 @@
 		font-family: $second-font;
 		line-height: 1.23;
 	}
+
+	@include _1680 {
+		padding-bottom: 495px;
+
+		&__title {
+			max-width: 603px;
+
+			h2 {
+				font-size: rem(70px);
+			}
+		}
+
+		&__list {
+			margin-left: 0;
+		}
+
+		&__col {
+			&:nth-child(1) {
+				width: 289px;
+			}
+
+			&:nth-child(2) {
+				width: calc(100% - 352px);
+			}
+		}
+
+		&__product {
+			height: 482px;
+
+			img {
+				width: 90%;
+			}
+
+			&:hover {
+				.catalog__product-info {
+					transform: translateY(-84px);
+				}
+			}
+		}
+
+		&__text {
+			font-size: 2.5rem;
+		}
+
+		.layer {
+			background-size: contain;
+
+			&._ball1 {
+				bottom: 120px;
+				left: 60px;
+				width: 368px;
+				height: 977px;
+			}
+
+			&._ball2 {
+				bottom: 110px;
+				left: -43px;
+				width: 231px;
+				height: 872px;
+			}
+
+			&._bg {
+				height: 948px;
+				background-size: cover;
+			}
+
+			&._kid-rabbit {
+				right: 360px;
+				bottom: 160px;
+				width: 418px;
+				height: 529px;
+
+				.kid-rabbit-body {
+					width: 201px;
+					height: 380px;
+				}
+
+				.kid-rabbit-ball1 {
+					top: 126px;
+					left: -10px;
+					width: 122px;
+					height: 120px;
+				}
+
+				.kid-rabbit-ball2 {
+					top: 20px;
+					left: 136px;
+					width: 111px;
+					height: 143px;
+				}
+
+				.kid-rabbit-ball3 {
+					top: 62px;
+					right: 19px;
+					width: 115px;
+					height: 137px;
+				}
+
+				.kid-rabbit-eye {
+					&._right {
+						right: 157px;
+						bottom: 115px;
+					}
+				}
+
+				.kid-rabbit-toy {
+					bottom: 5px;
+					width: 97px;
+					height: 94px;
+				}
+			}
+
+			&._school-rabbit {
+				right: 90px;
+				bottom: 380px;
+				width: 206px;
+				height: 443px;
+
+				.main {
+					width: 206px;
+					height: 443px;
+				}
+
+				.ball {
+					top: -176px;
+					width: 168px;
+					height: 222px;
+				}
+
+				.arm-left {
+					bottom: 50px;
+					height: 85px;
+				}
+
+				.arm-right {
+					right: 92px;
+					bottom: 49px;
+					height: 80px;
+				}
+
+				.bag {
+					right: 57px;
+					bottom: -32px;
+					width: 96px;
+					height: 87px;
+				}
+
+				.eye-left {
+					bottom: 132px;
+				}
+
+				.eye-right {
+					right: 109px;
+					bottom: 153px;
+				}
+			}
+		}
+	}
 }
 
 .cart-button {
@@ -622,6 +780,12 @@
 	&._disabled {
 		opacity: 0.5 !important;
 		pointer-events: none;
+	}
+
+	@include _1680 {
+		&__text {
+			padding: 22px 21px;
+		}
 	}
 }
 
@@ -674,6 +838,10 @@
 		font-size: 23px;
 		cursor: pointer;
 		user-select: none;
+	}
+
+	@include _1680 {
+		padding: 22px 25px;
 	}
 }
 
