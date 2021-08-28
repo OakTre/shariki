@@ -33,6 +33,10 @@
 		img {
 			max-width: 150px;
 			margin-right: 79px;
+
+			@include _1440 {
+				margin-right: 30px;
+			}
 		}
 
 		p {
@@ -59,6 +63,10 @@
 		margin-right: 80px;
 		color: $color-white;
 		font-size: rem(14px);
+
+		@include _1590 {
+			display: none;
+		}
 	}
 
 	&__nav {

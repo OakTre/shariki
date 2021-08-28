@@ -414,4 +414,75 @@
 			}
 		}
 	}
+
+	@include _1536 {
+		&__title {
+			margin-bottom: 70px;
+		}
+
+		.layer {
+			&._ball2 {
+				top: 311px;
+				right: -24px;
+				width: 229px;
+				height: 400px;
+			}
+		}
+	}
+
+	@include _1440 {
+		&__title {
+			h2 {
+				font-size: rem(56px);
+
+				span {
+					font-size: rem(60px);
+				}
+			}
+		}
+
+		.layer {
+			&._ball2 {
+				display: none;
+			}
+		}
+
+		&__top {
+			img {
+				right: -130px;
+			}
+
+			.thief {
+				top: 145px;
+				right: 228px;
+			}
+
+			.tail {
+				top: 146px;
+				right: 308px;
+			}
+
+			.discount-board {
+				right: 397px;
+			}
+
+			ul {
+				transform: translateX(50px);
+			}
+		}
+
+		&__warninig {
+			transform: translateX(50px);
+		}
+
+		&__promocode {
+			width: 407px;
+			padding: 9px 53px;
+
+			.watup {
+				width: 107px;
+				height: 238px;
+			}
+		}
+	}
 }

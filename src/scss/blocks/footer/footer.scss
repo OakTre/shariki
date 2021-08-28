@@ -201,4 +201,16 @@
 			margin-right: 48px;
 		}
 	}
+
+	@include _1440 {
+		&__legend {
+			font-size: 1.4rem;
+		}
+
+		&__right {
+			.phone-content {
+				font-size: 1.3rem !important;
+			}
+		}
+	}
 }

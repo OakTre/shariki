@@ -556,6 +556,185 @@
 			}
 		}
 	}
+
+	@include _1536 {
+		padding-top: 152px;
+
+		.layer {
+			&._skyTinny {
+				display: none;
+			}
+
+			&._ball3 {
+				right: 490px;
+			}
+
+			&._ball4 {
+				right: 286px;
+			}
+		}
+	}
+
+	@include _1440 {
+		padding-top: 162px;
+
+		&::before {
+			height: 54px;
+		}
+
+		&__container {
+			max-width: 772px;
+
+			h1 {
+				font-size: 4rem;
+
+				span {
+					span {
+						&:nth-of-type(2) {
+							padding-left: 173px;
+						}
+					}
+				}
+			}
+
+			p {
+				padding-left: 354px;
+			}
+		}
+
+		&__button {
+			margin-left: 355px;
+		}
+
+		.layer {
+			&._ball2,
+			&._ball4,
+			&._sky3 {
+				display: none;
+			}
+
+			&._ball1 {
+				left: 120px;
+			}
+
+			&._ball3 {
+				right: 310px;
+			}
+
+			&._rabbit {
+				bottom: -120px;
+				left: 390px;
+			}
+
+			&._rabbit-small {
+				right: 200px;
+				bottom: 170px;
+			}
+		}
+	}
+
+	@include _1366 {
+		.layer {
+			&._sky1 {
+				top: 61px;
+				width: 65px;
+				height: 290px;
+			}
+
+			&._sky4 {
+				width: 140px;
+				height: 140px;
+			}
+
+			&._sky2 {
+				width: 129px;
+				height: 129px;
+			}
+
+			&._ball1 {
+				top: 307px;
+				width: 222px;
+				height: 494px;
+			}
+
+			&._ball3 {
+				top: 204px;
+				width: 166px;
+				height: 353px;
+			}
+
+			&._rabbit-small {
+				right: 150px;
+				bottom: 200px;
+				width: 92px;
+				height: 249px;
+			}
+
+			&._sky6 {
+				right: 30px;
+				width: 102px;
+				height: 102px;
+			}
+
+			&._sky7 {
+				width: 38px;
+				height: 120px;
+			}
+
+			&._sky8 {
+				width: 92px;
+				height: 122px;
+			}
+
+			&._rabbit {
+				left: 320px;
+
+				.rabbit,
+				.rabbit-ball {
+					width: 181px;
+					height: 429px;
+				}
+
+				.rabbit-ear-left {
+					top: 0.3px;
+					right: 45px;
+					width: 37px;
+					height: 52px;
+				}
+
+				.rabbit-ear-right {
+					top: 19px;
+					right: 27px;
+					width: 37px;
+					height: 52px;
+				}
+
+				.rabbit-leg {
+					top: 65px;
+					left: 75px;
+					width: 24px;
+					height: 47px;
+				}
+
+				.rabit-eye {
+					.dot {
+						width: 8px;
+						height: 8px;
+					}
+
+					&._left {
+						top: 47px;
+						left: 99px;
+					}
+
+					&._right {
+						top: 74px;
+						right: 48px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @keyframes levitate {

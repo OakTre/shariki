@@ -366,4 +366,125 @@
 			}
 		}
 	}
+
+	@include _1536 {
+		padding-bottom: 146px;
+
+		&__content {
+			padding: 43px 58px 55px;
+		}
+
+		.layer {
+			&.discount-sky1 {
+				left: -143px;
+				width: 369px;
+				height: 268px;
+			}
+
+			&.discount-sky2 {
+				bottom: 64px;
+				left: -168px;
+				width: 490px;
+				height: 347px;
+			}
+
+			&.discount-sky3 {
+				right: -141px;
+				bottom: 488px;
+				width: 379px;
+				height: 287px;
+			}
+
+			&.wedding-rabbit {
+				top: 58px;
+				left: 37px;
+				width: 180px;
+				height: 272px;
+			}
+
+			&.simple-rabbit {
+				top: 185px;
+				width: 137px;
+				height: 270px;
+			}
+
+			&.lazy-rabbit {
+				bottom: 276px;
+				left: 65px;
+				width: 257px;
+				height: 211px;
+
+				.tie {
+					top: 123px;
+					left: 64px;
+				}
+
+				.left-ear {
+					top: 21px;
+					left: 3px;
+					width: 59px;
+					height: 93px;
+				}
+
+				.right-ear {
+					top: 6px;
+					left: 60px;
+					width: 57px;
+					height: 83px;
+				}
+			}
+		}
+	}
+
+	@include _1440 {
+		&__title {
+			max-width: 558px;
+
+			h2 {
+				font-size: rem(56px);
+			}
+		}
+
+		&__container {
+			max-width: 944px;
+		}
+
+		.layer {
+			&.discount-sky3 {
+				bottom: 188px;
+			}
+
+			&.simple-rabbit {
+				top: 435px;
+			}
+
+			&.lazy-rabbit {
+				left: 35px;
+			}
+
+			&.discount-sky1 {
+				top: 260px;
+				left: -93px;
+				width: 349px;
+				height: 238px;
+			}
+
+			&._bubles {
+				top: -270px;
+			}
+		}
+	}
+
+	@include _1366 {
+		.layer {
+			&.discount-sky1,
+			&.wedding-rabbit {
+				display: none;
+			}
+		}
+
+		&__title {
+			margin-bottom: 54px;
+		}
+	}
 }

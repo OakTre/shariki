@@ -760,6 +760,203 @@
 			}
 		}
 	}
+
+	@include _1590 {
+		&__product-button {
+			max-width: 283px;
+		}
+
+		.layer {
+			&._ball2 {
+				display: none;
+			}
+
+			&._ball1 {
+				left: -70px;
+			}
+
+			&._school-rabbit {
+				right: 0;
+			}
+
+			&._kid-rabbit {
+				right: 240px;
+			}
+		}
+	}
+
+	@include _1440 {
+		&__title {
+			max-width: 483px;
+
+			h2 {
+				font-size: rem(56px);
+			}
+		}
+
+		&__product {
+			height: 402px;
+
+			&-button {
+				justify-content: center;
+				max-width: 94%;
+			}
+
+			&-legend {
+				margin-bottom: 10px;
+			}
+		}
+
+		&__text,
+		&__link {
+			transform: translateX(-120px);
+		}
+
+		.layer {
+			&._ball1 {
+				bottom: 10px;
+			}
+		}
+	}
+
+	@include _1366 {
+		padding-bottom: 435px;
+
+		&__item {
+			padding: 9px 15px 9px 18px;
+		}
+
+		&__list {
+			padding: 20px 0 20px 12px;
+		}
+
+		&__col {
+			&:nth-child(2) {
+				width: calc(100% - 332px);
+			}
+		}
+
+		&__products {
+			gap: 25px;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		.layer {
+			&._bg {
+				height: 808px;
+			}
+
+			&._ball1 {
+				bottom: 60px;
+				width: 318px;
+				height: 847px;
+			}
+
+			&._school-rabbit {
+				width: 186px;
+				height: 423px;
+
+				.main {
+					width: 186px;
+					height: 423px;
+				}
+
+				.ball {
+					top: -100px;
+					left: 40px;
+					width: 128px;
+					height: 162px;
+				}
+
+				.arm-right {
+					right: 78px;
+					bottom: 48px;
+					height: 70px;
+				}
+
+				.arm-left {
+					bottom: 43px;
+					left: 11px;
+					height: 74px;
+				}
+
+				.bag {
+					right: 57px;
+					bottom: -26px;
+					width: 70px;
+					height: 77px;
+				}
+
+				.eye-left {
+					bottom: 121px;
+				}
+
+				.eye-right {
+					right: 98px;
+					bottom: 138px;
+				}
+			}
+
+			&._kid-rabbit {
+				width: 388px;
+				height: 489px;
+
+				.kid-rabbit-body {
+					width: 181px;
+					height: 330px;
+				}
+
+				.kid-rabbit-toy {
+					right: 92px;
+					bottom: 20px;
+					width: 77px;
+					height: 64px;
+				}
+
+				.kid-rabbit-eye {
+					width: 16px;
+					height: 16px;
+
+					&._right {
+						right: 149px;
+						bottom: 98px;
+
+						._right {
+							width: 13px;
+							height: 13px;
+						}
+					}
+
+					&._left {
+						bottom: 98px;
+						left: 148px;
+
+						._left {
+							width: 13px;
+							height: 13px;
+						}
+					}
+				}
+
+				.kid-rabbit-ball1 {
+					top: 121px;
+					left: -14px;
+				}
+
+				.kid-rabbit-ball2 {
+					top: 24px;
+					left: 120px;
+				}
+
+				.kid-rabbit-ball3 {
+					right: 13px;
+				}
+			}
+		}
+	}
 }
 
 .cart-button {
@@ -785,6 +982,12 @@
 	@include _1680 {
 		&__text {
 			padding: 22px 21px;
+		}
+	}
+
+	@include _1366 {
+		&__text {
+			font-size: 0.9rem;
 		}
 	}
 }
@@ -842,6 +1045,11 @@
 
 	@include _1680 {
 		padding: 22px 25px;
+	}
+
+	@include _1440 {
+		width: 130px;
+		padding: 22px 15px;
 	}
 }
 
