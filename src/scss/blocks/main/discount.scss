@@ -487,4 +487,130 @@
 			margin-bottom: 54px;
 		}
 	}
+
+	@include _1280 {
+		&__title {
+			margin-bottom: 40px;
+
+			h2 {
+				font-size: rem(50px);
+			}
+		}
+
+		&__container {
+			max-width: 834px;
+		}
+
+		&__legend {
+			max-width: 176px;
+			font-size: 1.6rem;
+
+			span {
+				display: block;
+				font-size: 2rem;
+			}
+		}
+
+		&__stock {
+			font-size: 1rem;
+		}
+
+		&__content {
+			padding: 33px 38px 45px;
+		}
+
+		&__pagination {
+			bottom: 33px !important;
+		}
+
+		.layer {
+			&.simple-rabbit {
+				top: 305px;
+			}
+
+			&.lazy-rabbit {
+				bottom: 286px;
+			}
+		}
+	}
+
+	@include _1200 {
+		.layer {
+			&.lazy-rabbit,
+			&.discount-sky2 {
+				display: none;
+			}
+
+			&.wedding-rabbit,
+			&.discount-sky1 {
+				display: block;
+			}
+
+			&.wedding-rabbit {
+				top: auto;
+				bottom: 170px;
+				left: -3px;
+				width: 160px;
+				height: 242px;
+			}
+
+			&.discount-sky1 {
+				top: auto;
+				bottom: 40px;
+				width: 299px;
+				height: 188px;
+			}
+
+			&.discount-sky3 {
+				width: 359px;
+				height: 257px;
+			}
+
+			&.simple-rabbit {
+				top: 345px;
+				width: 117px;
+				height: 220px;
+			}
+		}
+	}
+
+	@include _992 {
+		&__title {
+			max-width: 393px;
+
+			h2 {
+				font-size: rem(40px);
+			}
+		}
+
+		&__container {
+			z-index: 18;
+		}
+
+		.layer {
+			&.wedding-rabbit {
+				z-index: 19;
+			}
+
+			&.discount-sky1 {
+				z-index: 20;
+			}
+
+			&.discount-sky3 {
+				bottom: 98px;
+			}
+
+			&.simple-rabbit {
+				top: 435px;
+				z-index: 19;
+			}
+		}
+
+		&__link {
+			span {
+				padding: 24px 38px;
+				font-size: 1rem;
+			}
+		}
+	}
 }

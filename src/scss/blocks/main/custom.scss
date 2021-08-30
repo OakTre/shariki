@@ -465,6 +465,140 @@
 			}
 		}
 	}
+
+	@include _1280 {
+		&__title {
+			h2 {
+				font-size: rem(50px);
+			}
+		}
+
+		.layer {
+			&._bg {
+				height: 748px;
+			}
+		}
+
+		&__container {
+			padding-left: 63px;
+
+			p {
+				margin-bottom: 20px;
+				font-size: 1.2rem;
+			}
+		}
+
+		.birthday-rabbits {
+			right: -130px;
+			bottom: 20px;
+		}
+	}
+
+	@include _1200 {
+		&__container {
+			padding-left: 0;
+		}
+
+		.layer {
+			&._bg {
+				height: 698px;
+			}
+		}
+
+		.birthday-rabbits {
+			right: -190px;
+			bottom: -10px;
+		}
+	}
+
+	@include _992 {
+		&__title {
+			max-width: 476px;
+
+			h2 {
+				font-size: rem(40px);
+			}
+		}
+
+		.layer {
+			&._bg {
+				height: 658px;
+			}
+		}
+
+		.birthday-rabbits {
+			right: 0;
+			width: 465px;
+			height: 368px;
+
+			._first-rabbit {
+				width: 188px;
+				height: 213px;
+
+				._body {
+					width: 188px;
+					height: 213px;
+				}
+
+				._ear-left {
+					width: 30px;
+					height: 91px;
+				}
+
+				._ear-right {
+					right: 59px;
+					width: 30px;
+					height: 97px;
+				}
+
+				._hat {
+					top: 37px;
+				}
+			}
+
+			._cake {
+				left: 146px;
+				width: 133px;
+				height: 240px;
+			}
+
+			._second-rabbit {
+				right: 70px;
+				width: 123px;
+				height: 249px;
+
+				.body {
+					width: 123px;
+					height: 249px;
+				}
+
+				._hat {
+					top: 19px;
+				}
+			}
+
+			.ball3 {
+				top: 55px;
+				right: -80px;
+				width: 184px;
+				height: 235px;
+			}
+
+			.ball2 {
+				top: -33px;
+				right: -42px;
+				width: 142px;
+				height: 333px;
+			}
+
+			.ball1 {
+				top: 42px;
+				right: 49px;
+				width: 80px;
+				height: 243px;
+			}
+		}
+	}
 }
 
 .rabbits {
@@ -693,6 +827,54 @@
 				left: 237px;
 				width: 121px;
 				height: 219px;
+			}
+		}
+	}
+
+	@include _992 {
+		.flying-rabbit {
+			left: -140px;
+			width: 360px;
+			height: 648px;
+
+			.body {
+				width: 360px;
+				height: 648px;
+			}
+
+			.right-wing {
+				right: 82px;
+				bottom: 205px;
+				width: 71px;
+				height: 100px;
+			}
+
+			.arm-heart {
+				right: 104px;
+				bottom: 118px;
+				width: 68px;
+				height: 99px;
+			}
+
+			.ball1 {
+				top: 130px;
+				left: 89px;
+				width: 99px;
+				height: 169px;
+			}
+
+			.ball2 {
+				top: 0;
+				left: 84px;
+				width: 140px;
+				height: 295px;
+			}
+
+			.ball3 {
+				top: 120px;
+				left: 167px;
+				width: 91px;
+				height: 179px;
 			}
 		}
 	}
@@ -940,6 +1122,82 @@
 			right: 75px;
 			width: 147px;
 			height: 289px;
+		}
+	}
+
+	@include _1200 {
+		width: 680px;
+		height: 451px;
+
+		.smart-ball1 {
+			top: 132px;
+		}
+
+		.smart-ball2 {
+			top: 81px;
+		}
+
+		.smart-ball3 {
+			top: 44px;
+		}
+
+		.smart-ball4 {
+			top: 115px;
+		}
+
+		.smart-ball5 {
+			top: 80px;
+		}
+	}
+
+	@include _992 {
+		width: 530px;
+		height: 411px;
+
+		.smart-rabbit {
+			left: 80px;
+			width: 188px;
+			height: 250px;
+		}
+
+		.gift-rabbit {
+			right: 140px;
+			width: 145px;
+			height: 212px;
+		}
+
+		.smart-ball1 {
+			left: -9px;
+			width: 131px;
+			height: 183px;
+		}
+
+		.smart-ball2 {
+			top: 102px;
+			left: 2px;
+			width: 122px;
+			height: 225px;
+		}
+
+		.smart-ball3 {
+			top: 109px;
+			left: 313px;
+			width: 113px;
+			height: 221px;
+		}
+
+		.smart-ball4 {
+			top: 139px;
+			right: 178px;
+			width: 72px;
+			height: 188px;
+		}
+
+		.smart-ball5 {
+			top: 130px;
+			right: 75px;
+			width: 107px;
+			height: 199px;
 		}
 	}
 }
@@ -1261,6 +1519,40 @@
 			right: 100px;
 			width: 172px;
 			height: 211px;
+		}
+	}
+
+	@include _1200 {
+		width: 762px;
+		height: 542px;
+
+		.rabbit-mama {
+			right: 151px;
+			width: 218px;
+			height: 329px;
+		}
+
+		.ball1 {
+			top: 214px;
+		}
+
+		.ball2 {
+			top: 236px;
+		}
+
+		._ball3 {
+			top: 68px;
+			right: 140px;
+		}
+
+		.ball4 {
+			top: 75px;
+			right: 26px;
+		}
+
+		.ball5 {
+			top: 182px;
+			right: -10px;
 		}
 	}
 }

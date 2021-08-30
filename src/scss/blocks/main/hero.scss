@@ -735,6 +735,138 @@
 			}
 		}
 	}
+
+	@include _1280 {
+		padding-top: 132px;
+
+		&__container {
+			max-width: 672px;
+
+			h1 {
+				font-size: rem(54px);
+			}
+
+			p {
+				padding-left: 255px;
+				font-size: 1.15rem;
+			}
+		}
+
+		&__button {
+			margin-left: 254px;
+		}
+
+		.layer {
+			&._sky9 {
+				top: 510px;
+			}
+
+			&._sky5 {
+				top: 507px;
+			}
+		}
+	}
+
+	@include _1200 {
+		&__container {
+			text-align: center;
+
+			h1 {
+				span {
+					span {
+						&:nth-of-type(1) {
+							padding: 0;
+						}
+
+						&:nth-of-type(2) {
+							padding: 0;
+						}
+					}
+				}
+			}
+
+			p {
+				padding-left: 0;
+			}
+		}
+
+		&__button {
+			margin-left: 0;
+		}
+
+		.layer {
+			&._sky2 {
+				width: 109px;
+				height: 99px;
+			}
+
+			&._sky4 {
+				width: 120px;
+				height: 120px;
+			}
+
+			&._sky5 {
+				left: -4px;
+				width: 141px;
+				height: 138px;
+			}
+
+			&._sky9 {
+				width: 170px;
+				height: 129px;
+			}
+
+			&._ball1 {
+				top: 237px;
+				left: 70px;
+				width: 172px;
+				height: 424px;
+			}
+
+			&._ball3 {
+				top: 164px;
+				right: 200px;
+				width: 146px;
+				height: 323px;
+			}
+
+			&._rabbit {
+				bottom: -190px;
+				left: 170px;
+			}
+
+			&._rabbit-small {
+				bottom: 120px;
+			}
+
+			&._hero-mountains {
+				height: 350px;
+			}
+
+			&._light-left {
+				width: 483px;
+				height: 428px;
+			}
+
+			&._light-right {
+				width: 437px;
+				height: 363px;
+			}
+		}
+	}
+
+	@include _992 {
+		&__container {
+			h1 {
+				font-size: rem(44px);
+			}
+
+			p {
+				margin-bottom: 38px;
+				font-size: 1rem;
+			}
+		}
+	}
 }
 
 @keyframes levitate {

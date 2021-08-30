@@ -530,4 +530,147 @@
 			}
 		}
 	}
+
+	@include _1280 {
+		&__title {
+			h2 {
+				font-size: rem(50px);
+
+				span {
+					font-size: rem(54px);
+				}
+			}
+		}
+
+		&__top {
+			img {
+				width: 75%;
+			}
+		}
+
+		&__bottom {
+			.layer {
+				background-size: contain;
+
+				.lazy {
+					background-size: contain;
+				}
+
+				&.left-rabbit {
+					bottom: -69px;
+					width: 174px;
+					height: 283px;
+				}
+
+				&.right-rabbit {
+					width: 227px;
+					height: 201px;
+
+					.tie {
+						top: 118px;
+						left: 114px;
+						width: 59px;
+						height: 48px;
+					}
+				}
+
+				.ear-left {
+					width: 40px;
+					height: 120px;
+				}
+
+				.ear-right {
+					width: 39px;
+					height: 123px;
+				}
+
+				.glasses {
+					top: 103px;
+					width: 152px;
+					height: 54px;
+				}
+
+				.nose {
+					top: 115px;
+					left: 49px;
+					width: 57px;
+					height: 38px;
+				}
+
+				.right-hand {
+					top: 151px;
+					left: 19px;
+					width: 71px;
+					height: 56px;
+				}
+			}
+		}
+
+		&__promocode {
+			.watup {
+				top: -29px;
+				width: 87px;
+				height: 218px;
+			}
+		}
+	}
+
+	@include _1200 {
+		.layer {
+			&._ball1 {
+				top: -108px;
+				left: -71px;
+				width: 279px;
+				height: 640px;
+			}
+		}
+
+		&__top {
+			ul {
+				transform: none;
+			}
+
+			.thief {
+				top: 112px;
+				right: 139px;
+				width: 150px;
+				height: 174px;
+			}
+
+			.tail {
+				top: 108px;
+				right: 197px;
+				width: 46px;
+				height: 60px;
+			}
+
+			.discount-board {
+				top: 20px;
+				right: 260px;
+				width: 181px;
+				height: 213px;
+			}
+		}
+
+		&__warninig {
+			transform: none;
+		}
+
+		&__bottom {
+			.layer {
+				&.left-rabbit {
+					left: 3px;
+				}
+
+				&.right-rabbit {
+					right: 10px;
+					bottom: 0;
+				}
+			}
+		}
+
+		&__promocode {
+			width: 337px;
+		}
+	}
 }

@@ -64,8 +64,8 @@
 		position: relative;
 		z-index: 25;
 		display: grid;
+		grid-gap: 40px;
 		grid-template-columns: repeat(12, 1fr);
-		gap: 40px;
 	}
 
 	&__item {
@@ -260,6 +260,76 @@
 
 			&._bg {
 				height: 788px;
+			}
+		}
+	}
+
+	@include _1280 {
+		padding-bottom: 202px;
+
+		&__title {
+			margin-bottom: 56px;
+
+			h2 {
+				font-size: rem(50px);
+			}
+		}
+	}
+
+	@include _1200 {
+		&__item {
+			span {
+				margin-top: 20px;
+			}
+		}
+
+		&__container {
+			grid-gap: 25px;
+		}
+	}
+
+	@include _992 {
+		&__title {
+			max-width: 452px;
+
+			.title-layer {
+				top: -140px;
+				left: -10px;
+				width: 665px;
+				height: 619px;
+			}
+
+			h2 {
+				font-size: rem(40px);
+			}
+		}
+
+		&__item {
+			min-height: 224px;
+			padding: 27px 28px;
+
+			span {
+				font-size: 1rem;
+			}
+
+			p {
+				font-size: 0.9rem;
+			}
+		}
+
+		.layer {
+			&._ball1 {
+				top: -44px;
+				right: -98px;
+				width: 232px;
+				height: 598px;
+			}
+
+			&._ball2 {
+				bottom: -361px;
+				left: -60px;
+				width: 193px;
+				height: 487px;
 			}
 		}
 	}

@@ -237,4 +237,26 @@
 			height: 817px;
 		}
 	}
+
+	@include _1280 {
+		&__container {
+			flex-wrap: wrap;
+		}
+
+		&__content {
+			justify-content: space-between;
+			order: 1;
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 32px;
+		}
+
+		&__left {
+			order: 2;
+		}
+
+		&__right {
+			order: 3;
+		}
+	}
 }
