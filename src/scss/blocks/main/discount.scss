@@ -613,4 +613,70 @@
 			}
 		}
 	}
+
+	@include _769 {
+		padding-bottom: 86px;
+
+		.layer {
+			&.wedding-rabbit,
+			&.discount-sky1,
+			&.discount-sky3,
+			&.simple-rabbit {
+				display: none;
+			}
+		}
+	}
+
+	@include _740 {
+		.layer {
+			&._bubles {
+				top: -54px;
+				height: 251px;
+			}
+		}
+
+		&__legend {
+			font-size: 1.4rem;
+
+			span {
+				font-size: 1.6rem;
+			}
+		}
+
+		&__content {
+			padding: 23px 28px 35px;
+
+			&::before {
+				top: 10px;
+				right: 10px;
+				bottom: 10px;
+				left: 10px;
+			}
+		}
+
+		&__pagination {
+			bottom: 19px !important;
+		}
+	}
+
+	@include _540 {
+		&__title {
+			h2 {
+				font-size: rem(36px);
+			}
+		}
+
+		&__button {
+			span {
+				font-size: 0.9rem;
+			}
+		}
+
+		.layer {
+			&._bubles {
+				top: -74px;
+				height: 211px;
+			}
+		}
+	}
 }

@@ -599,6 +599,61 @@
 			}
 		}
 	}
+
+	@include _769 {
+		margin-bottom: 114px;
+
+		.layer {
+			&._bg {
+				height: 608px;
+			}
+		}
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		.birthday-rabbits {
+			right: -17px;
+			bottom: -120px;
+		}
+	}
+
+	@include _740 {
+		margin-bottom: 184px;
+
+		&__container {
+			padding-bottom: 190px;
+		}
+
+		.birthday-rabbits {
+			right: auto;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+
+		.layer {
+			&._bg {
+				height: 818px;
+			}
+		}
+	}
+
+	@include _540 {
+		margin-bottom: 204px;
+
+		&__title {
+			h2 {
+				font-size: rem(36px);
+			}
+		}
+
+		.layer {
+			&._bg {
+				height: 788px;
+			}
+		}
+	}
 }
 
 .rabbits {
@@ -877,6 +932,25 @@
 				height: 179px;
 			}
 		}
+	}
+
+	@include _769 {
+		margin-bottom: 81px;
+	}
+
+	@include _740 {
+		margin-bottom: 31px;
+		padding-bottom: 150px;
+
+		.flying-rabbit {
+			top: auto;
+			bottom: -390px;
+			transform: none;
+		}
+	}
+
+	@include _540 {
+		display: none;
 	}
 }
 
@@ -1199,6 +1273,14 @@
 			width: 107px;
 			height: 199px;
 		}
+	}
+
+	@include _769 {
+		margin-bottom: 40px;
+	}
+
+	@include _740 {
+		transform: translateX(160px);
 	}
 }
 
@@ -1554,5 +1636,82 @@
 			top: 182px;
 			right: -10px;
 		}
+	}
+
+	@include _992 {
+		width: 651px;
+		height: 397px;
+
+		.baby-rabbit {
+			width: 227px;
+			height: 182px;
+
+			._ear-right {
+				top: 2px;
+				left: 63px;
+				width: 26px;
+				height: 50px;
+			}
+
+			._ear-left {
+				top: 2px;
+				left: 42px;
+				width: 25px;
+				height: 48px;
+			}
+
+			._toy {
+				top: 61px;
+				left: 55px;
+				width: 18px;
+				height: 13px;
+			}
+		}
+
+		.rabbit-mama {
+			width: 178px;
+			height: 261px;
+		}
+
+		.ball1 {
+			top: 145px;
+			left: 67px;
+			width: 79px;
+			height: 160px;
+		}
+
+		.ball2 {
+			top: 143px;
+			left: 120px;
+			width: 77px;
+			height: 161px;
+		}
+
+		._ball3 {
+			top: 30px;
+			height: 237px;
+		}
+
+		.ball4 {
+			top: 11px;
+			right: 36px;
+			width: 172px;
+			height: 254px;
+		}
+
+		.ball5 {
+			top: 106px;
+			right: 5px;
+			width: 172px;
+			height: 171px;
+		}
+	}
+
+	@include _769 {
+		margin-left: 120px;
+	}
+
+	@include _740 {
+		display: none;
 	}
 }

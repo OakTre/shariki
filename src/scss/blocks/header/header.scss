@@ -165,6 +165,10 @@
 				color: $color-yellow !important;
 			}
 		}
+
+		@include _540 {
+			display: none;
+		}
 	}
 
 	&__order-button {

@@ -183,7 +183,11 @@
 					left: 2px;
 					width: 42px;
 					height: 36px;
-					content: url(../img/list-icon.svg);
+					background-image: url(../img/list-icon.svg);
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+					content: "";
 				}
 			}
 		}
@@ -671,6 +675,167 @@
 
 		&__promocode {
 			width: 337px;
+		}
+	}
+
+	@include _992 {
+		&__title {
+			h2 {
+				font-size: rem(40px);
+
+				span {
+					font-size: rem(48px);
+				}
+			}
+		}
+
+		&__top {
+			padding-bottom: 55px;
+
+			img {
+				bottom: -69px;
+			}
+
+			.thief {
+				top: 36px;
+				right: 112px;
+			}
+
+			.tail {
+				top: 31px;
+				right: 168px;
+			}
+
+			.discount-board {
+				top: -50px;
+				right: 230px;
+			}
+		}
+	}
+
+	@include _769 {
+		&__title {
+			position: relative;
+			z-index: 20;
+		}
+
+		&__top {
+			ul {
+				li {
+					padding-left: 44px;
+
+					&::before {
+						width: 29px;
+						height: 26px;
+					}
+				}
+			}
+
+			.thief {
+				top: 110px;
+				right: 74px;
+				width: 110px;
+				height: 124px;
+			}
+
+			.tail {
+				top: 101px;
+				right: 118px;
+				width: 36px;
+				height: 48px;
+			}
+
+			.discount-board {
+				top: 0;
+				right: 162px;
+			}
+		}
+
+		&__bottom {
+			&::before,
+			&::after {
+				display: none;
+			}
+
+			.layer {
+				&.right-rabbit {
+					top: 20px;
+					bottom: auto;
+				}
+
+				&.left-rabbit {
+					right: 90px;
+					left: auto;
+				}
+			}
+		}
+	}
+
+	@include _740 {
+		.layer {
+			&._ball1 {
+				right: -160px;
+				left: auto;
+			}
+		}
+
+		&__title {
+			margin-bottom: 40px;
+		}
+
+		&__top {
+			padding-bottom: 197px;
+
+			img {
+				right: -90px;
+				bottom: -67px;
+				width: 100%;
+			}
+
+			.thief {
+				top: 246px;
+				right: 94px;
+			}
+
+			.tail {
+				top: 241px;
+				right: 134px;
+			}
+
+			.discount-board {
+				top: 146px;
+				right: 169px;
+				width: 171px;
+				height: 193px;
+			}
+		}
+
+		&__bottom {
+			.layer {
+				&.left-rabbit {
+					right: -23px;
+				}
+
+				&.right-rabbit {
+					display: none;
+				}
+			}
+		}
+
+		&__promocode {
+			width: 317px;
+		}
+	}
+
+	@include _540 {
+		&__title {
+			h2 {
+				font-size: rem(36px);
+
+				span {
+					font-size: rem(36px);
+				}
+			}
 		}
 	}
 }

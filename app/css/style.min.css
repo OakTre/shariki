@@ -900,6 +900,78 @@ ul {
   line-height: 1.4;
 }
 
+@-webkit-keyframes levitatesm3 {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+  }
+}
+
+@keyframes levitatesm3 {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+  }
+}
+
+@-webkit-keyframes levitatesm2 {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(2rem);
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes levitatesm2 {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(2rem);
+    transform: translateY(2rem);
+  }
+}
+
+@-webkit-keyframes levitatesm {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+  }
+}
+
+@keyframes levitatesm {
+  0%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  50% {
+    -webkit-transform: translateY(-2rem);
+    transform: translateY(-2rem);
+  }
+}
+
 @-webkit-keyframes levitate {
   0%, 100% {
     -webkit-transform: translateY(0);
@@ -1080,6 +1152,14 @@ ul {
   background-repeat: no-repeat;
   background-position: center bottom;
   background-size: cover;
+}
+
+.catalog .layer._wedding-rabbit {
+  right: -30px;
+  bottom: 100px;
+  display: none;
+  width: 310px;
+  height: 310px;
 }
 
 .catalog .layer._bg {
@@ -1631,12 +1711,6 @@ ul {
   -o-transition: transform .2s ease-in;
   transition: transform .2s ease-in,-webkit-transform .2s ease-in;
   content: "";
-}
-
-.catalog__item:hover::before {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
 }
 
 .catalog__products {
@@ -3551,7 +3625,11 @@ ul {
   left: 2px;
   width: 42px;
   height: 36px;
-  content: url(../img/list-icon.svg);
+  background-image: url(../img/list-icon.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  content: "";
 }
 
 .contacts-us__warninig {
@@ -4430,6 +4508,12 @@ ul {
 
   .header__order-button span:hover::before {
     opacity: 0;
+  }
+
+  .catalog__item:hover::before {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
   }
 
   .catalog__product-button {
@@ -7054,6 +7138,673 @@ ul {
     right: 75px;
     width: 107px;
     height: 199px;
+  }
+
+  .rabbit-with-baby {
+    width: 651px;
+    height: 397px;
+  }
+
+  .rabbit-with-baby .baby-rabbit {
+    width: 227px;
+    height: 182px;
+  }
+
+  .rabbit-with-baby .baby-rabbit ._ear-right {
+    top: 2px;
+    left: 63px;
+    width: 26px;
+    height: 50px;
+  }
+
+  .rabbit-with-baby .baby-rabbit ._ear-left {
+    top: 2px;
+    left: 42px;
+    width: 25px;
+    height: 48px;
+  }
+
+  .rabbit-with-baby .baby-rabbit ._toy {
+    top: 61px;
+    left: 55px;
+    width: 18px;
+    height: 13px;
+  }
+
+  .rabbit-with-baby .rabbit-mama {
+    width: 178px;
+    height: 261px;
+  }
+
+  .rabbit-with-baby .ball1 {
+    top: 145px;
+    left: 67px;
+    width: 79px;
+    height: 160px;
+  }
+
+  .rabbit-with-baby .ball2 {
+    top: 143px;
+    left: 120px;
+    width: 77px;
+    height: 161px;
+  }
+
+  .rabbit-with-baby ._ball3 {
+    top: 30px;
+    height: 237px;
+  }
+
+  .rabbit-with-baby .ball4 {
+    top: 11px;
+    right: 36px;
+    width: 172px;
+    height: 254px;
+  }
+
+  .rabbit-with-baby .ball5 {
+    top: 106px;
+    right: 5px;
+    width: 172px;
+    height: 171px;
+  }
+
+  .contacts-us__title h2 {
+    font-size: 2.5rem;
+  }
+
+  .contacts-us__title h2 span {
+    font-size: 3rem;
+  }
+
+  .contacts-us__top {
+    padding-bottom: 55px;
+  }
+
+  .contacts-us__top img {
+    bottom: -69px;
+  }
+
+  .contacts-us__top .thief {
+    top: 36px;
+    right: 112px;
+  }
+
+  .contacts-us__top .tail {
+    top: 31px;
+    right: 168px;
+  }
+
+  .contacts-us__top .discount-board {
+    top: -50px;
+    right: 230px;
+  }
+}
+
+@media (max-width:769px) {
+  .hero-section .layer._sky2,
+  .hero-section .layer._sky4,
+  .hero-section .layer._sky6 {
+    display: none;
+  }
+
+  .hero-section .layer._ball1 {
+    top: 147px;
+    left: 10px;
+  }
+
+  .hero-section .layer._ball3 {
+    top: 151px;
+    right: 80px;
+    width: 126px;
+    height: 283px;
+  }
+
+  .hero-section .layer._rabbit {
+    bottom: -170px;
+    left: 40px;
+  }
+
+  .hero-section .layer._sky7 {
+    top: 130px;
+  }
+
+  .hero-section .layer._sky8 {
+    top: 223px;
+    right: -10px;
+  }
+
+  .hero-section .layer._sky9 {
+    top: 460px;
+    width: 140px;
+  }
+
+  .hero-section .layer._rabbit-small {
+    right: 70px;
+  }
+
+  .hero-section .layer._skyTinny {
+    bottom: 80px;
+    left: 200px;
+    display: block;
+    width: 145px;
+    height: 80px;
+  }
+
+  .catalog__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .catalog__col:nth-child(2) {
+    width: 100%;
+  }
+
+  .catalog__col:nth-child(1) {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+
+  .catalog__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px 20px 20px 12px;
+  }
+
+  .catalog__item {
+    width: 50%;
+  }
+
+  .catalog__item::before {
+    border-radius: 22px;
+  }
+
+  .catalog__link,
+  .catalog__text {
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .catalog .layer._school-rabbit {
+    bottom: 170px;
+  }
+
+  .catalog .layer._kid-rabbit {
+    right: 240px;
+    bottom: -30px;
+  }
+
+  .discount {
+    padding-bottom: 86px;
+  }
+
+  .discount .layer.discount-sky1,
+  .discount .layer.discount-sky3,
+  .discount .layer.simple-rabbit,
+  .discount .layer.wedding-rabbit {
+    display: none;
+  }
+
+  .reasons {
+    padding-bottom: 152px;
+  }
+
+  .reasons__item {
+    grid-column: 6 span;
+  }
+
+  .reasons__item:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+
+  .reasons__item:nth-child(2) {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .reasons__item:nth-child(3) {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .reasons__item:nth-child(4) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .reasons__item:nth-child(5) {
+    -webkit-box-ordinal-group: 6;
+    -ms-flex-order: 5;
+    order: 5;
+  }
+
+  .reasons__item:nth-child(6) {
+    -webkit-box-ordinal-group: 7;
+    -ms-flex-order: 6;
+    order: 6;
+  }
+
+  .reasons .layer._ball1 {
+    top: -114px;
+  }
+
+  .reasons .layer._ball2 {
+    bottom: -396px;
+  }
+
+  .custom {
+    margin-bottom: 114px;
+  }
+
+  .custom .layer._bg {
+    height: 608px;
+  }
+
+  .custom__title {
+    margin-bottom: 40px;
+  }
+
+  .custom .birthday-rabbits {
+    right: -17px;
+    bottom: -120px;
+  }
+
+  .rabbits {
+    margin-bottom: 81px;
+  }
+
+  .birthday-rabbit2 {
+    margin-bottom: 40px;
+  }
+
+  .rabbit-with-baby {
+    margin-left: 120px;
+  }
+
+  .contacts-us__title {
+    position: relative;
+    z-index: 20;
+  }
+
+  .contacts-us__top ul li {
+    padding-left: 44px;
+  }
+
+  .contacts-us__top ul li::before {
+    width: 29px;
+    height: 26px;
+  }
+
+  .contacts-us__top .thief {
+    top: 110px;
+    right: 74px;
+    width: 110px;
+    height: 124px;
+  }
+
+  .contacts-us__top .tail {
+    top: 101px;
+    right: 118px;
+    width: 36px;
+    height: 48px;
+  }
+
+  .contacts-us__top .discount-board {
+    top: 0;
+    right: 162px;
+  }
+
+  .contacts-us__bottom::after,
+  .contacts-us__bottom::before {
+    display: none;
+  }
+
+  .contacts-us__bottom .layer.right-rabbit {
+    top: 20px;
+    bottom: auto;
+  }
+
+  .contacts-us__bottom .layer.left-rabbit {
+    right: 90px;
+    left: auto;
+  }
+
+  .custom-form__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 359px;
+  }
+
+  .custom-form__col:nth-of-type(1) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .custom-form__col:nth-of-type(2) {
+    width: 100%;
+  }
+}
+
+@media (max-width:740px) {
+  .hero-section {
+    padding-bottom: 344px;
+  }
+
+  .hero-section .layer._light-left {
+    width: 363px;
+    height: 298px;
+  }
+
+  .hero-section .layer._light-right {
+    width: 345px;
+    height: 283px;
+  }
+
+  .hero-section .layer._rabbit {
+    bottom: -170px;
+    left: 30px;
+  }
+
+  .hero-section .layer._sky5 {
+    top: 427px;
+  }
+
+  .hero-section .layer._sky9 {
+    top: 540px;
+  }
+
+  .hero-section .layer._rabbit-small {
+    bottom: 188px;
+  }
+
+  .catalog .layer._kid-rabbit {
+    right: -3px;
+  }
+
+  .catalog .layer._school-rabbit {
+    display: none;
+  }
+
+  .discount .layer._bubles {
+    top: -54px;
+    height: 251px;
+  }
+
+  .discount__legend {
+    font-size: 1.4rem;
+  }
+
+  .discount__legend span {
+    font-size: 1.6rem;
+  }
+
+  .discount__content {
+    padding: 23px 28px 35px;
+  }
+
+  .discount__content::before {
+    top: 10px;
+    right: 10px;
+    bottom: 10px;
+    left: 10px;
+  }
+
+  .discount__pagination {
+    bottom: 19px!important;
+  }
+
+  .custom {
+    margin-bottom: 184px;
+  }
+
+  .custom__container {
+    padding-bottom: 190px;
+  }
+
+  .custom .birthday-rabbits {
+    right: auto;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .custom .layer._bg {
+    height: 818px;
+  }
+
+  .rabbits {
+    margin-bottom: 31px;
+    padding-bottom: 150px;
+  }
+
+  .rabbits .flying-rabbit {
+    top: auto;
+    bottom: -390px;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .birthday-rabbit2 {
+    -webkit-transform: translateX(160px);
+    -ms-transform: translateX(160px);
+    transform: translateX(160px);
+  }
+
+  .rabbit-with-baby {
+    display: none;
+  }
+
+  .contacts-us .layer._ball1 {
+    right: -160px;
+    left: auto;
+  }
+
+  .contacts-us__title {
+    margin-bottom: 40px;
+  }
+
+  .contacts-us__top {
+    padding-bottom: 197px;
+  }
+
+  .contacts-us__top img {
+    right: -90px;
+    bottom: -67px;
+    width: 100%;
+  }
+
+  .contacts-us__top .thief {
+    top: 246px;
+    right: 94px;
+  }
+
+  .contacts-us__top .tail {
+    top: 241px;
+    right: 134px;
+  }
+
+  .contacts-us__top .discount-board {
+    top: 146px;
+    right: 169px;
+    width: 171px;
+    height: 193px;
+  }
+
+  .contacts-us__bottom .layer.left-rabbit {
+    right: -23px;
+  }
+
+  .contacts-us__bottom .layer.right-rabbit {
+    display: none;
+  }
+
+  .contacts-us__promocode {
+    width: 317px;
+  }
+
+  .custom-form__row {
+    width: 100%;
+  }
+
+  .custom-form__agreement {
+    max-width: 65%;
+  }
+}
+
+@media (max-width:540px) {
+  .header__btn-group {
+    display: none;
+  }
+
+  .hero-section {
+    padding-top: 102px;
+  }
+
+  .hero-section__container h1 {
+    font-size: 2rem;
+  }
+
+  .hero-section__container p {
+    font-size: .9rem;
+  }
+
+  .hero-section .layer._ball1 {
+    -webkit-animation-name: levitatesm2;
+    animation-name: levitatesm2;
+  }
+
+  .hero-section .layer._ball3 {
+    right: 20px;
+    -webkit-animation-name: levitatesm3;
+    animation-name: levitatesm3;
+  }
+
+  .hero-section .layer._sky5 {
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+  }
+
+  .hero-section .layer._rabbit-small,
+  .hero-section .layer._skyTinny {
+    display: none;
+  }
+
+  .hero-section .layer._rabbit {
+    bottom: -230px;
+    left: 161px;
+    -webkit-animation: 6s ease-in-out infinite levitatesm;
+    animation: 6s ease-in-out infinite levitatesm;
+  }
+
+  .catalog {
+    padding-bottom: 235px;
+  }
+
+  .catalog__title {
+    max-width: 317px;
+    margin-bottom: 32px;
+  }
+
+  .catalog__title h2 {
+    font-size: 2.25rem;
+  }
+
+  .catalog__product {
+    grid-column: 12 span;
+    height: 382px;
+  }
+
+  .catalog__product-button {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .catalog__product img {
+    width: 54%;
+  }
+
+  .catalog__text {
+    font-size: 1.6rem;
+  }
+
+  .catalog .layer._kid-rabbit {
+    display: none;
+  }
+
+  .catalog .layer._wedding-rabbit {
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 240px;
+    height: 250px;
+  }
+
+  .catalog .layer._bg {
+    height: 558px;
+  }
+
+  .discount__title h2 {
+    font-size: 2.25rem;
+  }
+
+  .discount__button span {
+    font-size: .9rem;
+  }
+
+  .discount .layer._bubles {
+    top: -74px;
+    height: 211px;
+  }
+
+  .reasons .layer._ball1 {
+    top: -191px;
+  }
+
+  .reasons .layer._ball2 {
+    display: none;
+  }
+
+  .reasons__title h2 {
+    font-size: 2.25rem;
+  }
+
+  .custom {
+    margin-bottom: 204px;
+  }
+
+  .custom__title h2 {
+    font-size: 2.25rem;
+  }
+
+  .custom .layer._bg {
+    height: 788px;
+  }
+
+  .rabbits {
+    display: none;
+  }
+
+  .contacts-us__title h2,
+  .contacts-us__title h2 span {
+    font-size: 2.25rem;
   }
 }
 

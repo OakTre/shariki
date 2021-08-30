@@ -10,6 +10,14 @@
 		background-position: center bottom;
 		background-size: cover;
 
+		&._wedding-rabbit {
+			right: -30px;
+			bottom: 100px;
+			display: none;
+			width: 310px;
+			height: 310px;
+		}
+
 		&._bg {
 			bottom: 0;
 			left: 50%;
@@ -426,9 +434,11 @@
 			content: "";
 		}
 
-		&:hover {
-			&::before {
-				transform: translateX(0);
+		@include desktop {
+			&:hover {
+				&::before {
+					transform: translateX(0);
+				}
 			}
 		}
 	}
@@ -1070,6 +1080,115 @@
 
 		&__show-more {
 			margin: 48px auto 90px;
+		}
+	}
+
+	@include _769 {
+		&__container {
+			flex-direction: column;
+		}
+
+		&__col {
+			&:nth-child(2) {
+				width: 100%;
+			}
+
+			&:nth-child(1) {
+				width: 100%;
+				margin-bottom: 32px;
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			padding: 20px 20px 20px 12px;
+		}
+
+		&__item {
+			width: 50%;
+
+			&::before {
+				border-radius: 22px;
+			}
+		}
+
+		&__link,
+		&__text {
+			transform: none;
+		}
+
+		.layer {
+			&._school-rabbit {
+				bottom: 170px;
+			}
+
+			&._kid-rabbit {
+				right: 240px;
+				bottom: -30px;
+			}
+		}
+	}
+
+	@include _740 {
+		.layer {
+			&._kid-rabbit {
+				right: -3px;
+			}
+
+			&._school-rabbit {
+				display: none;
+			}
+		}
+	}
+
+	@include _540 {
+		padding-bottom: 235px;
+
+		&__title {
+			max-width: 317px;
+			margin-bottom: 32px;
+
+			h2 {
+				font-size: rem(36px);
+			}
+		}
+
+		&__product {
+			grid-column: 12 span;
+			height: 382px;
+
+			&-button {
+				margin-right: auto;
+				margin-left: auto;
+			}
+
+			img {
+				width: 54%;
+			}
+		}
+
+		&__text {
+			font-size: 1.6rem;
+		}
+
+		.layer {
+			&._kid-rabbit {
+				display: none;
+			}
+
+			&._wedding-rabbit {
+				right: 0;
+				bottom: 0;
+				display: block;
+				width: 240px;
+				height: 250px;
+			}
+
+			&._bg {
+				height: 558px;
+			}
 		}
 	}
 }

@@ -333,4 +333,64 @@
 			}
 		}
 	}
+
+	@include _769 {
+		padding-bottom: 152px;
+
+		&__item {
+			grid-column: 6 span;
+
+			&:nth-child(1) {
+				order: 1;
+			}
+
+			&:nth-child(2) {
+				order: 2;
+			}
+
+			&:nth-child(3) {
+				order: 4;
+			}
+
+			&:nth-child(4) {
+				order: 3;
+			}
+
+			&:nth-child(5) {
+				order: 5;
+			}
+
+			&:nth-child(6) {
+				order: 6;
+			}
+		}
+
+		.layer {
+			&._ball1 {
+				top: -114px;
+			}
+
+			&._ball2 {
+				bottom: -396px;
+			}
+		}
+	}
+
+	@include _540 {
+		.layer {
+			&._ball1 {
+				top: -191px;
+			}
+
+			&._ball2 {
+				display: none;
+			}
+		}
+
+		&__title {
+			h2 {
+				font-size: rem(36px);
+			}
+		}
+	}
 }

@@ -867,6 +867,182 @@
 			}
 		}
 	}
+
+	@include _769 {
+		.layer {
+			&._sky4,
+			&._sky2,
+			&._sky6 {
+				display: none;
+			}
+
+			&._ball1 {
+				top: 147px;
+				left: 10px;
+			}
+
+			&._ball3 {
+				top: 151px;
+				right: 80px;
+				width: 126px;
+				height: 283px;
+			}
+
+			&._rabbit {
+				bottom: -170px;
+				left: 40px;
+			}
+
+			&._sky7 {
+				top: 130px;
+			}
+
+			&._sky8 {
+				top: 223px;
+				right: -10px;
+			}
+
+			&._sky9 {
+				top: 460px;
+				width: 140px;
+			}
+
+			&._rabbit-small {
+				right: 70px;
+			}
+
+			&._skyTinny {
+				bottom: 80px;
+				left: 200px;
+				display: block;
+				width: 145px;
+				height: 80px;
+			}
+		}
+	}
+
+	@include _740 {
+		padding-bottom: 344px;
+
+		.layer {
+			&._light-left {
+				width: 363px;
+				height: 298px;
+			}
+
+			&._light-right {
+				width: 345px;
+				height: 283px;
+			}
+
+			&._ball1 {
+				// display: none;
+			}
+
+			&._rabbit {
+				bottom: -170px;
+				left: 30px;
+			}
+
+			&._sky5 {
+				top: 427px;
+			}
+
+			&._sky9 {
+				top: 540px;
+			}
+
+			&._rabbit-small {
+				bottom: 188px;
+			}
+		}
+	}
+
+	@include _540 {
+		padding-top: 102px;
+
+		&__container {
+			h1 {
+				font-size: rem(32px);
+			}
+
+			p {
+				font-size: 0.9rem;
+			}
+		}
+
+		.layer {
+			&._ball1 {
+				animation-name: levitatesm2;
+			}
+
+			&._ball3 {
+				right: 20px;
+				animation-name: levitatesm3;
+			}
+
+			&._sky5 {
+				animation-duration: 6s;
+				animation-delay: 0;
+			}
+
+			&._rabbit-small {
+				display: none;
+			}
+
+			&._skyTinny {
+				display: none;
+			}
+
+			&._rabbit {
+				bottom: -230px;
+				left: 161px;
+				animation: levitatesm 6s ease-in-out infinite;
+			}
+		}
+	}
+}
+
+@keyframes levitatesm3 {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-2rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes levitatesm2 {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(2rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes levitatesm {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-2rem);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
 }
 
 @keyframes levitate {
