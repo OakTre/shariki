@@ -650,6 +650,51 @@
 
 	@include _1366 {
 		padding-top: 0;
+
+		.flying-rabbit {
+			width: 490px;
+			height: 958px;
+
+			.body {
+				width: 490px;
+				height: 948px;
+			}
+
+			.right-wing {
+				right: 110px;
+				bottom: 308px;
+				width: 101px;
+				height: 150px;
+			}
+
+			.arm-heart {
+				right: 143px;
+				bottom: 198px;
+				width: 88px;
+				height: 129px;
+			}
+
+			.ball1 {
+				top: 200px;
+				left: 129px;
+				width: 129px;
+				height: 249px;
+			}
+
+			.ball2 {
+				top: 60px;
+				left: 131px;
+				width: 180px;
+				height: 365px;
+			}
+
+			.ball3 {
+				top: 213px;
+				left: 237px;
+				width: 121px;
+				height: 219px;
+			}
+		}
 	}
 }
 
@@ -1146,6 +1191,76 @@
 			right: 60px;
 			width: 202px;
 			height: 251px;
+		}
+	}
+
+	@include _1366 {
+		width: 932px;
+		height: 662px;
+
+		.rabbit-mama {
+			width: 288px;
+			height: 389px;
+		}
+
+		.baby-rabbit {
+			width: 337px;
+			height: 232px;
+
+			._ear-left {
+				top: 4px;
+				left: 79px;
+				width: 25px;
+				height: 58px;
+			}
+
+			._ear-right {
+				top: 4px;
+				left: 106px;
+				width: 26px;
+				height: 60px;
+			}
+
+			._toy {
+				top: 74px;
+				width: 23px;
+				height: 23px;
+			}
+		}
+
+		.ball1 {
+			top: 334px;
+			left: 54px;
+			width: 109px;
+			height: 210px;
+		}
+
+		.ball2 {
+			top: 366px;
+			left: 129px;
+			width: 87px;
+			height: 181px;
+		}
+
+		._ball3 {
+			top: 155px;
+			right: 250px;
+			width: 107px;
+			height: 311px;
+		}
+
+		.ball4 {
+			top: 161px;
+			right: 133px;
+			width: 172px;
+			height: 307px;
+		}
+
+		.ball5 {
+			top: 272px;
+			right: 100px;
+			width: 172px;
+			height: 211px;
 		}
 	}
 }

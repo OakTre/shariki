@@ -213,4 +213,28 @@
 			}
 		}
 	}
+
+	@include _1366 {
+		&__button {
+			span {
+				padding: 22px 38px;
+			}
+		}
+
+		&__left {
+			margin-right: 43px;
+		}
+
+		&__col {
+			&:nth-of-type(1) {
+				margin-right: 50px;
+			}
+		}
+
+		&-layer {
+			bottom: -370px;
+			width: 1560px;
+			height: 817px;
+		}
+	}
 }

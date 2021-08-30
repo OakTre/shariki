@@ -485,4 +485,49 @@
 			}
 		}
 	}
+
+	@include _1366 {
+		.layer {
+			&._ball1 {
+				top: -168px;
+				left: -111px;
+				width: 339px;
+				height: 810px;
+			}
+		}
+
+		&__top {
+			ul {
+				li {
+					font-size: 1rem;
+				}
+			}
+
+			img {
+				right: -110px;
+				bottom: -100px;
+				width: 70%;
+			}
+
+			.thief {
+				top: 39px;
+				right: 178px;
+				width: 190px;
+				height: 224px;
+			}
+
+			.tail {
+				top: 41px;
+				right: 252px;
+				width: 54px;
+				height: 67px;
+			}
+
+			.discount-board {
+				right: 340px;
+				width: 191px;
+				height: 233px;
+			}
+		}
+	}
 }
