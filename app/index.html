@@ -35,11 +35,31 @@
               <svg class="icon icon-cart">
                 <use xlink:href="img/sprite.svg#cart"></use>
               </svg></a>
-            <button class="header__burger burger-button button-reset"><span></span><span></span></button>
+            <button class="header__burger burger-button button-reset" aria-label="Меню"><span></span><span></span></button>
           </div>
         </div>
       </header>
       <main class="page-main main">
+        <div class="site-menu">
+          <div class="site-menu__bg"></div>
+          <div class="site-menu__container">
+            <button class="site-menu__burger burger-button button-reset" aria-label="Закрыть меню"><span></span><span></span></button>
+            <div class="_layer lazy" data-bg="img/simple-rabbit.webp" data-bg-fallback="img/simple-rabbit.png"></div>
+            <div class="_layer lazy ball" data-bg="img/ball3.webp" data-bg-fallback="img/ball3.png"></div>
+            <div class="site-menu__nav">
+              <ul>
+                <li><a href="">О компании</a></li>
+                <li><a href="">Каталог</a></li>
+                <li><a href="">Доставка и оплата</a></li>
+                <li><a href="">Пункты самовывоза</a></li>
+                <li><a href="">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="site-menu__btn-group"><a class="phone-content" href="">	+7 (999) 135-35-03</a>
+              <button class="button-reset site-menu__order-button"><span>	Заказать звонок</span></button><span class="site-menu__location">	г. Санкт-Петербург</span>
+            </div>
+          </div>
+        </div>
         <section class="hero-section lazy" data-bg="img/hero-bg.webp" data-bg-fallback="img/hero-bg.png">
           <div class="layer _sky1 lazy" data-bg="img/sky1.webp" data-bg-fallback="img/sky1.png"></div>
           <div class="layer _sky2 lazy" data-bg="img/sky2.webp" data-bg-fallback="img/sky2.png"></div>

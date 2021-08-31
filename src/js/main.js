@@ -518,6 +518,51 @@ document.addEventListener("DOMContentLoaded", function(event) {
 		})
 	}
 
+	const catalogItem = document.querySelectorAll(".catalog__item");
 
+	if (catalogItem) {
+		catalogItem.forEach(function(el){
+			el.addEventListener("click", function(){
+				catalogItem.forEach(function(el){
+					el.classList.remove("_active");
+				});
+
+				this.classList.add("_active");
+			});
+		})
+	}
+
+	// открытие меню
+	const menu = document.querySelector(".site-menu");
+	const burgerButton = document.querySelector(".header__burger");
+	const burgerButtonClose = document.querySelector(".site-menu__burger");
+
+
+	if (burgerButton) {
+		burgerButton.addEventListener("click", function(){
+			menu.classList.add("is-open");
+
+			menu.style.display = "block";
+			menu.querySelector(".site-menu__container").style.opacity = "0";
+
+			setTimeout(function(){
+				menu.querySelector(".site-menu__container").style.opacity = "1";
+				menu.querySelector(".site-menu__container").classList.add("_active");
+			}, 200);
+		});
+	}
+
+	if (burgerButtonClose) {
+		burgerButtonClose.addEventListener("click", function(){
+			menu.classList.remove("is-open");
+
+			menu.querySelector(".site-menu__container").style.opacity = "0";
+			menu.querySelector(".site-menu__container").classList.remove("_active");
+
+			setTimeout(function(){
+				menu.style.display = "none";
+			}, 200);
+		});
+	}
 
 });

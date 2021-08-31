@@ -1,4 +1,28 @@
+- let menu_list = ["О компании", "Каталог", "Доставка и оплата", "Пункты самовывоза", "Контакты"];
+
 main.page-main.main
+	.site-menu
+		.site-menu__bg
+		.site-menu__container
+			button.site-menu__burger.burger-button.button-reset(aria-label="Закрыть меню")
+				span
+				span
+			._layer.lazy(data-bg="img/simple-rabbit.webp", data-bg-fallback="img/simple-rabbit.png")
+			._layer.lazy.ball(data-bg="img/ball3.webp", data-bg-fallback="img/ball3.png")
+			.site-menu__nav
+				ul
+					for item in menu_list
+						li
+							a(href="")=item
+			.site-menu__btn-group
+				a.phone-content(href="")
+					|	+7 (999) 135-35-03
+				button.button-reset.site-menu__order-button
+					span
+						|	Заказать звонок
+				span.site-menu__location
+					|	г. Санкт-Петербург
+
 	include hero.pug
 	include catalog.pug
 	include discount.pug
