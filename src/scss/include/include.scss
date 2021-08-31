@@ -114,3 +114,28 @@
 .text-center {
 	text-align: center;
 }
+
+.burger-button {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 57px;
+	height: 57px;
+	background-color: $color-blue;
+	border-radius: 50%;
+	cursor: pointer;
+
+	span {
+		display: block;
+		width: 65%;
+		height: 4px;
+		background-color: $color-white;
+		border-radius: 5px;
+
+		&:nth-child(1) {
+			margin-bottom: 7px;
+		}
+	}
+}

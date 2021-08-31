@@ -1,6 +1,21 @@
 .cart-modal {
 	// color: #00205c;
 
+	@include _1280 {
+		overflow: hidden;
+
+		&::before {
+			content: none;
+		}
+	}
+
+	@include _769 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
 	&.is-empty {
 		._not-empty {
 			display: none;
@@ -11,6 +26,22 @@
 		}
 
 		.simplebar-content {
+			height: 100%;
+		}
+	}
+
+	&__container {
+		@include _1366 {
+			margin: 30px auto;
+		}
+
+		@include _1280 {
+			width: 100%;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		@include _480 {
 			height: 100%;
 		}
 	}
@@ -56,6 +87,35 @@
 		@include _1590 {
 			height: 650px;
 		}
+
+		@include _1366 {
+			height: 578px;
+		}
+
+		@include _1280 {
+			border-radius: 0;
+		}
+
+		@include _1200 {
+			height: 768px;
+		}
+
+		@include _992 {
+			height: 600px;
+		}
+
+		@include _769 {
+			height: 800px;
+		}
+
+		@include _500 {
+			height: 650px;
+		}
+
+		@include _480 {
+			height: 100%;
+			padding: 40px 16px;
+		}
 	}
 
 	&__title {
@@ -63,11 +123,31 @@
 		font-weight: 800;
 		font-size: rem(48px);
 		font-family: $second-font;
+
+		@include _1280 {
+			font-size: 2.3rem;
+		}
+
+		@include _480 {
+			font-size: 1.7rem;
+		}
+
+		@include _480 {
+			margin-bottom: 25px;
+		}
 	}
 
 	&__top {
 		max-width: 770px;
 		margin: 0 auto;
+
+		@include _1280 {
+			max-width: 930px;
+		}
+
+		@include _480 {
+			margin-bottom: 32px;
+		}
 	}
 
 	&__head {
@@ -113,6 +193,15 @@
 
 		span {
 			font-weight: 700;
+		}
+
+		@include _480 {
+			padding: 24px 0;
+			font-size: 1.2rem;
+		}
+
+		@include _320 {
+			font-size: 1.1rem;
 		}
 	}
 
@@ -181,6 +270,26 @@
 			}
 		}
 	}
+
+	@include _740 {
+		&__head {
+			display: none;
+		}
+
+		._is-empty {
+			.cart-modal__title {
+				text-align: center;
+			}
+		}
+
+		&__bottom {
+			max-width: 100%;
+		}
+
+		&__top {
+			max-width: 100%;
+		}
+	}
 }
 
 .mini-cart {
@@ -198,6 +307,10 @@
 
 		&:last-of-type {
 			margin-bottom: 0;
+		}
+
+		.smallTexts {
+			display: none;
 		}
 	}
 
@@ -229,6 +342,15 @@
 		display: flex;
 		flex-shrink: 0;
 		align-items: flex-start;
+
+		._wrap {
+			display: flex;
+			align-items: flex-start;
+
+			img {
+				flex-shrink: 0;
+			}
+		}
 
 		span {
 			display: block;
@@ -289,6 +411,90 @@
 		span {
 			display: inline-block;
 			font-size: rem(18px);
+		}
+	}
+
+	@include _740 {
+		&__item {
+			flex-wrap: wrap;
+
+			&:nth-of-type(1) {
+				padding-top: 18px;
+				border-top: 1px solid #fff;
+			}
+
+			.smallTexts {
+				display: block;
+				margin-bottom: 8px;
+				font-size: 1rem;
+				line-height: 1;
+			}
+		}
+
+		&__logo {
+			flex-wrap: wrap;
+			width: 100%;
+			max-width: 100%;
+			margin-right: 0;
+			margin-bottom: 24px;
+		}
+
+		&__mobileName {
+			width: 100%;
+		}
+
+		&__price {
+			width: 33.3%;
+			max-width: 100%;
+			text-align: left;
+		}
+
+		&__summ {
+			width: 33.3%;
+			max-width: 100%;
+		}
+
+		&__quant {
+			width: 33.3%;
+			max-width: 100%;
+
+			.quant {
+				width: 100%;
+			}
+
+			.quant__minus,
+			.quant__plus {
+				width: 54px;
+				height: 28px;
+			}
+		}
+
+		&__delete {
+			top: 18px;
+			bottom: auto;
+		}
+	}
+
+	@include _480 {
+		&__logo {
+			order: 1;
+			margin-bottom: 10px;
+		}
+
+		&__price {
+			order: 3;
+			width: 50%;
+		}
+
+		&__quant {
+			order: 2;
+			width: 100%;
+			margin-bottom: 24px;
+		}
+
+		&__summ {
+			order: 4;
+			width: 50%;
 		}
 	}
 }

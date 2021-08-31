@@ -24,6 +24,28 @@
 		line-height: 1;
 	}
 
+	&__burger {
+		display: none;
+		margin-left: 20px;
+
+		@include _1350 {
+			display: flex;
+		}
+
+		@include _480 {
+			flex-shrink: 0;
+			width: 45px;
+			height: 45px;
+			margin-left: 10px;
+
+			span {
+				&:nth-child(1) {
+					margin-bottom: 5px;
+				}
+			}
+		}
+	}
+
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -45,6 +67,10 @@
 			color: $color-white;
 			font-size: rem(14px);
 			line-height: 1.3;
+
+			@include _480 {
+				display: none;
+			}
 		}
 
 		&:focus {
@@ -55,6 +81,10 @@
 			p {
 				color: $color-yellow;
 			}
+		}
+
+		@include _1366 {
+			margin-right: 30px;
 		}
 	}
 
@@ -141,6 +171,45 @@
 					fill: $color-yellow;
 				}
 			}
+
+			&._mobile {
+				display: none;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				width: 57px;
+				margin-left: 20px;
+				padding: 0;
+				border-radius: 50%;
+
+				.cart-quant {
+					margin-right: 0;
+					margin-bottom: 5px;
+				}
+
+				@include _1350 {
+					display: flex;
+				}
+
+				@include _740 {
+					margin-left: auto;
+				}
+
+				@include _480 {
+					flex-shrink: 0;
+					width: 45px;
+					height: 45px;
+
+					.icon-cart {
+						width: 16px;
+						height: 16px;
+					}
+
+					.cart-quant {
+						font-size: 0.675rem;
+					}
+				}
+			}
 		}
 
 		@include _1350 {
@@ -166,7 +235,7 @@
 			}
 		}
 
-		@include _540 {
+		@include _740 {
 			display: none;
 		}
 	}

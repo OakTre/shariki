@@ -31,8 +31,11 @@
             </nav>
             <div class="header__btn-group"><a class="phone-content" href="">	+7 (999) 135-35-03</a>
               <button class="button-reset header__order-button"><span>	Заказать звонок</span></button>
-            </div>
-            <button class="burger-button"></button>
+            </div><a class="header__nav-cart _mobile modal-btn" href="" aria-label="Перейти в корзину" data-path="test" data-animation="fadeInUp" data-speed="400"><span class="header__quantity cart-quant"><span class="cartQuantity">	0</span>	шт.</span>
+              <svg class="icon icon-cart">
+                <use xlink:href="img/sprite.svg#cart"></use>
+              </svg></a>
+            <button class="header__burger burger-button button-reset"><span></span><span></span></button>
           </div>
         </div>
       </header>
@@ -453,7 +456,7 @@
         </div>
       </footer>
       <div class="modal cart-modal is-empty">
-        <div class="modal__container" data-target="test">
+        <div class="modal__container cart-modal__container" data-target="test">
           <button class="modal-close cart-modal__close button-reset">Закрыть</button>
           <div class="modal-content cart-modal__content" data-simplebar>
             <div class="_is-empty">

@@ -28,13 +28,18 @@ const generateCartProduct = function (id, price, summ, link, img, name, quant) {
 				</svg>
 			</div>
 			<a class="mini-cart__logo cart-modal__name" href="${link}">
-				<img class="mini-cart__img" src="${img}" alt="${name}">
-				<span>${name}</span>
+				<span class="smallTexts mini-cart__mobileName">Наименование</span>
+				<div class="_wrap">
+					<img class="mini-cart__img" src="${img}" alt="${name}">
+					<span>${name}</span>
+				</div>
 			</a>
 			<div class="mini-cart__price cart-modal__price">
+				<span class="smallTexts mini-cart__mobilePrice">Цена</span>
 				<span>${normalPrice(price)} руб.</span>
 			</div>
 			<div class="mini-cart__quant cart-modal__quant">
+				<span class="smallTexts mini-cart__mobileQuant">Количество</span>
 				<div class="quant">
 					<span class="quant__minus mini-cart__quantMinus">-</span>
 					<input class="quant__input mini-cart__quantInput" type="text" value="${quant}" maxlength="3">
@@ -42,6 +47,7 @@ const generateCartProduct = function (id, price, summ, link, img, name, quant) {
 				</div>
 			</div>
 			<div class="mini-cart__summ cart-modal__summ">
+				<span class="smallTexts mini-cart__mobileSumm">Сумма</span>
 				<span class="cartItemSumm">${normalPrice(summ)}</span>
 				<span>руб.</span>
 			</div>
@@ -69,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	const myModal = document.querySelector(".modal");
 	const productContainer = myModal.querySelector(".cart-modal__list");
 	const fullPrice = document.querySelector(".fullPrice");
-	const cartQuantity = document.querySelector(".cartQuantity");
+	const cartQuantity = document.querySelectorAll(".cartQuantity");
 
 	// обшая цена
 	const printFullPrice = function() {
@@ -79,15 +85,18 @@ document.addEventListener("DOMContentLoaded", function(event) {
 	// количество товаров в корзине
 	const printQuantity = function() {
 		let cartItemNumber = document.querySelectorAll(".mini-cart__item").length;
-		cartQuantity.textContent = cartItemNumber;
+
+		cartQuantity.forEach(function(el){
+			el.textContent = cartItemNumber;
+
+			// показываем количество если товаров больше 0 и наоборот
+			cartItemNumber > 0 ? el.closest(".cart-quant").style.display = "block" : el.closest(".cart-quant").style.display = "none";
+		})
 
 		// показывем что корзина пуста
 		if (cartItemNumber == 0) {
 			myModal.classList.add("is-empty");
 		}
-
-		// показываем количество если товаров больше 0 и наоборот
-		cartItemNumber > 0 ? cartQuantity.closest(".cart-quant").style.display = "block" : cartQuantity.closest(".cart-quant").style.display = "none";
 	};
 
 	// удаление товара
