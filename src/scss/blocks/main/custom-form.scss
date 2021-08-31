@@ -58,6 +58,12 @@
 			height: 70px;
 			padding: 23px 38px;
 		}
+
+		@include _480 {
+			height: 60px;
+			padding: 20px 33px;
+			border-radius: 18px;
+		}
 	}
 
 	&__button {
@@ -66,6 +72,13 @@
 
 		span {
 			padding: 33px 78px;
+		}
+
+		@include _480 {
+			span {
+				padding: 22px 58px;
+				border-radius: 35px;
+			}
 		}
 	}
 
@@ -124,6 +137,10 @@
 
 		@include _740 {
 			max-width: 65%;
+		}
+
+		@include _540 {
+			max-width: 100%;
 		}
 	}
 

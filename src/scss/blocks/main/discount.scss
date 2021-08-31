@@ -676,6 +676,100 @@
 			&._bubles {
 				top: -74px;
 				height: 211px;
+				height: 311px;
+				background-size: cover;
+			}
+		}
+
+		&__container {
+			padding-bottom: 50px;
+		}
+
+		&__link {
+			margin-top: 18px;
+		}
+	}
+
+	@include _480 {
+		padding-bottom: 65px;
+
+		&__container {
+			width: auto;
+			margin-right: -24px;
+			margin-left: -24px;
+		}
+
+		&__content {
+			border-radius: 0;
+		}
+
+		&__button {
+			span {
+				padding: 22px 67px;
+			}
+		}
+
+		&__link {
+			span {
+				padding: 22px 41px;
+			}
+		}
+	}
+
+	@include _375 {
+		padding-bottom: 55px;
+
+		&__title {
+			h2 {
+				font-size: 1.95rem;
+			}
+		}
+
+		&__button {
+			width: 100%;
+		}
+
+		&__container {
+			padding-bottom: 40px;
+		}
+
+		&__pagination {
+			.swiper-pagination-bullet {
+				width: 40px;
+				margin: 0 8px !important;
+				background-color: $color-white;
+			}
+		}
+	}
+
+	@include _360 {
+		padding-bottom: 75px;
+
+		&__container {
+			margin-right: -16px;
+			margin-left: -16px;
+		}
+	}
+
+	@include _320 {
+		&__title {
+			h2 {
+				font-size: 1.75rem;
+			}
+		}
+
+		&__legend {
+			max-width: 163px;
+			font-size: 1.2rem;
+
+			span {
+				font-size: 1.3rem;
+			}
+		}
+
+		&__button {
+			span {
+				padding: 20px 67px;
 			}
 		}
 	}

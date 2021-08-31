@@ -654,6 +654,141 @@
 			}
 		}
 	}
+
+	@include _480 {
+		margin-bottom: 194px;
+
+		.birthday-rabbits {
+			width: 100%;
+
+			._first-rabbit {
+				display: none;
+			}
+
+			._cake {
+				bottom: 0;
+				left: 50px;
+				width: 113px;
+				height: 200px;
+			}
+
+			._second-rabbit {
+				right: 97px;
+
+				._hat {
+					top: 39px;
+					left: 48%;
+					width: 41px;
+					height: 50px;
+				}
+			}
+
+			.ball1 {
+				display: none;
+			}
+
+			.ball2 {
+				top: -27px;
+				right: -2px;
+				animation-name: balllevitage2Mob;
+			}
+
+			@keyframes balllevitage2Mob {
+				0% {
+					transform: rotate(0) translate(0, 0);
+				}
+
+				50% {
+					transform: rotate(6deg) translate(17px, 4px);
+				}
+
+				100% {
+					transform: rotate(0) translate(0, 0);
+				}
+			}
+
+			.ball3 {
+				top: 55px;
+				right: -43px;
+				animation-name: balllevitage3Mob;
+			}
+
+			@keyframes balllevitage3Mob {
+				0% {
+					transform: rotate(0) translate(0, 0);
+				}
+
+				50% {
+					transform: rotate(6deg) translate(12px, 6px);
+				}
+
+				100% {
+					transform: rotate(0) translate(0, 0);
+				}
+			}
+		}
+	}
+
+	@include _375 {
+		&__title {
+			h2 {
+				font-size: 1.95rem;
+			}
+		}
+
+		&__container {
+			padding-bottom: 230px;
+
+			ul {
+				li {
+					padding-left: 40px;
+
+					&::before {
+						width: 26px;
+						height: 22px;
+					}
+				}
+			}
+		}
+
+		.layer {
+			&._bg {
+				height: 807px;
+			}
+		}
+	}
+
+	@include _360 {
+		margin-bottom: 174px;
+
+		&__title {
+			h2 {
+				font-size: 1.75rem;
+			}
+		}
+
+		.birthday-rabbits {
+			._cake {
+				left: 19px;
+			}
+		}
+	}
+
+	@include _320 {
+		.birthday-rabbits {
+			._second-rabbit {
+				right: 57px;
+			}
+
+			.ball2 {
+				right: -42px;
+			}
+
+			.ball3 {
+				right: -81px;
+			}
+		}
+	}
 }
 
 .rabbits {

@@ -259,4 +259,37 @@
 			order: 3;
 		}
 	}
+
+	@include _540 {
+		&__content {
+			flex-wrap: wrap;
+			order: 2;
+		}
+
+		&__col {
+			&:nth-of-type(2) {
+				margin-right: 0;
+				margin-bottom: 32px;
+			}
+
+			&:nth-of-type(1) {
+				margin-right: 0;
+				margin-bottom: 32px;
+			}
+		}
+
+		&__left {
+			order: 1;
+			margin-bottom:  32px;
+		}
+
+		&__right {
+			align-items: flex-start;
+			order: 3;
+		}
+
+		&__button {
+			margin-bottom: 24px;
+		}
+	}
 }

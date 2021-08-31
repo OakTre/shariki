@@ -1001,6 +1001,122 @@
 			}
 		}
 	}
+
+	@include _480 {
+		margin-bottom: 20px;
+
+		.layer {
+			&._rabbit {
+				left: 131px;
+			}
+
+			&._ball3 {
+				top: 111px;
+				right: -30px;
+				width: 126px;
+			}
+
+			&._ball1 {
+				top: 217px;
+				left: -40px;
+			}
+
+			&._sky1 {
+				top: 53px;
+				width: 45px;
+				height: 190px;
+			}
+
+			&._sky9 {
+				width: 120px;
+			}
+
+			&._sky8 {
+				top: 313px;
+			}
+
+			&._sky7 {
+				top: 220px;
+			}
+
+			&._sky5 {
+				z-index: 83;
+				width: 111px;
+			}
+
+			&._light-right {
+				width: 195px;
+				height: 183px;
+			}
+
+			&._light-left {
+				width: 263px;
+				height: 198px;
+			}
+		}
+
+		&__button {
+			span {
+				padding: 23px 57px;
+			}
+		}
+	}
+
+	@include _375 {
+		.layer {
+			&._rabbit {
+				left: 95px;
+			}
+		}
+	}
+
+	@include _360 {
+		.layer {
+			&._ball3 {
+				top: 57px;
+				right: -24px;
+				width: 106px;
+			}
+
+			&._ball1 {
+				top: 307px;
+				width: 152px;
+				height: 314px;
+			}
+
+			&._sky8 {
+				width: 72px;
+				height: 92px;
+			}
+
+			&._sky9 {
+				width: 110px;
+				height: 89px;
+			}
+
+			&._sky5 {
+				width: 91px;
+			}
+
+			&._sky1 {
+				width: 37px;
+				height: 150px;
+			}
+
+			&._sky7 {
+				width: 28px;
+				height: 90px;
+			}
+		}
+	}
+
+	@include _320 {
+		.layer {
+			&._rabbit {
+				left: 75px;
+			}
+		}
+	}
 }
 
 @keyframes levitatesm3 {

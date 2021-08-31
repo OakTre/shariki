@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @font-face {
   font-weight: 400;
   font-family: Exo2;
@@ -3522,6 +3524,10 @@ ul {
   padding-bottom: 104px;
 }
 
+.contacts-us__top ._mobile-img {
+  display: none;
+}
+
 .contacts-us__top .thief {
   position: absolute;
   top: 102px;
@@ -6279,11 +6285,13 @@ ul {
   }
 }
 
-@media (max-width:1280px) {
+@media (max-width:1350px) {
   .header__nav {
     display: none;
   }
+}
 
+@media (max-width:1280px) {
   .header {
     padding-bottom: 40px;
   }
@@ -7741,6 +7749,10 @@ ul {
     width: 54%;
   }
 
+  .catalog__product:nth-child(n+4) {
+    display: none;
+  }
+
   .catalog__text {
     font-size: 1.6rem;
   }
@@ -7771,7 +7783,16 @@ ul {
 
   .discount .layer._bubles {
     top: -74px;
-    height: 211px;
+    height: 311px;
+    background-size: cover;
+  }
+
+  .discount__container {
+    padding-bottom: 50px;
+  }
+
+  .discount__link {
+    margin-top: 18px;
   }
 
   .reasons .layer._ball1 {
@@ -7782,8 +7803,21 @@ ul {
     display: none;
   }
 
+  .reasons__title {
+    margin-bottom: 26px;
+  }
+
   .reasons__title h2 {
     font-size: 2.25rem;
+  }
+
+  .reasons__item {
+    padding: 23px 17px;
+  }
+
+  .reasons__container {
+    grid-row-gap: 20px;
+    grid-column-gap: 13px;
   }
 
   .custom {
@@ -7802,15 +7836,614 @@ ul {
     display: none;
   }
 
+  .contacts-us {
+    padding-bottom: 20px;
+  }
+
+  .contacts-us::before {
+    height: 70px;
+  }
+
   .contacts-us__title h2,
   .contacts-us__title h2 span {
     font-size: 2.25rem;
+  }
+
+  .contacts-us .layer._ball1 {
+    top: 301px;
+    right: -50px;
+    width: 169px;
+    height: 410px;
+  }
+
+  .contacts-us__top {
+    padding-bottom: 277px;
+  }
+
+  .contacts-us__top img {
+    right: auto;
+    bottom: -55px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+
+  .contacts-us__top .thief {
+    top: 344px;
+    right: 137px;
+  }
+
+  .contacts-us__top .tail {
+    top: 335px;
+    right: 182px;
+  }
+
+  .contacts-us__top .discount-board {
+    top: 230px;
+    right: 224px;
+  }
+
+  .contacts-us__promocode {
+    width: 90%;
+  }
+
+  .contacts-us__bottom .layer.left-rabbit {
+    display: none;
+  }
+
+  .custom-form__agreement {
+    max-width: 100%;
+  }
+
+  .footer__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .footer__col:nth-of-type(1),
+  .footer__col:nth-of-type(2) {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+
+  .footer__left {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    margin-bottom: 32px;
+  }
+
+  .footer__right {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .footer__button {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width:480px) {
+  .hero-section {
+    margin-bottom: 20px;
+  }
+
+  .hero-section .layer._rabbit {
+    left: 131px;
+  }
+
+  .hero-section .layer._ball3 {
+    top: 111px;
+    right: -30px;
+    width: 126px;
+  }
+
+  .hero-section .layer._ball1 {
+    top: 217px;
+    left: -40px;
+  }
+
+  .hero-section .layer._sky1 {
+    top: 53px;
+    width: 45px;
+    height: 190px;
+  }
+
+  .hero-section .layer._sky9 {
+    width: 120px;
+  }
+
+  .hero-section .layer._sky8 {
+    top: 313px;
+  }
+
+  .hero-section .layer._sky7 {
+    top: 220px;
+  }
+
+  .hero-section .layer._sky5 {
+    z-index: 83;
+    width: 111px;
+  }
+
+  .hero-section .layer._light-right {
+    width: 195px;
+    height: 183px;
+  }
+
+  .hero-section .layer._light-left {
+    width: 263px;
+    height: 198px;
+  }
+
+  .hero-section__button span {
+    padding: 23px 57px;
+  }
+
+  .catalog__item {
+    width: 100%;
+  }
+
+  .catalog .layer._bg {
+    height: 608px;
+  }
+
+  .catalog .layer._wedding-rabbit {
+    right: -20px;
+  }
+
+  .catalog__link span {
+    padding: 22px ​67px;
+  }
+
+  .discount {
+    padding-bottom: 65px;
+  }
+
+  .discount__container {
+    width: auto;
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+
+  .discount__content {
+    border-radius: 0;
+  }
+
+  .discount__button span {
+    padding: 22px 67px;
+  }
+
+  .discount__link span {
+    padding: 22px 41px;
+  }
+
+  .reasons {
+    padding-bottom: 102px;
+  }
+
+  .reasons .layer._ball1 {
+    display: none;
+  }
+
+  .reasons .layer._bg {
+    height: 781px;
+  }
+
+  .reasons__item {
+    grid-column: 12 span;
+  }
+
+  .reasons__item:nth-child(3) {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+  }
+
+  .reasons__item:nth-child(4) {
+    -webkit-box-ordinal-group: 5;
+    -ms-flex-order: 4;
+    order: 4;
+  }
+
+  .custom {
+    margin-bottom: 194px;
+  }
+
+  .custom .birthday-rabbits {
+    width: 100%;
+  }
+
+  .custom .birthday-rabbits ._first-rabbit {
+    display: none;
+  }
+
+  .custom .birthday-rabbits ._cake {
+    bottom: 0;
+    left: 50px;
+    width: 113px;
+    height: 200px;
+  }
+
+  .custom .birthday-rabbits ._second-rabbit {
+    right: 97px;
+  }
+
+  .custom .birthday-rabbits ._second-rabbit ._hat {
+    top: 39px;
+    left: 48%;
+    width: 41px;
+    height: 50px;
+  }
+
+  .custom .birthday-rabbits .ball1 {
+    display: none;
+  }
+
+  .custom .birthday-rabbits .ball2 {
+    top: -27px;
+    right: -2px;
+    -webkit-animation-name: balllevitage2Mob;
+    animation-name: balllevitage2Mob;
+  }
+
+@-webkit-keyframes balllevitage2Mob {
+    0%, 100% {
+      -webkit-transform: rotate(0) translate(0,0);
+      transform: rotate(0) translate(0,0);
+    }
+
+    50% {
+      -webkit-transform: rotate(6deg) translate(17px,4px);
+      transform: rotate(6deg) translate(17px,4px);
+    }
+}
+
+@keyframes balllevitage2Mob {
+    0%, 100% {
+      -webkit-transform: rotate(0) translate(0,0);
+      transform: rotate(0) translate(0,0);
+    }
+
+    50% {
+      -webkit-transform: rotate(6deg) translate(17px,4px);
+      transform: rotate(6deg) translate(17px,4px);
+    }
+}
+
+  .custom .birthday-rabbits .ball3 {
+    top: 55px;
+    right: -43px;
+    -webkit-animation-name: balllevitage3Mob;
+    animation-name: balllevitage3Mob;
+  }
+
+@-webkit-keyframes balllevitage3Mob {
+    0%, 100% {
+      -webkit-transform: rotate(0) translate(0,0);
+      transform: rotate(0) translate(0,0);
+    }
+
+    50% {
+      -webkit-transform: rotate(6deg) translate(12px,6px);
+      transform: rotate(6deg) translate(12px,6px);
+    }
+}
+
+@keyframes balllevitage3Mob {
+    0%, 100% {
+      -webkit-transform: rotate(0) translate(0,0);
+      transform: rotate(0) translate(0,0);
+    }
+
+    50% {
+      -webkit-transform: rotate(6deg) translate(12px,6px);
+      transform: rotate(6deg) translate(12px,6px);
+    }
+}
+
+  .contacts-us__title {
+    margin-bottom: 30px;
+  }
+
+  .contacts-us__title h2,
+  .contacts-us__title h2 span {
+    font-size: 1.95rem;
+  }
+
+  .contacts-us__top {
+    padding-bottom: 217px;
+  }
+
+  .contacts-us__top .tail,
+  .contacts-us__top .thief,
+  .contacts-us__top img {
+    display: none;
+  }
+
+  .contacts-us__top ._mobile-img {
+    display: block;
+  }
+
+  .contacts-us__top ._mobile-img img {
+    bottom: -40px;
+    left: 0;
+    display: block;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+
+  .contacts-us .layer._ball1 {
+    display: none;
+  }
+
+  .contacts-us .discount-board {
+    top: 240px;
+    right: 194px;
+  }
+
+  .contacts-us__promocode {
+    padding: 9px 23px;
+    border-radius: 31px;
+  }
+
+  .contacts-us__promocode-text {
+    font-size: .925rem;
+  }
+
+  .contacts-us__promocode .watup {
+    top: -12px;
+    right: -7px;
+    width: 70px;
+    height: 156px;
+  }
+
+  .custom-form__input {
+    height: 60px;
+    padding: 20px 33px;
+    border-radius: 18px;
+  }
+
+  .custom-form__button span {
+    padding: 22px 58px;
+    border-radius: 35px;
+  }
+}
+
+@media (max-width:375px) {
+  .hero-section .layer._rabbit {
+    left: 95px;
+  }
+
+  .catalog .layer.weddding-rabbit {
+    width: 210px;
+    height: 220px;
+  }
+
+  .discount {
+    padding-bottom: 55px;
+  }
+
+  .discount__title h2 {
+    font-size: 1.95rem;
+  }
+
+  .discount__button {
+    width: 100%;
+  }
+
+  .discount__container {
+    padding-bottom: 40px;
+  }
+
+  .discount__pagination .swiper-pagination-bullet {
+    width: 40px;
+    margin: 0 8px!important;
+    background-color: #fff;
+  }
+
+  .reasons__title h2 {
+    font-size: 1.85rem;
+  }
+
+  .reasons__container {
+    margin-right: -24px;
+    margin-left: -24px;
+  }
+
+  .reasons__item {
+    border-radius: 8px;
+  }
+
+  .custom__title h2 {
+    font-size: 1.95rem;
+  }
+
+  .custom__container {
+    padding-bottom: 230px;
+  }
+
+  .custom__container ul li {
+    padding-left: 40px;
+  }
+
+  .custom__container ul li::before {
+    width: 26px;
+    height: 22px;
+  }
+
+  .custom .layer._bg {
+    height: 807px;
+  }
+
+  .contacts-us__title h2,
+  .contacts-us__title h2 span {
+    font-size: 1.75rem;
+  }
+
+  .contacts-us__bottom {
+    padding: 22px;
+  }
+
+  .contacts-us__top {
+    padding-bottom: 197px;
+  }
+
+  .contacts-us .discount-board {
+    top: 280px;
+    right: 164px;
+    width: 141px;
+    height: 153px;
   }
 }
 
 @media (max-width:360px) {
   .site-container {
     padding: 0 16px;
+  }
+
+  .hero-section .layer._ball3 {
+    top: 57px;
+    right: -24px;
+    width: 106px;
+  }
+
+  .hero-section .layer._ball1 {
+    top: 307px;
+    width: 152px;
+    height: 314px;
+  }
+
+  .hero-section .layer._sky8 {
+    width: 72px;
+    height: 92px;
+  }
+
+  .hero-section .layer._sky9 {
+    width: 110px;
+    height: 89px;
+  }
+
+  .hero-section .layer._sky5 {
+    width: 91px;
+  }
+
+  .hero-section .layer._sky1 {
+    width: 37px;
+    height: 150px;
+  }
+
+  .hero-section .layer._sky7 {
+    width: 28px;
+    height: 90px;
+  }
+
+  .catalog {
+    padding-bottom: 195px;
+  }
+
+  .catalog .layer._wedding-rabbit {
+    width: 140px;
+    height: 220px;
+  }
+
+  .discount {
+    padding-bottom: 75px;
+  }
+
+  .discount__container {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  .reasons__container {
+    margin-right: -16px;
+    margin-left: -16px;
+  }
+
+  .custom {
+    margin-bottom: 174px;
+  }
+
+  .custom__title h2 {
+    font-size: 1.75rem;
+  }
+
+  .custom .birthday-rabbits ._cake {
+    left: 19px;
+  }
+}
+
+@media (max-width:320px) {
+  .hero-section .layer._rabbit {
+    left: 75px;
+  }
+
+  .catalog__title h2 {
+    font-size: 1.95rem;
+  }
+
+  .catalog__show-more {
+    margin-bottom: 60px;
+  }
+
+  .catalog__text {
+    font-size: 1.4rem;
+  }
+
+  .catalog .layer._bg {
+    height: 528px;
+  }
+
+  .discount__title h2 {
+    font-size: 1.75rem;
+  }
+
+  .discount__legend {
+    max-width: 163px;
+    font-size: 1.2rem;
+  }
+
+  .discount__legend span {
+    font-size: 1.3rem;
+  }
+
+  .discount__button span {
+    padding: 20px 67px;
+  }
+
+  .reasons__title h2 {
+    font-size: 1.65rem;
+  }
+
+  .custom .birthday-rabbits ._second-rabbit {
+    right: 57px;
+  }
+
+  .custom .birthday-rabbits .ball2 {
+    right: -42px;
+  }
+
+  .custom .birthday-rabbits .ball3 {
+    right: -81px;
+  }
+
+  .contacts-us__top .discount-board {
+    top: 310px;
+    right: 144px;
+  }
+
+  .contacts-us__promocode .watup {
+    right: -36px;
   }
 }
 /*# sourceMappingURL=style.min.css.map */

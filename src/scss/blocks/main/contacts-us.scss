@@ -94,6 +94,10 @@
 		position: relative;
 		padding-bottom: 104px;
 
+		._mobile-img {
+			display: none;
+		}
+
 		.thief {
 			position: absolute;
 			top: 102px;
@@ -828,6 +832,12 @@
 	}
 
 	@include _540 {
+		padding-bottom: 20px;
+
+		&::before {
+			height: 70px;
+		}
+
 		&__title {
 			h2 {
 				font-size: rem(36px);
@@ -835,6 +845,162 @@
 				span {
 					font-size: rem(36px);
 				}
+			}
+		}
+
+		.layer {
+			&._ball1 {
+				top: 301px;
+				right: -50px;
+				width: 169px;
+				height: 410px;
+			}
+		}
+
+		&__top {
+			padding-bottom: 277px;
+
+			img {
+				right: auto;
+				bottom: -55px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			.thief {
+				top: 344px;
+				right: 137px;
+			}
+
+			.tail {
+				top: 335px;
+				right: 182px;
+			}
+
+			.discount-board {
+				top: 230px;
+				right: 224px;
+			}
+		}
+
+		&__promocode {
+			width: 90%;
+			// padding: 9px 33px;
+
+			// &-text {
+			// 	font-size: 0.925rem;
+			// }
+		}
+
+		&__bottom {
+			.layer {
+				&.left-rabbit {
+					display: none;
+				}
+			}
+		}
+	}
+
+	@include _480 {
+		&__title {
+			margin-bottom: 30px;
+
+			h2 {
+				font-size: 1.95rem;
+
+				span {
+					font-size: 1.95rem;
+				}
+			}
+		}
+
+		&__top {
+			padding-bottom: 217px;
+
+			img,
+			.thief,
+			.tail {
+				display: none;
+			}
+
+			._mobile-img {
+				display: block;
+
+				img {
+					bottom: -40px;
+					left: 0;
+					display: block;
+					transform: none;
+				}
+			}
+		}
+
+		.layer {
+			&._ball1 {
+				display: none;
+			}
+		}
+
+		.discount-board {
+			top: 240px;
+			right: 194px;
+		}
+
+		&__promocode {
+			padding: 9px 23px;
+			border-radius: 31px;
+
+			&-text {
+				font-size: 0.925rem;
+			}
+
+			.watup {
+				top: -12px;
+				right: -7px;
+				width: 70px;
+				height: 156px;
+			}
+		}
+	}
+
+	@include _375 {
+		&__title {
+			h2 {
+				font-size: 1.75rem;
+
+				span {
+					font-size: 1.75rem;
+				}
+			}
+		}
+
+		&__bottom {
+			padding: 22px;
+		}
+
+		&__top {
+			padding-bottom: 197px;
+		}
+
+		.discount-board {
+			top: 280px;
+			right: 164px;
+			width: 141px;
+			height: 153px;
+		}
+	}
+
+	@include _320 {
+		&__top {
+			.discount-board {
+				top: 310px;
+				right: 144px;
+			}
+		}
+
+		&__promocode {
+			.watup {
+				right: -36px;
 			}
 		}
 	}
